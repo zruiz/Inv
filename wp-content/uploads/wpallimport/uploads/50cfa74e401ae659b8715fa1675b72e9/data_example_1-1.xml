@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+	<node>
+		<shipyard><![CDATA[Shipyard1]]></shipyard>
+		<model><![CDATA[Model1]]></model>
+		<year><![CDATA[2006]]></year>
+		<name><![CDATA[Yacht1]]></name>
+		<loa><![CDATA[89]]></loa>
+		<description><![CDATA[blah blah]]></description>
+		<beam><![CDATA[3]]></beam>
+		<draft><![CDATA[5]]></draft>
+		<enginemanufacturer><![CDATA[Manufacturer1]]></enginemanufacturer>
+		<numberofengines><![CDATA[2]]></numberofengines>
+		<enginemodels><![CDATA[Model1]]></enginemodels>
+		<enginehorsepowers><![CDATA[2000]]></enginehorsepowers>
+	</node>
+	<node>
+		<shipyard><![CDATA[Shipyard2]]></shipyard>
+		<model><![CDATA[Model2]]></model>
+		<year><![CDATA[2004]]></year>
+		<name><![CDATA[Yacht2]]></name>
+		<loa><![CDATA[69]]></loa>
+		<description><![CDATA[blah blah]]></description>
+		<beam><![CDATA[4]]></beam>
+		<draft><![CDATA[2]]></draft>
+		<enginemanufacturer><![CDATA[Manufacturer2]]></enginemanufacturer>
+		<numberofengines><![CDATA[1]]></numberofengines>
+		<enginemodels><![CDATA[Model2]]></enginemodels>
+		<enginehorsepowers><![CDATA[4000]]></enginehorsepowers>
+	</node>
+	<node>
+		<shipyard><![CDATA[Shipyard3]]></shipyard>
+		<model><![CDATA[Model3]]></model>
+		<year><![CDATA[2008]]></year>
+		<name><![CDATA[Yacht3]]></name>
+		<loa><![CDATA[209]]></loa>
+		<description><![CDATA[blah blah]]></description>
+		<beam><![CDATA[3.5]]></beam>
+		<draft><![CDATA[2.5]]></draft>
+		<enginemanufacturer><![CDATA[Manufacturer3]]></enginemanufacturer>
+		<numberofengines><![CDATA[2]]></numberofengines>
+		<enginemodels><![CDATA[Model3]]></enginemodels>
+		<enginehorsepowers><![CDATA[6000]]></enginehorsepowers>
+	</node>
+</data>

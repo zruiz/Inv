@@ -1,0 +1,570 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "Import any XML or CSV File to WordPress"
+msgstr ""
+
+#. Short description.
+msgid "WP All Import is an extremely powerful importer that makes it easy to import any XML or CSV file to WordPress."
+msgstr ""
+
+#. Screenshot description.
+msgid "Choose file."
+msgstr ""
+
+#. Screenshot description.
+msgid "Filtering options."
+msgstr ""
+
+#. Screenshot description.
+msgid "Choose where to import your data."
+msgstr ""
+
+#. Screenshot description.
+msgid "Manage imports."
+msgstr ""
+
+#. Found in description header.
+msgid "WP All Import - Simple &amp; Powerful XML / CSV Importer Plugin"
+msgstr ""
+
+#. Found in description header.
+msgid "WP All Import Professional Edition"
+msgstr ""
+
+#. Found in description header.
+msgid "WordPress CSV Imports"
+msgstr ""
+
+#. Found in description header.
+msgid "Add-Ons"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Import data to Custom Fields - used by many themes, especially those using Custom Post Types - to store data associated with the posts.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Import images to the post media gallery - WP All Import can download images from URLs in an XML or CSV file and put them in the media gallery.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Cron Job/Recurring Imports - WP All Import pro can check periodically check a file for updates, and add, edit, and delete to the imported posts accordingly.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Import files from a URL - Download and import files from external websites, even if they are password protected with HTTP authentication. URL imports are integrated with the recurring/cron imports feature, so WP All Import can periodically re-download the files and add, edit, and delete posts accordingly.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Execution of Custom PHP Functions on data, i.e. use something like [my_function({xpath/to/a/field[1]})] in your template, to pass the value of {xpath/to/a/field[1]} to my_function and display whatever it returns.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "<p>Guaranteed technical support via e-mail.</p>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Advanced Custom Fields Add-On - <a href=\"http://www.advancedcustomfields.com/\">ACF</a> XML &amp; CSV importer"
+msgstr ""
+
+#. Found in description list item.
+msgid "WooCommerce Add-On - XML &amp; CSV importer for all <a href=\"http://wordpress.org/plugins/woocommerce\">WooCommerce</a> product types"
+msgstr ""
+
+#. Found in description list item.
+msgid "User Import Add-On - XML &amp; CSV importer for users, including user_meta"
+msgstr ""
+
+#. Found in description list item.
+msgid "Link Cloak Add-On - Auto-create redirects for links present during an XML or CSV import"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "WP All Import has a four step import process and an intuitive drag &amp; drop interface that makes complicated import tasks simple and fast."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "There are no special requirements that the elements in your file must be laid out in a certain way. WP All Import really can import any XML or CSV file."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "WP All Import can be used for everything from migrating content from a legacy CMS to WordPress to building a store with an affiliate datafeed to displaying live stock quotes or sports scores to building a real estate portal."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Check out our <a href=\"http://www.wpallimport.com/documentation/?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=docs\">documentation and video tutorials</a> to make the most of WP All Import."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For technical support from the developers, please consider purchasing WP All Import Pro."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "[youtube http://www.youtube.com/watch?v=pD6WQANJcJY /]"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<em>WP All Import Pro</em> is a paid upgrade that includes premium support and adds the following features:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Import data to Custom Fields - used by many themes, especially those using Custom Post Types - to store data associated with the posts."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Import images to the post media gallery - WP All Import can download images from URLs in an XML or CSV file and put them in the media gallery."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Cron Job/Recurring Imports - WP All Import pro can check periodically check a file for updates, and add, edit, and delete to the imported posts accordingly."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Import files from a URL - Download and import files from external websites, even if they are password protected with HTTP authentication. URL imports are integrated with the recurring/cron imports feature, so WP All Import can periodically re-download the files and add, edit, and delete posts accordingly."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Execution of Custom PHP Functions on data, i.e. use something like [my_function({xpath/to/a/field[1]})] in your template, to pass the value of {xpath/to/a/field[1]} to my_function and display whatever it returns."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Guaranteed technical support via e-mail."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<a href=\"http://www.wpallimport.com/documentation/?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=upgrade\">Upgrade to the professional edition of WP All Import.</a>"
+msgstr ""
+
+#. Found in description paragraph, remaining content paragraph.
+msgid "Need to <a href=\"http://wordpress.org/plugins/woocommerce-xml-csv-product-import/\">import XML and CSV to WooCommerce?</a> Check out our WooCommerce add-on."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Read on to learn more about the CSV importer functionality of WP All Import. Importing CSVs with WP All Import is exactly the same as importing XML files, because internally, WP All Import actually converts your CSV file to an XML file on the fly. You can use the same XPath filtering options and all the same features you have when importing XML files."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "CSV imports don't require your CSV file to have a specific structure. Your CSV file can use any column names/headings. You can map the columns in your CSV file to the appropriate places in WordPress during the import process."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "When importing CSV files, your CSV should have UTF-8 encoding if you are having trouble importing special characters."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "In step 2 of a CSV import, you can specify an alternative delimiter if you aren't using a comma. WP All Import can import CSVs that are pipe-delimited, # delimited, or delimited/separated by any other character."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "For CSV import tutorials and example files, visit our <a href=\"http://www.wpallimport.com/documentation/?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=documentation\">documentation</a>. Please keep in mind CSV imports with WP All Import are just like XML imports - you have all the same functionality, and the process is exactly the same. Any of our tutorial videos that apply to XML files also apply to importing CSV files, so if you see a tutorial with us importing an XML file, know that you can follow the exact same steps for a CSV import."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "A number of premium add-ons are available to add functionality to the importer and make XML &amp; CSV import tasks to complex plugins simple."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Learn more about our add-ons at <a href=\"http://www.wpallimport.com/add-ons?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=add-ons\">http://www.wpallimport.com/add-ons</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "A <a href=\"http://www.wpallimport.com/documentation/developers/action-reference/?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=documentation\">developer API</a> (action hooks) is also available."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed duplicate matching by custom field"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed converting image filenames to lowercase"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import html to image description"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import _wp_old_slug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added Post ID to manual record matching"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added 'Comment status' to 'Choose data to update' section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed fatal error on saving settings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed parsing CSV with empty lines"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed parsing multiple IF statements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed preview in case when ‘Disable the visual editor when writing’ is enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed conflict with WooCommerce - Store Exporter Deluxe"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added notifications for required addons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added support for wp all export bundle"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added support for manual import bundle"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added feature 'click to download import file'"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added validation for excerpt and images sections"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added auto-detect a broken Unique ID notification"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added import template notifications"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "removed support for importing WooCommerce Orders"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "changed absolute paths to relative in db"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added new options to taxonomies import 'Try to match terms to existing child Product Categories' &amp; 'Only assign Products to the imported Product Category, not the entire hierarchy'"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added support for Excel files ( .xls, .xlsx ) "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "load ini_set only on plugin pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed saving import template"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed Apply mapping rules before splitting via separator symbol for manual hierarchy"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed path equal or less than"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed changing unique key when moving back from confirm screen"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed override page template"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "updated wp_all_import_is_post_to_update filter with second argument XML node as array"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added a second argument to pmxi_saved_post action ( SimpleXML object ) of current record"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed enum fields mapping rules feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility with 3rd party development: http://www.wpallimport.com/documentation/addon-dev/overview/"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Important security fixes - additional hardening, prevention of blind SQL injection and reflected XSS attacks"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "critical security fix - stopping non-logged in users from accessing adminInit"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed re-count record when a file has been changed at an import setting screen"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed unlink attachment source when posts updated/deleted"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added a limit 10 to the existing meta values"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed database schema"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "uploading large files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed updating import settings"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "IMPORTANT: WP All Import v4 (3.2.0) is a MAJOR update. Read this post before upgrading: http://www.wpallimport.com/2014/11/free-version-wordpress-org-update-information"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "speed up the import of taxonomies/categories"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added taxonomies/categories mapping feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added custom fields auto-detection feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added custom fields mapping feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added images/taxonomies preview feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added unofficial support for more file formats - json &amp; sql"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added new setting (secure mode) to protect your files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "better import logs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "updated design"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed pmxi_delete_post action"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import menu order &amp; post parent for pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import log for continue import feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added is update author option"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed post formats"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed UTC dates on manage imports page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "changed support email"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import pages"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added compatibility with WP 3.9"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "added autodetect session mode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "updated convertation CSV to XML with XMLWriter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed import *.zip files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed xpath helper on step 2"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed showing zeros in XML tree"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed deleting history files"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed autodetect image extensions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "fixed increasing SQL query length"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "allow post content to be empty on step 3"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "delete deprecated settings \"my csv contain html code\" and \"case sensitivity\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed compatibility with addons"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed \"download image\" option for import products"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed CSS for WP 3.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed dismiss links"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility with WP 3.8"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatibility with WPAI WooCommerce add-on (paid) 1.2.4"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance Improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved UI"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Lots of bug fixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New Record Matching section"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to set Post Status with XPath (the value of presented XPath should be one of the following: publish, draft, trash)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Preview navigation"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed import categories;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Updated UI/UX;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added import/export templates feature;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added enhanced session functionality;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to set post status with XPath;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added feeds encoding feature;"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added support for the WooCommerce add-on"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Free edition of 3.0 pro release"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Category list delimiter bug fix"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Tons of bug fixes, updates, and additional features. "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Initial release on WordPress.org."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<a href=\"http://www.wpallimport.com/documentation/advanced/import-processing/?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=large-files\">Various settings are available</a> to make it possible to import larger files or speed up your import."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<em>The answer to all of the following questions is yes:</em>"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Premium Support"
+msgstr ""
+
+#. Found in remaining content header.
+msgid "Import To WooCommerce"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "Upgrade to the professional edition of WP All Import for premium support."
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "E-mail: support@wpallimport.com"
+msgstr ""
+
+#. Found in remaining content paragraph.
+msgid "<a href=\"http://www.wpallimport.com/woocommerce-product-import?utm_source=free-plugin&amp;utm_medium=dot-org&amp;utm_campaign=woocommerce\">WooCommerce XML &amp; CSV Import Pro Version</a>"
+msgstr ""

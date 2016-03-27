@@ -1,0 +1,93 @@
+*** Changelog ***
+30 May 2015- Version 1.0
+	INITIAL RELEASE
+
+01 June 2015- Version 1.1
+	FIXED! Homepage Social Icons format on small screens
+	FIXED! Demo Price attribute not displaying
+	FIXED! Mobile menu getting hidden on touch scroll
+
+03 June 2015- Version 1.2
+	FIXED! Car details page forms was not working
+	FIXED! Wrong number of listing showing in search filters sidebar
+	NEW! Password strength meter and password generator for signup popup and form widget
+	NEW! Search form shortcakes (2 types)
+	NEW! Option to choose the default form for ad listing page either be search or custom details
+	NEW! Auto move to next step on Add Listing Wizard
+
+22 June, 2105 - Version 1.3
+	NEW! Option for plans whether admin wants to activate it or not.
+	NEW! Option for listing status Ex- Under Review and Active Instantly.
+	NEW! Child specification was not working in search shortcode.
+	NEW! Child specification was not working in search filter.
+	NEW Km/Miles option for calculating distance.
+	NEW! Currency option for mortgage calculator.
+	NEW! Listing details page can now also have option for shortcode of forms or totally disable the inquiry forms.
+	NEW! Extra tabs option for listing details page.
+	FIXED! Content was not showing on single blog page.
+
+30 June, 2015 - Version 1.3.1
+	prettyPhoto XSS fix
+
+24 July, 2015 - Version 1.4
+	NEW! Classifieds demo added
+	NEW! Multiple category option for listings
+	NEW! Added title field for listing
+	NEW! Set time expiration for listing in your pricing plan
+	FIXED! Header sticky disable option not working
+	FIXED! Footer position in boxed layout on Blog(index.php) page
+
+03 September, 2015 - Version 1.4.1
+	FIXED! IE Browser Issues for Add Listings and Listing View Page Templates
+	FIXED! Pagination not showing all pages after some listings
+	FIXED! Search results were not getting accurate
+	FIXED! Recent Listings were not having correct order on page refresh or on sorting
+	NEW! Option to use WP Media Uploader on Add Listings Page
+	UPDATED! Revolution Slider to Latest Version
+	NEW! Option to set image upload field as mandatory
+	NEW! Billing Info fields from Add Listings Page will be hidden if Pricing Plans are disabled
+	FIXED! Listings expiry date were not saving for some users
+	FIXED! Search over slider issue while using revolution slider
+	NEW! Option to add currency in Pricing Plans
+	FIXED! Mostly Viewed Listings showing Draft Listings post as well
+	NEW! Default language file added
+
+17 November, 2015 - Version 1.5
+	FIXED! Specifications was not loading on listings page while using listing plugin
+	FIXED! Gallery page template category selection was not working
+	NEW! Option for Reset Password
+	NEW! Now theme support WP All Import
+	FIXED! Some WPML bugs
+	NEW! Inquiry form email will show Listing URL instead of ID
+	FIXED! Google map was not showing on listing details page
+	FIXED! Compare listing template was not working fine with Classifieds plugin
+	FIXED! Issue with media uploader for front end in Google Chrome
+	FIXED! Classified settings page was not getting updated in WP Dashboard
+	NEW! Language .po file added for Listing Plugin
+	FIXED! Issue with some translations strings
+	FIXED! Issue with child values not loading for some users
+	NEW! Shortcode added for the dealers list
+	FIXED! UX problem with login register forms
+	FIXED! Listings pagination was not working fine, preventing page counts to max 7
+	FIXED! Listings single page inquiry forms were delivering to admin now will be sent to dealer/seller
+	FIXED! News section was not getting disabled on template home 1
+	UPDATED! Listing single page images slider to more advanced
+	NEW! Added vk social icon options for header/footer and sharing buttons
+	UPDATED! Revolution Slider to latest version
+
+02 December, 2015 - Version 1.6
+	NEW! Additional child theme added for users who need to use theme as a single dealer
+	NEW! Add any option for child field in search form, so that it could search all listing of parent field
+	NEW! RTL option included
+	NEW! Option to choose magnetic popup in place of pretty photo
+	NEW! Range filter for search filters
+	FIXED! Specifications not showing in listing if any key removed from repeatable field
+	FIXED! News section was not getting disabled on homepage
+	FIXED! Sort by filter doesn't keep existing filters.
+	FIXED! Enquiry forms should have message of successful
+	FIXED! Integer specification doesn't have space while using custom title
+	FIXED! Child specification filter doesn't show due to index not found
+	FIXED! Add listing js numeric validation bug
+	FIXED! Child values doesn't show in single-cars.php file
+	FIXED! search-one.php file mistakenly placed in includes folder, now removed
+	FIXED! meta_field.php should have check value if exists instead of index

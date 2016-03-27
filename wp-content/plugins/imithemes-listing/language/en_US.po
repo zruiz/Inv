@@ -1,0 +1,318 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: imithemes listings\n"
+"POT-Creation-Date: 2015-09-28 13:40+0530\n"
+"PO-Revision-Date: 2015-11-03 14:50+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.5\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: custom-post-types/cars-type.php:12
+msgid "Listing Specifications"
+msgstr ""
+
+#: custom-post-types/cars-type.php:13
+msgid "Listing Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:14 custom-post-types/cars-type.php:61
+#: custom-post-types/gallery-type.php:25 custom-post-types/plan-type.php:13
+#: custom-post-types/team-type.php:13
+#: custom-post-types/testimonial-type.php:12
+#: custom-post-types/user-type.php:38
+msgid "Add New"
+msgstr ""
+
+#: custom-post-types/cars-type.php:15
+msgid "Add New Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:16
+msgid "Edit Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:17
+msgid "New Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:18
+msgid "View Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:19
+msgid "Search Specification"
+msgstr ""
+
+#: custom-post-types/cars-type.php:20
+msgid "No specifications have been added yet"
+msgstr ""
+
+#: custom-post-types/cars-type.php:21 custom-post-types/cars-type.php:68
+#: custom-post-types/gallery-type.php:33 custom-post-types/plan-type.php:20
+#: custom-post-types/team-type.php:20
+#: custom-post-types/testimonial-type.php:19
+#: custom-post-types/user-type.php:45
+msgid "Nothing found in Trash"
+msgstr ""
+
+#: custom-post-types/cars-type.php:42
+msgid "Listing Features"
+msgstr ""
+
+#: custom-post-types/cars-type.php:43
+msgid "Listing Feature"
+msgstr ""
+
+#: custom-post-types/cars-type.php:59
+msgid "Listings"
+msgstr ""
+
+#: custom-post-types/cars-type.php:60
+msgid "Listing"
+msgstr ""
+
+#: custom-post-types/cars-type.php:62
+msgid "Add New Listing"
+msgstr ""
+
+#: custom-post-types/cars-type.php:63
+msgid "Edit Listing"
+msgstr ""
+
+#: custom-post-types/cars-type.php:64
+msgid "New Listing"
+msgstr ""
+
+#: custom-post-types/cars-type.php:65
+msgid "View Listing"
+msgstr ""
+
+#: custom-post-types/cars-type.php:66
+msgid "Search Listings"
+msgstr ""
+
+#: custom-post-types/cars-type.php:67
+msgid "No listings have been added yet"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:10
+msgid "Gallery Categories"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:11
+msgid "Gallery Category"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:23
+msgid "Gallery"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:24
+msgid "Gallery Item"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:26
+msgid "Gallery items"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:27
+msgid "Add New Gallery Item"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:28
+msgid "Edit Gallery Item"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:29
+msgid "New Gallery Item"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:30
+msgid "View Gallery Item"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:31
+msgid "Search Gallery"
+msgstr ""
+
+#: custom-post-types/gallery-type.php:32
+msgid "No gallery items have been added yet"
+msgstr ""
+
+#: custom-post-types/plan-type.php:10 custom-post-types/plan-type.php:12
+msgid "Plans"
+msgstr ""
+
+#: custom-post-types/plan-type.php:11
+msgid "Plan"
+msgstr ""
+
+#: custom-post-types/plan-type.php:14
+msgid "Add New Payment Plan"
+msgstr ""
+
+#: custom-post-types/plan-type.php:15
+msgid "Edit Payment Plan"
+msgstr ""
+
+#: custom-post-types/plan-type.php:16
+msgid "New Payment Plan"
+msgstr ""
+
+#: custom-post-types/plan-type.php:17
+msgid "View Plans"
+msgstr ""
+
+#: custom-post-types/plan-type.php:18
+msgid "Search Plans"
+msgstr ""
+
+#: custom-post-types/plan-type.php:19
+msgid "No payment plans have been added yet"
+msgstr ""
+
+#: custom-post-types/team-type.php:10 custom-post-types/team-type.php:11
+#: custom-post-types/team-type.php:12
+msgid "Team"
+msgstr ""
+
+#: custom-post-types/team-type.php:14
+msgid "Add New Team Member"
+msgstr ""
+
+#: custom-post-types/team-type.php:15
+msgid "Edit Team Member"
+msgstr ""
+
+#: custom-post-types/team-type.php:16
+msgid "New Team Member"
+msgstr ""
+
+#: custom-post-types/team-type.php:17
+msgid "View Team"
+msgstr ""
+
+#: custom-post-types/team-type.php:18
+msgid "Search Team"
+msgstr ""
+
+#: custom-post-types/team-type.php:19
+msgid "No team member have been added yet"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:10
+msgid "Testimonials"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:11
+msgid "Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:13
+msgid "Add New Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:14
+msgid "Edit Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:15
+msgid "New Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:16
+msgid "View Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:17
+msgid "Search Testimonial"
+msgstr ""
+
+#: custom-post-types/testimonial-type.php:18
+msgid "No testimonial have been added yet"
+msgstr ""
+
+#: custom-post-types/user-type.php:10
+msgid "Users Role"
+msgstr ""
+
+#: custom-post-types/user-type.php:11
+msgid "User Role"
+msgstr ""
+
+#: custom-post-types/user-type.php:23 custom-post-types/user-type.php:24
+msgid "User City"
+msgstr ""
+
+#: custom-post-types/user-type.php:36
+msgid "Users Info"
+msgstr ""
+
+#: custom-post-types/user-type.php:37
+msgid "User"
+msgstr ""
+
+#: custom-post-types/user-type.php:39
+msgid "Add New User"
+msgstr ""
+
+#: custom-post-types/user-type.php:40
+msgid "Edit User"
+msgstr ""
+
+#: custom-post-types/user-type.php:41
+msgid "New User"
+msgstr ""
+
+#: custom-post-types/user-type.php:42
+msgid "View Users"
+msgstr ""
+
+#: custom-post-types/user-type.php:43
+msgid "Search Users"
+msgstr ""
+
+#: custom-post-types/user-type.php:44
+msgid "No users have been added yet"
+msgstr ""
+
+#: imic-post-type-permalinks.php:14
+msgid "Property permalink base"
+msgstr ""
+
+#: imic-post-type-permalinks.php:18
+msgid "Property Type  base"
+msgstr ""
+
+#: imic-post-type-permalinks.php:37
+msgid ""
+"These settings control the permalinks used for property items. These "
+"settings only apply when <strong>not using \"default\" permalinks above</"
+"strong>."
+msgstr ""
+
+#: imic-post-type-permalinks.php:51
+msgid "Default"
+msgstr ""
+
+#: imic-post-type-permalinks.php:55
+msgid "Post name"
+msgstr ""
+
+#: imic-post-type-permalinks.php:60
+msgid "Custom Structure"
+msgstr ""
+
+#: imic-post-type-permalinks.php:62
+msgid ""
+"Enter a custom structure to use. A structure <strong>must</strong> be set or "
+"WordPress will use default instead."
+msgstr ""
