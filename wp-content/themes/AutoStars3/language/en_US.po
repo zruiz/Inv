@@ -1,0 +1,5727 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: AutoStars\n"
+"POT-Creation-Date: 2015-09-03 15:41+0530\n"
+"PO-Revision-Date: 2015-09-03 15:43+0530\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.4\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Language: en_US\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:9
+msgid "404 Error"
+msgstr ""
+
+#: 404.php:34
+msgid "404"
+msgstr ""
+
+#: 404.php:36
+msgid "Sorry - Page Not Found!"
+msgstr ""
+
+#: 404.php:37
+msgid ""
+"The page you are looking for was moved, removed, renamed<br>or might never "
+"existed. You stumbled upon a broken link"
+msgstr ""
+
+#: author.php:52 template-home-second.php:301
+msgid "Member since "
+msgstr ""
+
+#: author.php:53 template-home-second.php:302
+msgid "Active listings "
+msgstr ""
+
+#: author.php:64
+msgid "Visit website"
+msgstr ""
+
+#: author.php:87
+msgid "Our Recently Listed Vehicles"
+msgstr ""
+
+#: author.php:149 index.php:58 search.php:45 single.php:53 template-blog.php:81
+#: template-blog.php:113
+msgid "No comments yet"
+msgstr ""
+
+#: author.php:149 index.php:58 search.php:45 single.php:53 template-blog.php:81
+#: template-blog.php:113
+msgid "Comments are off for this post"
+msgstr ""
+
+#: author.php:153 index.php:62 search.php:49 template-blog.php:85
+#: template-blog.php:117
+msgid "Continue reading"
+msgstr ""
+
+#: author.php:154 index.php:63 search.php:50 template-blog.php:86
+#: template-blog.php:118
+msgid "Posted in:"
+msgstr ""
+
+#: bar-category.php:9
+msgid "Browse our categories"
+msgstr ""
+
+#: bar-saved.php:14 bar-saved.php:108 imic-framework/shortcodes.php:387
+#: imic-framework/shortcodes.php:573 template-home-second.php:153
+#: template-home.php:156 template-listing.php:54 template-listing.php:147
+msgid "View all"
+msgstr ""
+
+#: bar-saved.php:15
+msgid "Saved listings"
+msgstr ""
+
+#: bar-saved.php:43 bar-saved.php:90 template-listing.php:82
+#: template-listing.php:129
+msgid "No Saved Cars yet"
+msgstr ""
+
+#: bar-saved.php:88 bar-saved.php:146
+#: imic-framework/imic-theme-functions.php:1756
+#: imic-framework/imic-theme-functions.php:1876 template-listing.php:127
+#: template-listing.php:185
+msgid "Please login/register to add more"
+msgstr ""
+
+#: bar-saved.php:95 bar-saved.php:154 template-listing.php:134
+#: template-listing.php:193
+msgid "Signin/Join"
+msgstr ""
+
+#: bar-saved.php:96 bar-saved.php:218 template-listing.php:135
+#: template-listing.php:257
+msgid "Compare"
+msgstr ""
+
+#: bar-saved.php:109 template-listing.php:148
+msgid "Saved searches"
+msgstr ""
+
+#: bar-saved.php:126 bar-saved.php:149 template-listing.php:165
+#: template-listing.php:188
+msgid "No Saved Searches Yet"
+msgstr ""
+
+#: bar-saved.php:146 template-listing.php:185
+msgid "No saved searches yet"
+msgstr ""
+
+#: bar-saved.php:161
+msgid "Recently viewed listings"
+msgstr ""
+
+#: bar-saved.php:167 template-listing.php:206
+msgid "You do not have any viewed listings yet"
+msgstr ""
+
+#: comments.php:5
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:8
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: comments.php:19
+msgid "No Comments"
+msgstr ""
+
+#: comments.php:19
+msgid "Comment(1)"
+msgstr ""
+
+#: comments.php:19
+msgid "Comments(%)"
+msgstr ""
+
+#: comments.php:30
+msgid "Comments are now closed for this article."
+msgstr ""
+
+#: comments.php:35
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:48
+msgid "Post a comment"
+msgstr ""
+
+#: comments.php:48
+#, php-format
+msgid "Post a comment to %s"
+msgstr ""
+
+#: comments.php:50
+msgid "Cancel Reply"
+msgstr ""
+
+#: comments.php:53
+#, php-format
+msgid "You must be %1$slogged in%2$s to post a comment."
+msgstr ""
+
+#: comments.php:57
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: comments.php:61
+msgid "Your name"
+msgstr ""
+
+#: comments.php:64
+msgid "Your email"
+msgstr ""
+
+#: comments.php:67
+msgid "Website (optional)"
+msgstr ""
+
+#: comments.php:74
+msgid "Your comment"
+msgstr ""
+
+#: comments.php:81
+msgid "Submit your comment"
+msgstr ""
+
+#: email_file.php:15
+msgid " has been contacted you for below enquiry"
+msgstr ""
+
+#: email_file.php:19
+msgid "You information has been received, we will contact you shortly."
+msgstr ""
+
+#: footer.php:41
+msgid "Login or Register for website"
+msgstr ""
+
+#: footer.php:46 imic-framework/widgets/registration.php:27
+#: imic-framework/widgets/registration.php:91
+msgid "Login"
+msgstr ""
+
+#: footer.php:47 imic-framework/shortcodes.php:1833
+msgid "Register"
+msgstr ""
+
+#: footer.php:67 imic-framework/widgets/registration.php:90
+msgid "Remember Me!"
+msgstr ""
+
+#: footer.php:69
+msgid "Login Now"
+msgstr ""
+
+#: footer.php:82
+msgid "Role"
+msgstr ""
+
+#: footer.php:92 imic-framework/widgets/registration.php:65
+#: imic-framework/widgets/registration.php:88
+msgid "Username"
+msgstr ""
+
+#: footer.php:96 imic-framework/meta-boxes.php:469
+#: imic-framework/shortcodes.php:1727
+#: imic-framework/widgets/Newsletter/newsletter.php:65
+#: imic-framework/widgets/registration.php:66 single-cars.php:569
+#: single-cars.php:581 single-cars.php:612 single-cars.php:638
+#: single-cars.php:669 template-add-listing.php:806 template-contact.php:71
+#: template-dashboard.php:514
+msgid "Email"
+msgstr ""
+
+#: footer.php:100 imic-framework/widgets/registration.php:67
+#: imic-framework/widgets/registration.php:89
+msgid "Password"
+msgstr ""
+
+#: footer.php:102
+msgid "Show/Hide Password"
+msgstr ""
+
+#: footer.php:103
+msgid "Generate Password"
+msgstr ""
+
+#: footer.php:108 imic-framework/widgets/registration.php:72
+msgid "Repeat Password"
+msgstr ""
+
+#: footer.php:112
+msgid "Register Now"
+msgstr ""
+
+#: footer.php:131 footer.php:169 template-add-listing.php:877
+msgid "×"
+msgstr ""
+
+#: footer.php:132
+msgid "Save Search"
+msgstr ""
+
+#: footer.php:170
+msgid "Delete Selected Items"
+msgstr ""
+
+#: footer.php:173
+msgid "Are you really wants to delete"
+msgstr ""
+
+#: functions.php:30
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:31
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:99 functions.php:125
+msgid "First"
+msgstr ""
+
+#: functions.php:105 functions.php:132
+msgid "Last"
+msgstr ""
+
+#: functions.php:175
+msgid "Reply"
+msgstr ""
+
+#: functions.php:176
+msgid " says"
+msgstr ""
+
+#: functions.php:181 imic-framework/shortcodes.php:1828
+msgid " at "
+msgstr ""
+
+#: functions.php:186
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: gallery-none.php:8
+msgid "No Gallery posts to display"
+msgstr ""
+
+#: header-v1.php:52 header-v2.php:56 header-v3.php:72 header-v4.php:55
+msgid "Welcome"
+msgstr ""
+
+#: header-v1.php:59 header-v2.php:63 header-v3.php:79 header-v4.php:62
+#: template-dashboard.php:143 template-dashboard.php:184
+msgid "Dashboard"
+msgstr ""
+
+#: header-v1.php:60 header-v2.php:64 header-v3.php:80 header-v4.php:63
+#: template-dashboard.php:145 template-dashboard.php:385
+msgid "Saved Searches"
+msgstr ""
+
+#: header-v1.php:61 header-v2.php:65 header-v3.php:81 header-v4.php:64
+msgid "Saved Listings"
+msgstr ""
+
+#: header-v1.php:62 header-v2.php:66 header-v3.php:82 header-v4.php:65
+#: template-dashboard.php:148
+msgid "Manage Ads"
+msgstr ""
+
+#: header-v1.php:63 header-v2.php:67 header-v3.php:83 header-v4.php:66
+#: template-dashboard.php:149 template-dashboard.php:484
+msgid "My Profile"
+msgstr ""
+
+#: header-v1.php:64 header-v2.php:68 header-v3.php:84 header-v4.php:67
+#: template-dashboard.php:151
+msgid "Log Out"
+msgstr ""
+
+#: header-v1.php:81 header-v4.php:32
+msgid "Call us"
+msgstr ""
+
+#: header-v1.php:81 header-v4.php:32
+msgid "1800 011 2211"
+msgstr ""
+
+#: header-v1.php:81 header-v4.php:32
+msgid "or"
+msgstr ""
+
+#: header-v2.php:38 header-v3.php:54
+msgid "Login/Signup"
+msgstr ""
+
+#: header-v3.php:90
+msgid "Enter model, make, zipcode etc. to search"
+msgstr ""
+
+#: header-v3.php:92
+msgid "Search!"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:303
+#: imic-framework/plugin-includes.php:108
+msgid "Install Required Plugins"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:304
+#: imic-framework/plugin-includes.php:109
+msgid "Install Plugins"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:305
+#: imic-framework/plugin-includes.php:110
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:306
+#: imic-framework/plugin-includes.php:111
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:308
+#: imic-framework/plugin-includes.php:112
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:313
+#: imic-framework/plugin-includes.php:113
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:318
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:323
+#: imic-framework/plugin-includes.php:118
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:328
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:333
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %1$s plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:338
+#: imic-framework/plugin-includes.php:115
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:343
+#: imic-framework/plugin-includes.php:116
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:348
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugin."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %1$s "
+"plugins."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:353
+#: imic-framework/plugin-includes.php:120
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:358
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:363
+#: imic-framework/plugin-includes.php:121
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:368
+#: imic-framework/plugin-includes.php:122
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:369
+msgid "Return to the dashboard"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:370
+#: imic-framework/class-tgm-plugin-activation.php:3048
+#: imic-framework/plugin-includes.php:123
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:371
+#: imic-framework/class-tgm-plugin-activation.php:2869
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:372
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:373
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:374
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:375
+msgid "Dismiss this notice"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:376
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:494
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:495
+msgid "Update Required"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:612
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:811
+#: imic-framework/class-tgm-plugin-activation.php:3466
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:926
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:926
+#: imic-framework/class-tgm-plugin-activation.php:930
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:930
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:1115
+#: imic-framework/class-tgm-plugin-activation.php:2865
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:1933
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2214
+msgid "Required"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2217
+msgid "Recommended"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2234
+msgid "WordPress Repository"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2238
+msgid "External Source"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2242
+msgid "Pre-Packaged"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2261
+msgid "Not Installed"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2265
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2267
+#: imic-framework/imic-theme-functions.php:2535 template-dashboard.php:219
+msgid "Active"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2273
+msgid "Required Update not Available"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2276
+msgid "Requires Update"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2279
+msgid "Update recommended"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2287
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2336
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2340
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2344
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2348
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2441
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2449
+msgid "Installed version:"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2457
+msgid "Minimum required version:"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2469
+msgid "Available version:"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2493
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2509
+msgid "Plugin"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2510
+msgid "Source"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2511
+#: imic-framework/imic-shortcodes/imic-interface.php:170
+#: imic-framework/imic-shortcodes/imic-interface.php:241
+#: imic-framework/imic-shortcodes/imic-interface.php:465
+msgid "Type"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2515
+msgid "Version"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2516
+#: imic-framework/imic-theme-functions.php:2664
+msgid "Status"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2540
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2546
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2552
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2623
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2656
+msgid "Install"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2662
+msgid "Update"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2665
+#: template-dashboard.php:287
+msgid "Activate"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2726
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2728
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:2851
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3047
+msgid "Plugin activation failed."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3386
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3390
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3391
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3395
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3396
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3396
+#: imic-framework/class-tgm-plugin-activation.php:3403
+msgid "Show Details"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3396
+#: imic-framework/class-tgm-plugin-activation.php:3403
+msgid "Hide Details"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3397
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3398
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3402
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3403
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3404
+msgid "All installations have been completed."
+msgstr ""
+
+#: imic-framework/class-tgm-plugin-activation.php:3405
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: imic-framework/imic-framework.php:97
+msgid "Basic Search"
+msgstr ""
+
+#: imic-framework/imic-framework.php:98 pages-flex.php:36 pages-nivo.php:32
+#: pages-revolution.php:24
+msgid "Advanced Search"
+msgstr ""
+
+#: imic-framework/imic-import-csv.php:16
+msgid "Import CSV file for listing"
+msgstr ""
+
+#: imic-framework/imic-import-csv.php:188
+#: imic-framework/imic-import-csv.php:210
+#: imic-framework/imic-megamenu/edit_custom_walker.php:245
+msgid "Remove"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:74
+#, php-format
+msgid "%s (Invalid)"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:78
+#, php-format
+msgid "%s (Pending)"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:98
+msgid "Move up"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:109
+msgid "Move down"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:111
+#: imic-framework/imic-megamenu/edit_custom_walker.php:113
+msgid "Edit Menu Item"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:121
+#: imic-framework/imic-shortcodes/imic-interface.php:410
+#: imic-framework/meta-boxes.php:775
+msgid "URL"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:128
+msgid "Navigation Label"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:134
+msgid "Title Attribute"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:141
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:146
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:152
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:158
+#: imic-framework/imic-shortcodes/imic-interface.php:406
+#: template-dashboard.php:204 template-dashboard.php:323
+#: template-dashboard.php:539
+msgid "Description"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:160
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:165
+msgid "Move"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:166
+msgid "Up one"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:167
+msgid "Down one"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:170
+msgid "To the top"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:182
+msgid "Enable Mega Menu"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:196
+msgid "Select Post Type"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:208
+msgid "Enter Number of Post Ex-3"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:213
+msgid "Enter Comma seperated value Ex-1,2,3(for  menu use M like M10)"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:218
+msgid "Textarea may be used as Text Editor"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:233
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: imic-framework/imic-megamenu/edit_custom_walker.php:246
+msgid "Cancel"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:15
+msgid "IMIC Framework Shortcodes"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:39
+msgid "Select a shortcode"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:41
+#: imic-framework/meta-boxes.php:1322 includes/sample/sample-config.php:977
+#: includes/sample/sample-config.php:1003
+#: includes/sample/sample-config.php:1029
+msgid "Shortcode"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:44
+#: imic-framework/imic-shortcodes/imic-interface.php:962
+msgid "Accordions"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:45
+#: imic-framework/imic-shortcodes/imic-interface.php:80
+msgid "Staff"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:46
+#: imic-framework/imic-shortcodes/imic-interface.php:252
+msgid "Browse Listing"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:47
+msgid "Button"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:48
+#: imic-framework/imic-shortcodes/imic-interface.php:132
+#: imic-framework/imic-shortcodes/imic-interface.php:218
+#: imic-framework/imic-shortcodes/imic-interface.php:661
+msgid "Columns"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:49
+#: imic-framework/imic-shortcodes/imic-interface.php:784
+msgid "Counters"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:50
+#: imic-framework/imic-shortcodes/imic-interface.php:990
+msgid "Form"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:51
+#: imic-framework/imic-shortcodes/imic-interface.php:380
+msgid "Google Map"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:52
+#: imic-framework/imic-shortcodes/imic-interface.php:1004
+msgid "Calendar"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:53
+#: imic-framework/imic-shortcodes/imic-interface.php:344
+msgid "Icons"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:54
+#: imic-framework/imic-shortcodes/imic-interface.php:390
+msgid "Icons Box"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:55
+#: imic-framework/imic-shortcodes/imic-interface.php:906
+msgid "Lists"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:56
+#: imic-framework/user-role-fields.php:35
+msgid "Ad Listing"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:57
+msgid "Most Viewed"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:58
+msgid "Listing Categories"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:59
+msgid "Featured Categories"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:60
+#: imic-framework/imic-shortcodes/imic-interface.php:736
+msgid "Modal Box"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:61
+#: imic-framework/imic-shortcodes/imic-interface.php:696
+msgid "Progress Bar"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:62
+#: imic-framework/imic-shortcodes/imic-interface.php:818
+msgid "Pricing Table"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:63
+#: imic-framework/imic-shortcodes/imic-interface.php:280
+#: imic-framework/meta_fields.php:150
+msgid "Plan"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:64
+#: imic-framework/shortcodes.php:806 pages-flex.php:32 pages-nivo.php:28
+#: pages-revolution.php:20
+msgid "Search"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:65
+#: imic-framework/imic-shortcodes/imic-interface.php:144
+msgid "Sidebar"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:66
+#: imic-framework/imic-shortcodes/imic-interface.php:859
+msgid "Table"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:67
+#: imic-framework/imic-shortcodes/imic-interface.php:355
+msgid "Video"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:68
+msgid "Testimonials"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:69
+#: imic-framework/imic-shortcodes/imic-interface.php:758
+msgid "Tooltip"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:70
+#: imic-framework/imic-shortcodes/imic-interface.php:463
+msgid "Typography"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:71
+#: imic-framework/imic-shortcodes/imic-interface.php:948
+#: imic-framework/meta_fields.php:232
+msgid "Tabs"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:72
+#: imic-framework/imic-shortcodes/imic-interface.php:976
+msgid "Toggles"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:82
+#: imic-framework/imic-shortcodes/imic-interface.php:104
+#: imic-framework/imic-shortcodes/imic-interface.php:162
+#: imic-framework/imic-shortcodes/imic-interface.php:184
+#: imic-framework/imic-shortcodes/imic-interface.php:197
+#: imic-framework/imic-shortcodes/imic-interface.php:207
+#: imic-framework/imic-shortcodes/imic-interface.php:233
+#: imic-framework/imic-shortcodes/imic-interface.php:254
+#: imic-framework/imic-shortcodes/imic-interface.php:282
+#: imic-framework/imic-shortcodes/imic-interface.php:402
+#: imic-framework/imic-shortcodes/imic-interface.php:992
+#: imic-framework/meta-boxes.php:369 imic-framework/meta-boxes.php:766
+#: imic-framework/meta_fields.php:353 imic-framework/meta_fields.php:366
+#: imic-framework/widgets/Newsletter/newsletter.php:20
+#: imic-framework/widgets/cars.php:23 imic-framework/widgets/enquiry.php:21
+#: imic-framework/widgets/latest_posts.php:21
+#: imic-framework/widgets/mortgage.php:20
+#: imic-framework/widgets/registration.php:20
+#: imic-framework/widgets/reviews.php:23
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:31
+#: includes/sample/sample-config.php:687
+msgid "Title"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:86
+msgid "Number of Staff"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:90
+#: imic-framework/imic-theme-functions.php:509
+#: imic-framework/meta-boxes.php:669 imic-framework/meta-boxes.php:735
+#: imic-framework/meta-boxes.php:881 imic-framework/meta-boxes.php:1280
+msgid "Column"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:92
+#: imic-framework/imic-shortcodes/imic-interface.php:134
+#: imic-framework/imic-theme-functions.php:652
+#: imic-framework/meta-boxes.php:357
+msgid "One Third"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:93
+#: imic-framework/imic-shortcodes/imic-interface.php:135
+#: imic-framework/imic-theme-functions.php:651
+#: imic-framework/meta-boxes.php:356
+msgid "One Fourth"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:94
+#: imic-framework/imic-shortcodes/imic-interface.php:136
+#: imic-framework/imic-theme-functions.php:653
+#: imic-framework/meta-boxes.php:358
+msgid "Half"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:95
+#: imic-framework/imic-shortcodes/imic-interface.php:138
+msgid "One Sixth"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:108
+msgid "Number of Listings"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:112
+#: imic-framework/imic-shortcodes/imic-interface.php:188
+msgid "Listing Categories. Enter slugs with comma \",\" separated."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:116
+msgid "Listing Tags. Enter slug with comma \",\" separated."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:120
+msgid ""
+"Listing Specifications. Enter specifications value comma \",\" separated."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:124
+#: imic-framework/meta_fields.php:204
+msgid "Listing View"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:126
+#: imic-framework/meta-boxes.php:416
+msgid "List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:127
+#: imic-framework/meta-boxes.php:417
+msgid "Grid"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:128
+msgid "Carousel"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:137
+msgid "Full"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:146
+#: imic-framework/imic-theme-functions.php:634
+msgid "Select Sidebar"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:148
+#: imic-framework/imic-shortcodes/imic-interface.php:1008
+#: imic-framework/meta_fields.php:341
+#: imic-framework/widgets/registration.php:24 search-one.php:77
+#: template-add-listing.php:160 template-add-listing.php:189
+#: template-add-listing.php:323 template-add-listing.php:458
+#: template-add-listing.php:635 template-add-listing.php:829
+#: template-add-listing.php:912 template-dashboard.php:608
+#: template-listing.php:332 template-listing.php:360
+msgid "Select"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:166
+msgid "Number of Viewed"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:172
+msgid "Recent Viewed Listing"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:173
+msgid "Recent Viewed Category"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:174
+msgid "Most Viewed Listing"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:175
+msgid "Most Viewed Category"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:205
+#: includes/sample/sample-config.php:828 includes/sample/sample-config.php:923
+msgid "Search Form"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:211
+msgid "Options"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:213
+msgid "Search Widget 1"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:214
+#: includes/sample/sample-config.php:956
+msgid "Search Widget 2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:220
+msgid "One Column"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:221
+#: imic-framework/meta-boxes.php:677 imic-framework/meta-boxes.php:742
+#: imic-framework/meta-boxes.php:889 imic-framework/meta-boxes.php:1285
+msgid "Two Columns"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:222
+#: imic-framework/meta-boxes.php:676 imic-framework/meta-boxes.php:741
+#: imic-framework/meta-boxes.php:888 imic-framework/meta-boxes.php:1286
+msgid "Three Columns"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:223
+#: imic-framework/meta-boxes.php:675 imic-framework/meta-boxes.php:740
+#: imic-framework/meta-boxes.php:887 imic-framework/meta-boxes.php:1287
+msgid "Four Columns"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:231
+msgid "Testimonial"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:237
+msgid "Number of Testimonial"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:243
+#: imic-framework/meta_fields.php:120
+msgid "One"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:244
+#: imic-framework/meta_fields.php:121
+msgid "Two"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:258
+msgid "Show Values"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:260
+#: imic-framework/imic-shortcodes/imic-interface.php:371
+#: imic-framework/imic-shortcodes/imic-interface.php:417
+#: imic-framework/imic-shortcodes/imic-interface.php:424
+#: imic-framework/imic-shortcodes/imic-interface.php:440
+#: imic-framework/imic-shortcodes/imic-interface.php:871
+#: imic-framework/imic-shortcodes/imic-interface.php:1020
+#: imic-framework/imic-shortcodes/imic-interface.php:1027
+#: imic-framework/meta-boxes.php:82 imic-framework/meta-boxes.php:92
+#: imic-framework/meta-boxes.php:263 imic-framework/meta-boxes.php:273
+#: imic-framework/meta-boxes.php:543 imic-framework/meta-boxes.php:650
+#: imic-framework/meta-boxes.php:953 imic-framework/meta-boxes.php:1045
+#: imic-framework/meta-boxes.php:1123 imic-framework/meta-boxes.php:1208
+#: imic-framework/meta-boxes.php:1516 imic-framework/meta_fields.php:92
+#: imic-framework/user-role-fields.php:40 imic-framework/widgets/reviews.php:34
+#: includes/sample/sample-config.php:647 single-cars.php:692
+msgid "No"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:261
+#: imic-framework/imic-shortcodes/imic-interface.php:372
+#: imic-framework/imic-shortcodes/imic-interface.php:416
+#: imic-framework/imic-shortcodes/imic-interface.php:423
+#: imic-framework/imic-shortcodes/imic-interface.php:439
+#: imic-framework/imic-shortcodes/imic-interface.php:870
+#: imic-framework/imic-shortcodes/imic-interface.php:1021
+#: imic-framework/imic-shortcodes/imic-interface.php:1028
+#: imic-framework/meta-boxes.php:81 imic-framework/meta-boxes.php:91
+#: imic-framework/meta-boxes.php:262 imic-framework/meta-boxes.php:272
+#: imic-framework/meta-boxes.php:542 imic-framework/meta-boxes.php:649
+#: imic-framework/meta-boxes.php:952 imic-framework/meta-boxes.php:1044
+#: imic-framework/meta-boxes.php:1122 imic-framework/meta-boxes.php:1207
+#: imic-framework/meta-boxes.php:1517 imic-framework/meta_fields.php:91
+#: imic-framework/user-role-fields.php:39 imic-framework/widgets/reviews.php:33
+#: includes/sample/sample-config.php:648 single-cars.php:691
+msgid "Yes"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:265
+#: imic-framework/meta-boxes.php:562 imic-framework/meta-boxes.php:601
+#: imic-framework/meta-boxes.php:1234 imic-framework/meta_fields.php:284
+msgid "Specifications"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:286
+msgid "Number of Plan"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:294
+msgid "Buttons"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:296
+msgid "Button colour"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:298
+#: imic-framework/imic-shortcodes/imic-interface.php:328
+#: imic-framework/imic-shortcodes/imic-interface.php:433
+#: imic-framework/imic-shortcodes/imic-interface.php:646
+#: imic-framework/imic-shortcodes/imic-interface.php:808
+#: includes/sample/sample-config.php:310 includes/sample/sample-config.php:635
+#: includes/sample/sample-config.php:976 includes/sample/sample-config.php:1002
+#: includes/sample/sample-config.php:1028
+msgid "Default"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:299
+#: imic-framework/imic-shortcodes/imic-interface.php:647
+#: imic-framework/imic-shortcodes/imic-interface.php:723
+msgid "Primary"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:300
+#: imic-framework/imic-shortcodes/imic-interface.php:594
+#: imic-framework/imic-shortcodes/imic-interface.php:648
+#: imic-framework/imic-shortcodes/imic-interface.php:724
+msgid "Success"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:301
+#: imic-framework/imic-shortcodes/imic-interface.php:593
+#: imic-framework/imic-shortcodes/imic-interface.php:649
+#: imic-framework/imic-shortcodes/imic-interface.php:725
+msgid "Info"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:302
+#: imic-framework/imic-shortcodes/imic-interface.php:591
+#: imic-framework/imic-shortcodes/imic-interface.php:650
+#: imic-framework/imic-shortcodes/imic-interface.php:726
+msgid "Warning"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:303
+#: imic-framework/imic-shortcodes/imic-interface.php:651
+#: imic-framework/imic-shortcodes/imic-interface.php:727
+msgid "Danger"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:307
+msgid "Button type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:309
+#: includes/sample/sample-config.php:204
+msgid "Enabled"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:310
+#: includes/sample/sample-config.php:205
+msgid "Disabled"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:314
+#: imic-framework/imic-shortcodes/imic-interface.php:315
+msgid "Button text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:318
+msgid "Button URL"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:322
+msgid "Open link in a new window?"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:326
+msgid "Button Size"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:329
+msgid "Extra Small"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:330
+msgid "Small"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:331
+msgid "Large"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:335
+msgid "Button Extra Class"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:337
+msgid "Optional, for extra styling/custom colour control."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:346
+#: imic-framework/imic-shortcodes/imic-interface.php:397
+#: imic-framework/imic-shortcodes/imic-interface.php:557
+#: imic-framework/imic-shortcodes/imic-interface.php:801
+msgid "Icon image"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:357
+msgid "Insert Vimeo or Youtube URL"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:361
+msgid "Video Width"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:365
+msgid "Video Height"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:369
+msgid "Full Width"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:382
+msgid "Address"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:392
+msgid "Fonts Icon image"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:414
+msgid "Select Icon Center"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:421
+msgid "Select Icon Outline"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:425
+msgid "Border"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:429
+msgid "Select Icon Shade"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:431
+#: imic-framework/imic-shortcodes/imic-interface.php:652
+msgid "Dark"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:432
+msgid "Light"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:437
+msgid "Select Icon Effect"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:444
+msgid "Select Icon Box"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:446
+#: includes/sample/sample-config.php:1186
+msgid "Rounded"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:447
+msgid "Square"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:448
+msgid "Plain"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:452
+msgid "Select Icon Box type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:454
+msgid "With description"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:455
+msgid "With Out description"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:468
+#: imic-framework/imic-shortcodes/imic-interface.php:486
+msgid "Anchor Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:469
+msgid "Div"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:470
+#: imic-framework/imic-shortcodes/imic-interface.php:555
+msgid "Heading"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:471
+#: imic-framework/imic-shortcodes/imic-interface.php:531
+msgid "Paragraph"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:472
+#: imic-framework/imic-shortcodes/imic-interface.php:539
+msgid "Span Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:473
+#: imic-framework/imic-shortcodes/imic-interface.php:547
+msgid "Divider"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:474
+msgid "Row"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:475
+msgid "Section"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:476
+msgid "Spacer"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:477
+#: imic-framework/imic-shortcodes/imic-interface.php:586
+msgid "Alert Box"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:478
+#: imic-framework/imic-shortcodes/imic-interface.php:604
+msgid "Blockquote"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:479
+#: imic-framework/imic-shortcodes/imic-interface.php:612
+msgid "Dropcap"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:480
+#: imic-framework/imic-shortcodes/imic-interface.php:623
+msgid "Code"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:481
+#: imic-framework/imic-shortcodes/imic-interface.php:642
+msgid "Label"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:488
+msgid "Anchor Link"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:492
+#: imic-framework/imic-shortcodes/imic-interface.php:499
+#: imic-framework/imic-shortcodes/imic-interface.php:518
+#: imic-framework/imic-shortcodes/imic-interface.php:525
+#: imic-framework/imic-shortcodes/imic-interface.php:533
+#: imic-framework/imic-shortcodes/imic-interface.php:541
+#: imic-framework/imic-shortcodes/imic-interface.php:549
+#: imic-framework/imic-shortcodes/imic-interface.php:580
+#: imic-framework/imic-shortcodes/imic-interface.php:636
+#: imic-framework/imic-shortcodes/imic-interface.php:680
+#: imic-framework/imic-shortcodes/imic-interface.php:940
+msgid "Add Extra Class"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:497
+msgid "Div Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:504
+msgid "Spacer Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:506
+msgid "Select Spacer"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:508
+msgid "Spacer 10"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:509
+msgid "Spacer 20"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:510
+msgid "Spacer 30"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:511
+msgid "Spacer 40"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:512
+msgid "Spacer 50"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:513
+msgid "Spacer 75"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:514
+msgid "Spacer 100"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:523
+msgid "Section Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:562
+msgid "Select Heading Type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:564
+#: imic-framework/imic-shortcodes/imic-interface.php:590
+#: imic-framework/imic-shortcodes/imic-interface.php:627
+#: imic-framework/imic-shortcodes/imic-interface.php:715
+msgid "Standard"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:565
+msgid "Block Heading"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:569
+msgid "Select Heading Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:571
+msgid "H1"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:572
+msgid "H2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:573
+#: imic-framework/imic-shortcodes/imic-interface.php:809
+msgid "H3"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:574
+msgid "H4"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:575
+msgid "H5"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:576
+#: imic-framework/imic-shortcodes/imic-interface.php:810
+msgid "H6"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:588
+msgid "Select Alert Box type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:592
+msgid "Error"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:598
+msgid "Add Close Button"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:606
+msgid "Blockquote Author Name"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:614
+msgid "Dropcap Type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:616
+msgid "Style 1"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:617
+msgid "Style 2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:625
+msgid "Code Type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:628
+msgid "Inline"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:634
+msgid "Container"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:644
+msgid "Select Label Tag"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:663
+msgid "Layout"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:666
+#: imic-framework/imic-shortcodes/imic-interface.php:829
+#: imic-framework/imic-shortcodes/imic-interface.php:838
+#: imic-framework/imic-shortcodes/imic-interface.php:878
+#: imic-framework/imic-shortcodes/imic-interface.php:889
+#: imic-framework/imic-shortcodes/imic-interface.php:926
+#: imic-framework/meta-boxes.php:687 imic-framework/meta-boxes.php:899
+#: imic-framework/meta-boxes.php:990 imic-framework/meta-boxes.php:1069
+#: imic-framework/meta-boxes.php:1153
+msgid "1"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:667
+msgid "1/2 + 1/2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:668
+msgid "1/2 + 1/4 + 1/4"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:669
+msgid "1/3 + 1/3 + 1/3"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:670
+msgid "1/3 + 2/3"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:671
+msgid "2/3 + 1/3"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:672
+msgid "1/4 + 1/4 + 1/2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:673
+msgid "1/4 + 1/2 + 1/4"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:674
+msgid "1/4 + 1/4 + 1/4 + 1/4"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:675
+msgid "1/6 + 1/6 + 1/6 + 1/6 + 1/6 + 1/6"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:676
+msgid "Custom"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:684
+msgid "Animation"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:687
+msgid "From Right"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:688
+msgid "From Left"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:698
+msgid "Percentage"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:700
+msgid "Enter the percentage of the progress bar."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:703
+msgid "Progress Text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:705
+msgid "Enter the text that you'd like shown above the bar, i.e. \"COMPLETED\"."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:708
+msgid "Progress Value"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:710
+msgid ""
+"Enter value that you'd like shown at the end of the bar on completion, i.e. "
+"\"90\"."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:713
+msgid "Progress Bar Type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:716
+msgid "Striped"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:717
+msgid "Colored"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:721
+msgid "Progress Bar Colour Type"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:729
+msgid "Select progress bar color for progress bar type striped and colored."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:738
+msgid "Modal Box ID"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:742
+msgid "Modal Box Title"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:746
+msgid "Modal Box Body Text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:750
+msgid "Modal Box Button Text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:760
+msgid "Text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:762
+msgid "Enter the text for the tooltip."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:765
+msgid "Link"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:767
+msgid "Enter the link that the tooltip text links to."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:770
+msgid "Direction"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:772
+msgid "Top"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:773
+msgid "Bottom"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:774
+msgid "Left"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:775
+msgid "Right"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:777
+msgid "Choose the direction in which the tooltip appears."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:786
+msgid "To Value"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:788
+msgid "Enter the number from which the counter counts up to."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:791
+msgid "Subject Text"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:793
+msgid "Enter the text which you would like to show below the counter."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:796
+msgid "Speed"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:798
+msgid ""
+"Enter the time you want the counter to take to complete, this is in "
+"milliseconds and optional. The default is 2000."
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:806
+msgid "Text style"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:820
+#: imic-framework/imic-shortcodes/imic-interface.php:876
+msgid "Number of columns"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:822
+#: imic-framework/imic-shortcodes/imic-interface.php:831
+#: imic-framework/imic-shortcodes/imic-interface.php:840
+#: imic-framework/imic-shortcodes/imic-interface.php:880
+#: imic-framework/imic-shortcodes/imic-interface.php:891
+#: imic-framework/imic-shortcodes/imic-interface.php:928
+#: imic-framework/meta-boxes.php:689 imic-framework/meta-boxes.php:901
+#: imic-framework/meta-boxes.php:992 imic-framework/meta-boxes.php:1071
+#: imic-framework/meta-boxes.php:1155
+msgid "3"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:823
+#: imic-framework/imic-shortcodes/imic-interface.php:832
+#: imic-framework/imic-shortcodes/imic-interface.php:841
+#: imic-framework/imic-shortcodes/imic-interface.php:881
+#: imic-framework/imic-shortcodes/imic-interface.php:892
+#: imic-framework/imic-shortcodes/imic-interface.php:929
+#: imic-framework/meta-boxes.php:690 imic-framework/meta-boxes.php:902
+#: imic-framework/meta-boxes.php:993 imic-framework/meta-boxes.php:1072
+#: imic-framework/meta-boxes.php:1156
+msgid "4"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:827
+msgid "Active Column"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:830
+#: imic-framework/imic-shortcodes/imic-interface.php:839
+#: imic-framework/imic-shortcodes/imic-interface.php:879
+#: imic-framework/imic-shortcodes/imic-interface.php:890
+#: imic-framework/imic-shortcodes/imic-interface.php:927
+#: imic-framework/meta-boxes.php:688 imic-framework/meta-boxes.php:900
+#: imic-framework/meta-boxes.php:991 imic-framework/meta-boxes.php:1070
+#: imic-framework/meta-boxes.php:1154
+msgid "2"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:836
+#: imic-framework/imic-shortcodes/imic-interface.php:887
+msgid "Number of rows"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:842
+#: imic-framework/imic-shortcodes/imic-interface.php:882
+#: imic-framework/imic-shortcodes/imic-interface.php:893
+#: imic-framework/imic-shortcodes/imic-interface.php:930
+#: imic-framework/meta-boxes.php:691 imic-framework/meta-boxes.php:903
+#: imic-framework/meta-boxes.php:994 imic-framework/meta-boxes.php:1073
+#: imic-framework/meta-boxes.php:1157
+msgid "5"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:843
+#: imic-framework/imic-shortcodes/imic-interface.php:883
+#: imic-framework/imic-shortcodes/imic-interface.php:894
+#: imic-framework/imic-shortcodes/imic-interface.php:931
+#: imic-framework/meta-boxes.php:692 imic-framework/meta-boxes.php:904
+#: imic-framework/meta-boxes.php:995 imic-framework/meta-boxes.php:1074
+#: imic-framework/meta-boxes.php:1158
+msgid "6"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:844
+#: imic-framework/imic-shortcodes/imic-interface.php:895
+#: imic-framework/imic-shortcodes/imic-interface.php:932
+#: imic-framework/meta-boxes.php:693 imic-framework/meta-boxes.php:905
+#: imic-framework/meta-boxes.php:996 imic-framework/meta-boxes.php:1075
+#: imic-framework/meta-boxes.php:1159
+msgid "7"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:845
+#: imic-framework/imic-shortcodes/imic-interface.php:896
+#: imic-framework/imic-shortcodes/imic-interface.php:933
+#: imic-framework/meta-boxes.php:694 imic-framework/meta-boxes.php:906
+#: imic-framework/meta-boxes.php:997 imic-framework/meta-boxes.php:1076
+#: imic-framework/meta-boxes.php:1160
+msgid "8"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:846
+#: imic-framework/imic-shortcodes/imic-interface.php:897
+#: imic-framework/imic-shortcodes/imic-interface.php:934
+#: imic-framework/meta-boxes.php:695 imic-framework/meta-boxes.php:907
+#: imic-framework/meta-boxes.php:998 imic-framework/meta-boxes.php:1077
+#: imic-framework/meta-boxes.php:1161
+msgid "9"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:847
+#: imic-framework/imic-shortcodes/imic-interface.php:898
+#: imic-framework/imic-shortcodes/imic-interface.php:935
+#: imic-framework/meta-boxes.php:696 imic-framework/meta-boxes.php:908
+#: imic-framework/meta-boxes.php:999 imic-framework/meta-boxes.php:1078
+#: imic-framework/meta-boxes.php:1162
+msgid "10"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:851
+#: imic-framework/meta-boxes.php:1471
+msgid "Currency"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:861
+msgid "Table style"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:863
+msgid "Striped table"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:864
+msgid "Bordered table"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:868
+msgid "Table Head"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:908
+msgid "List style"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:910
+msgid "Custom Unordered List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:911
+msgid "Unordered List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:912
+msgid "Ordered List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:913
+msgid "Icon List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:914
+msgid "Inline List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:915
+msgid "Description List"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:919
+msgid "List icon"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:924
+msgid "Number of list items"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:950
+msgid "Tab ID"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:954
+msgid "Number of Tabs"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:964
+msgid "Accordion ID"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:968
+msgid "Number of Accordions"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:978
+msgid "Toggle ID"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:982
+msgid "Number of Toggles"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:996
+msgid "Enter Email with comma seperated"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:1006
+msgid "Calendar Event Categories"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:1018
+msgid "Calendar Filter"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:1025
+msgid "Events Preview"
+msgstr ""
+
+#: imic-framework/imic-shortcodes/imic-interface.php:1036
+msgid "Insert Shortcode"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:106
+msgid "We are currently in maintenance mode, please check back shortly."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:106
+msgid "Maintenance Mode"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:144
+msgid "Color Customizer"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:320
+msgid "Home Page Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:330
+msgid "Home Page Sidebar Second"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:340
+msgid "Contact Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:350
+msgid "Page Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:360
+msgid "Details Page Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:370
+msgid "Post Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:380
+msgid "Car Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:390
+msgid "Shop Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:400
+msgid "Footer Widgets"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:485
+msgid "Mega Menu"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:503
+msgid "Create Column"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:516
+msgid "Add to Menu"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:641
+msgid ""
+"Select Sidebar from list, if using page builder then please add sidebar from "
+"element only."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:646
+#: imic-framework/meta-boxes.php:351
+msgid "Columns Layout"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:648
+#: imic-framework/meta-boxes.php:353
+msgid "Select Columns Layout ."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:663
+msgid "Select Featured Sidebar"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:670
+msgid "Select Sidebar for featured section of details page."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:941 template-listing.php:450
+msgid "Refine Search"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:956 template-listing.php:463
+msgid "Less Than "
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1034 template-listing.php:543
+msgid "Deep Search"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1045
+msgid "Filters not found, please select category."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1049 template-listing.php:558
+msgid "Reset search"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1050 template-listing.php:559
+msgid "Save search"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1160
+#: imic-framework/shortcodes.php:285 template-home-third.php:167
+#: template-listing.php:745
+msgid "View video"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1161
+#: imic-framework/shortcodes.php:287 template-home-third.php:168
+#: template-listing.php:746
+msgid "View details"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1181
+#: imic-framework/shortcodes.php:307 template-add-listing.php:543
+#: template-home-third.php:188 template-listing.php:767
+msgid "Save"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1182
+#: imic-framework/shortcodes.php:308 template-home-third.php:189
+#: template-listing.php:768
+msgid "Enquire"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1183
+#: imic-framework/shortcodes.php:309 template-home-third.php:190
+#: template-listing.php:769
+msgid "Distance from me?"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1187
+#: imic-framework/shortcodes.php:313 template-home-third.php:194
+#: template-listing.php:773
+msgid "Get"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1207
+#: imic-framework/shortcodes.php:413 template-listing.php:793
+msgid "Sorry - No listing found for this criteria"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1208
+#: imic-framework/shortcodes.php:414 template-listing.php:794
+msgid "Please search again with different filters."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1306
+#: imic-framework/imic-theme-functions.php:1315
+msgid "No Match Found"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:1308
+#: imic-framework/imic-theme-functions.php:1317
+msgid "Continue with Custom Details"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2034
+msgid "Sending user info, please wait..."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2053
+msgid "Wrong username or password."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2055
+msgid "Login successful, redirecting..."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2149
+msgid "You must enter your username."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2152
+msgid "You must enter email address."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2155
+msgid "You must enter a valid email address."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2158
+msgid "You must enter password."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2161
+msgid "You must enter repeat password."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2164
+msgid "You must enter a same password."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2185
+msgid "New user registered with following details."
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2186 template-dashboard.php:168
+msgid "Name: "
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2187 template-dashboard.php:169
+msgid "Email: "
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2288
+msgid " away"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2297
+msgid "Member since"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2298
+msgid "Total listings"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2301 template-home-second.php:305
+msgid "View profile"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2390
+msgid "This is the payment you need to make per month"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2463
+#: imic-framework/imic-theme-functions.php:2475
+msgid "Sorry, No Idea for this listing"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2469
+msgid "between "
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2472
+msgid "Appx "
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2535
+#: imic-framework/imic-theme-functions.php:2682
+#: imic-framework/meta_fields.php:138 template-dashboard.php:221
+msgid "Inactive"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2541
+#: imic-framework/imic-theme-functions.php:2680
+#: imic-framework/meta_fields.php:137 imic-framework/widgets/cars.php:31
+#: template-dashboard.php:220 template-dashboard.php:285
+msgid "Sold"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2676
+#: imic-framework/meta_fields.php:134
+msgid "Pending"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2678
+#: imic-framework/meta_fields.php:135
+msgid "Completed"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2684
+#: imic-framework/meta_fields.php:136 template-dashboard.php:222
+msgid "Under Review"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2696
+msgid "User Info ID"
+msgstr ""
+
+#: imic-framework/imic-theme-functions.php:2700
+msgid "Dealers Info ID"
+msgstr ""
+
+#: imic-framework/listing_category_image.php:25
+msgid "Taxonomy Image"
+msgstr ""
+
+#: imic-framework/listing_category_image.php:28
+msgid "Upload Image"
+msgstr ""
+
+#: imic-framework/listing_category_image.php:30
+msgid "Remove Image"
+msgstr ""
+
+#: imic-framework/listing_category_image.php:33
+msgid "Upload an image for the taxonomy ."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:9
+msgid "Page/Post Header Options"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:13
+msgid "Choose Header Type"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:15 imic-framework/meta-boxes.php:147
+msgid "Select Banner Type."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:18
+msgid "Banner"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:19 imic-framework/meta-boxes.php:33
+#: template-dashboard.php:548
+msgid "Banner Image"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:20
+msgid "Flex Slider"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:21
+msgid "Full Width Carousel"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:22 imic-framework/meta-boxes.php:368
+#: imic-framework/meta-boxes.php:532 imic-framework/meta_fields.php:119
+#: includes/sample/sample-config.php:978 includes/sample/sample-config.php:1004
+#: includes/sample/sample-config.php:1030
+msgid "None"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:23
+msgid "Revolution Slider"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:28
+msgid "Banner Color"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:35
+msgid "Upload banner image for header for this Page/Post."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:46 imic-framework/meta-boxes.php:48
+msgid "Select Revolution Slider from list"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:54
+msgid "Banner/Slider Height"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:56
+msgid "Enter Height for Banner/Slider Ex-265."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:60
+msgid "Slider Image"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:62
+msgid "Enter Slider Image."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:66 imic-framework/meta-boxes.php:247
+msgid "Slider Pagination"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:68 imic-framework/meta-boxes.php:249
+msgid "Enable to show pagination for slider."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:71 imic-framework/meta-boxes.php:252
+#: imic-framework/meta-boxes.php:314 imic-framework/meta-boxes.php:325
+#: imic-framework/meta-boxes.php:595 imic-framework/meta-boxes.php:638
+#: imic-framework/meta-boxes.php:729 imic-framework/meta-boxes.php:941
+#: imic-framework/meta-boxes.php:1033 imic-framework/meta-boxes.php:1111
+#: imic-framework/meta-boxes.php:1196 imic-framework/meta-boxes.php:1267
+#: imic-framework/meta-boxes.php:1310 imic-framework/meta-boxes.php:1494
+#: imic-framework/meta_fields.php:23 imic-framework/meta_fields.php:63
+msgid "Enable"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:72 imic-framework/meta-boxes.php:253
+#: imic-framework/meta-boxes.php:315 imic-framework/meta-boxes.php:326
+#: imic-framework/meta-boxes.php:596 imic-framework/meta-boxes.php:639
+#: imic-framework/meta-boxes.php:730 imic-framework/meta-boxes.php:942
+#: imic-framework/meta-boxes.php:1034 imic-framework/meta-boxes.php:1112
+#: imic-framework/meta-boxes.php:1197 imic-framework/meta-boxes.php:1268
+#: imic-framework/meta-boxes.php:1311 imic-framework/meta-boxes.php:1495
+#: imic-framework/meta_fields.php:22 imic-framework/meta_fields.php:62
+msgid "Disable"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:76 imic-framework/meta-boxes.php:257
+msgid "Slider Auto Slide"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:78 imic-framework/meta-boxes.php:259
+msgid "Select Yes to slide automatically."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:86 imic-framework/meta-boxes.php:267
+msgid "Slider Direction Arrows"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:88 imic-framework/meta-boxes.php:269
+msgid "Select Yes to show slider direction arrows."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:96 imic-framework/meta-boxes.php:277
+msgid "Slider Effects"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:98 imic-framework/meta-boxes.php:279
+msgid "Select effects for slider."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:101 imic-framework/meta-boxes.php:282
+msgid "Fade"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:102 imic-framework/meta-boxes.php:283
+msgid "Slide"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:135 imic-framework/meta-boxes.php:151
+msgid "Banner Options"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:145
+msgid "Choose Banner Type"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:150
+msgid "Map"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:156 imic-framework/meta-boxes.php:205
+msgid "Address for Map"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:158 imic-framework/meta-boxes.php:207
+msgid "Enter address for map."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:167
+msgid "Post Select"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:177 imic-framework/meta-boxes.php:500
+msgid "Post"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:179
+msgid "Select Post/Review."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:182 imic-framework/meta-boxes.php:371
+msgid "Both"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:183
+msgid "Posts"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:184 imic-framework/widgets/reviews.php:7
+msgid "Reviews"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:195
+msgid "Map Address"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:216
+msgid "Gallery Fields"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:221
+msgid "Video Url"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:223
+msgid "Enter the Youtube or Vimeo URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:228
+msgid "Link Url"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:230
+msgid "Enter the Link URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:234
+msgid "Gallery Images"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:236
+msgid "Upload images for gallery."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:241
+msgid "Slider Speed"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:243
+msgid "Default Slider Speed is 5000."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:288
+msgid "Audio"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:290
+msgid "Upload Audio."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:298
+msgid "Gallery Metabox"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:309
+msgid "Enabled/Disable Sorting  Bar"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:311
+msgid "Select Enabled to active Sorting  Bar."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:320
+msgid "Enabled/Disable Pagination"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:322
+msgid "Select Enabled to active Pagination."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:331
+msgid "Gallery Category"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:333
+msgid "Choose Gallery Category"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:345
+msgid "Gallery to show on page"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:347
+msgid ""
+"Enter number of galleries to show on page, blank will show all Gallery items."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:363
+msgid "Title/Content"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:365
+msgid "Select title or content."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:370 imic-framework/meta-boxes.php:794
+msgid "Content"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:380
+msgid "Contact Options"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:390 imic-framework/meta_fields.php:171
+msgid "Contact Email"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:392
+msgid "Enter contact email, if left blank admin email will be used."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:401 imic-framework/meta-boxes.php:411
+msgid "Listing Type"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:413
+msgid "Select default listing type."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:428 imic-framework/meta-boxes.php:465
+msgid "Social Information"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:432 template-dashboard.php:567
+msgid "Facebook"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:434
+msgid "Enter Facebook URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:439 template-dashboard.php:571
+msgid "Twitter"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:441
+msgid "Enter Twitter URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:446 template-dashboard.php:577
+msgid "Google Plus"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:448
+msgid "Enter Google Plus URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:453 template-dashboard.php:581
+msgid "Pinterest"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:455
+msgid "Enter Pinterest URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:471
+msgid "Enter the team member's Email."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:476
+msgid "Social Icon"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:478
+msgid "Enter Social Icon and Url."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:482
+msgid "Social"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:483
+msgid "Url"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:491
+msgid "Post Information"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:495
+msgid "Post Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:497
+msgid "Select Post or Review."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:501 imic-framework/meta-boxes.php:506
+msgid "Review"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:508
+msgid "Enter Ratings and Features."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:512
+msgid "Rating"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:513
+msgid "Features"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:519
+msgid "Secondary Bar"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:523
+msgid "Bar type"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:525
+msgid "Select bar option."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:528
+msgid "Browse/Social Bar"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:529
+msgid "Breadcrumb"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:530
+msgid "Saved Cars Bar"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:531
+msgid "Categories Bar"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:537 imic-framework/meta-boxes.php:644
+#: imic-framework/meta-boxes.php:947 imic-framework/meta-boxes.php:1039
+#: imic-framework/meta-boxes.php:1117 imic-framework/meta-boxes.php:1202
+msgid "Auto Scroll"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:539 imic-framework/meta-boxes.php:646
+#: imic-framework/meta-boxes.php:949 imic-framework/meta-boxes.php:1041
+#: imic-framework/meta-boxes.php:1119 imic-framework/meta-boxes.php:1204
+msgid "Select auto scroll."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:548 imic-framework/meta-boxes.php:655
+#: imic-framework/meta-boxes.php:957 imic-framework/meta-boxes.php:1050
+#: imic-framework/meta-boxes.php:1128 imic-framework/meta-boxes.php:1213
+msgid "Scroll Speed"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:550 imic-framework/meta-boxes.php:657
+#: imic-framework/meta-boxes.php:959 imic-framework/meta-boxes.php:1052
+#: imic-framework/meta-boxes.php:1130 imic-framework/meta-boxes.php:1215
+msgid "Enter scroll speed 1000 = 1sec default is 5000."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:555 imic-framework/meta-boxes.php:662
+#: imic-framework/meta-boxes.php:964 imic-framework/meta-boxes.php:1057
+#: imic-framework/meta-boxes.php:1141 imic-framework/meta-boxes.php:1220
+#: imic-framework/meta-boxes.php:1273
+msgid "Section Title"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:557
+msgid "Enter browse by specification title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:569 imic-framework/meta-boxes.php:610
+#: imic-framework/meta-boxes.php:1241
+msgid "Select Specification for search"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:580
+msgid "Sort by specification"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:590
+msgid "Enabled/Disable sort by specification Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:592
+msgid "Select Enabled to active Sort by specification section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:604
+msgid "Select integer specification for sorting."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:623
+msgid "Vehicle Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:633
+msgid "Enabled/Disable Vehicle Listing"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:635
+msgid "Select Enabled to active Vehicle Listing."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:664 imic-framework/meta-boxes.php:966
+#: imic-framework/meta-boxes.php:973 imic-framework/meta-boxes.php:980
+msgid "Enter Vehicle section title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:671 imic-framework/meta-boxes.php:737
+#: imic-framework/meta-boxes.php:883 imic-framework/meta-boxes.php:1282
+msgid "Select Column Layout."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:674 imic-framework/meta-boxes.php:886
+msgid "Six Columns"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:682
+msgid "Vehicle Count"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:684
+msgid "Select the vehicle count."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:697 imic-framework/meta-boxes.php:909
+#: imic-framework/meta-boxes.php:1000 imic-framework/meta-boxes.php:1079
+#: imic-framework/meta-boxes.php:1163
+msgid "11"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:698 imic-framework/meta-boxes.php:910
+#: imic-framework/meta-boxes.php:1001 imic-framework/meta-boxes.php:1080
+#: imic-framework/meta-boxes.php:1164
+msgid "12"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:699 imic-framework/meta-boxes.php:911
+#: imic-framework/meta-boxes.php:1002 imic-framework/meta-boxes.php:1081
+#: imic-framework/meta-boxes.php:1165
+msgid "13"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:700 imic-framework/meta-boxes.php:912
+#: imic-framework/meta-boxes.php:1003 imic-framework/meta-boxes.php:1082
+#: imic-framework/meta-boxes.php:1166
+msgid "14"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:701 imic-framework/meta-boxes.php:913
+#: imic-framework/meta-boxes.php:1004 imic-framework/meta-boxes.php:1083
+#: imic-framework/meta-boxes.php:1167
+msgid "15"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:702 imic-framework/meta-boxes.php:914
+#: imic-framework/meta-boxes.php:1005 imic-framework/meta-boxes.php:1084
+#: imic-framework/meta-boxes.php:1168
+msgid "16"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:703 imic-framework/meta-boxes.php:915
+#: imic-framework/meta-boxes.php:1006 imic-framework/meta-boxes.php:1085
+#: imic-framework/meta-boxes.php:1169
+msgid "17"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:704 imic-framework/meta-boxes.php:916
+#: imic-framework/meta-boxes.php:1007 imic-framework/meta-boxes.php:1086
+#: imic-framework/meta-boxes.php:1170
+msgid "18"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:705 imic-framework/meta-boxes.php:917
+#: imic-framework/meta-boxes.php:1008 imic-framework/meta-boxes.php:1087
+#: imic-framework/meta-boxes.php:1171
+msgid "19"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:706 imic-framework/meta-boxes.php:918
+#: imic-framework/meta-boxes.php:1009 imic-framework/meta-boxes.php:1088
+#: imic-framework/meta-boxes.php:1172
+msgid "20"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:713 template-dashboard.php:393
+msgid "Details"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:724
+msgid "Enabled/Disable Details Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:726
+msgid "Select Enabled to active Details Section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:747
+msgid "Secondry Shortcode"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:749 imic-framework/meta-boxes.php:1324
+msgid "Enter Shortcode."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:768
+msgid "Enter title for tabs."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:777
+msgid "Enter URL for tabs."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:785 imic-framework/meta_fields.php:257
+msgid "Image"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:787
+msgid "Insert details tabs image."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:802
+msgid "Extra Tabs"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:807
+msgid "Tab Area 1"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:809
+msgid ""
+"Use this area in Theme Options by adding [tab-area1], to show in details "
+"page."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:819
+msgid "Tab Area 2"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:821
+msgid ""
+"Use this area in Theme Options by adding [tab-area2], to show in details "
+"page."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:831
+msgid "Tab Area 3"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:833
+msgid ""
+"Use this area in Theme Options by adding [tab-area3], to show in details "
+"page."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:843
+msgid "Tab Area 4"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:845
+msgid ""
+"Use this area in Theme Options by adding [tab-area4], to show in details "
+"page."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:860
+msgid "Blog Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:870
+msgid "Blog Layout"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:872
+msgid "Select blog layout."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:875
+msgid "Classic"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:876
+msgid "Masonry"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:894
+msgid "Post Count"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:896
+msgid "Select the post count."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:926
+msgid "Latest News Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:936
+msgid "Enabled/Disable Latest News"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:938
+msgid "Select Enabled to active Latest News."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:971
+msgid "All News Title"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:978
+msgid "All News URL"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:985
+msgid "News Count"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:987
+msgid "Select the News count."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1018
+msgid "Testimonial Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1028
+msgid "Enabled/Disable Testimonial Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1030
+msgid "Select Enabled to active Testimonial Section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1059
+msgid "Enter Testimonial section title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1064
+msgid "Testimonial Count"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1066
+msgid "Select the Testimonials count."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1096
+msgid "Top Seller Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1106
+msgid "Enabled/Disable Top Seller Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1108
+msgid "Select Enabled to active Seller Section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1135 imic-framework/meta-boxes.php:1316
+msgid "Parallax Image"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1137 imic-framework/meta-boxes.php:1318
+msgid "Select Parallax Image"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1143
+msgid "Enter Top Seller section title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1148
+msgid "Seller Count"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1150
+msgid "Select the Seller count."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1181
+msgid "Search by specification"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1191
+msgid "Enabled/Disable Search by specification Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1193
+msgid "Select Enabled to active Search by specification section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1222
+msgid "Enter search by specification title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1227
+msgid "Section URL"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1229
+msgid "Enter all vehicles URL."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1251
+msgid "Pricing Options"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1262
+msgid "Enabled/Disable Pricing Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1264
+msgid "Select Enabled to active Pricing Section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1275
+msgid "Enter Pricing section title."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1295
+msgid "Parallax Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1305
+msgid "Enabled/Disable Parallax Section"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1307
+msgid "Select Enabled to active Parallax Section."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1338
+msgid "User Information"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1342
+msgid "User ID"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1344
+msgid "User Registration ID, please do not edit this field until required."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1349
+msgid "Sold Cars"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1351
+msgid "Number of listings sold by this user."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1356 template-add-listing.php:816
+#: template-dashboard.php:595
+msgid "City"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1358
+msgid "User City."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1363
+msgid "Pin Code"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1365
+msgid "User Zip code."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1371
+msgid "Location"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1378 imic-framework/meta-boxes.php:1442
+msgid "Company"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1380
+msgid "User company name."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1385
+msgid "User Company Tagline"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1387
+msgid "User Company Tagline."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1392
+msgid "User Website"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1394
+msgid "User Website."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1399
+msgid "User Telephone"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1401
+msgid "User Telephone."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1406
+msgid "User Banner"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1408
+msgid "User Logo"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1438
+msgid "Testimonial Information"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1444
+msgid "Enter Company Name."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1449
+msgid "Company URL"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1451
+msgid "Enter Company URL"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1460
+msgid "Plan Information"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1464 includes/sample/sample-config.php:698
+msgid "Price"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1466
+msgid "Enter Plan Price."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1473
+msgid "Enter Plan Currency."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1478
+msgid "Currency Position"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1480
+msgid "Select Position of Currency."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1483 imic-framework/meta_fields.php:51
+msgid "Prefix"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1484 imic-framework/meta_fields.php:52
+msgid "Postfix"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1489
+msgid "Enabled/Disable Premium Badge"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1491
+msgid "Select Enabled to have Primium Badge."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1511
+msgid "Highlighted"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1513
+msgid "Select Yes to highlight this plan."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1522
+msgid "Advantage"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1524
+msgid "Enter Plan Advantage."
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1532
+msgid "Periodic Listing"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1536
+msgid "Number of Days"
+msgstr ""
+
+#: imic-framework/meta-boxes.php:1538
+msgid "Enter number of days for listing active, Ex-10."
+msgstr ""
+
+#: imic-framework/meta_fields.php:12
+msgid "Specification Details"
+msgstr ""
+
+#: imic-framework/meta_fields.php:17
+msgid "Required Mandatory"
+msgstr ""
+
+#: imic-framework/meta_fields.php:19
+msgid ""
+"Enable if you need this specification to be filled mandatory by users while "
+"publishing their AD listing"
+msgstr ""
+
+#: imic-framework/meta_fields.php:28
+msgid "Character Type"
+msgstr ""
+
+#: imic-framework/meta_fields.php:30
+msgid ""
+"Values of the variables can be set as normal for text and Numeric. Numeric "
+"are helpful for specification like Price, Fuel Economy or Mileage"
+msgstr ""
+
+#: imic-framework/meta_fields.php:33
+msgid "Normal"
+msgstr ""
+
+#: imic-framework/meta_fields.php:34
+msgid "Numeric"
+msgstr ""
+
+#: imic-framework/meta_fields.php:39
+msgid "Value Label"
+msgstr ""
+
+#: imic-framework/meta_fields.php:41
+msgid ""
+"Variables label goes here like for Price you can put in $ sign or for "
+"Mileage you can use: Kms"
+msgstr ""
+
+#: imic-framework/meta_fields.php:46
+msgid "Lable Position"
+msgstr ""
+
+#: imic-framework/meta_fields.php:48
+msgid ""
+"Position of the variables label can be set to prefix or postfix so like for "
+"prices Currency sign show before price or after price"
+msgstr ""
+
+#: imic-framework/meta_fields.php:57
+msgid "Enable Sub-field"
+msgstr ""
+
+#: imic-framework/meta_fields.php:59
+msgid ""
+"Enable the subfield for the add listing form if you put in the child values "
+"ablove for the variable like for make/model"
+msgstr ""
+
+#: imic-framework/meta_fields.php:68
+msgid "Sub Field Label"
+msgstr ""
+
+#: imic-framework/meta_fields.php:70
+msgid "Lable for the child values if added for the variable above."
+msgstr ""
+
+#: imic-framework/meta_fields.php:75
+msgid "Status after Payment"
+msgstr ""
+
+#: imic-framework/meta_fields.php:77
+msgid ""
+"Choose whether you want this specification to be editable once the user/"
+"dealer complete the ad listing payment or not."
+msgstr ""
+
+#: imic-framework/meta_fields.php:80
+msgid "Editable"
+msgstr ""
+
+#: imic-framework/meta_fields.php:81
+msgid "Non Editable"
+msgstr ""
+
+#: imic-framework/meta_fields.php:86
+msgid "Show for vehicle edit"
+msgstr ""
+
+#: imic-framework/meta_fields.php:88
+msgid ""
+"Select whether to display this as custom field while editing listing from "
+"the wp-dashboard > Cars."
+msgstr ""
+
+#: imic-framework/meta_fields.php:109
+msgid "Additional Specifications"
+msgstr ""
+
+#: imic-framework/meta_fields.php:114
+msgid "Ad Steps Completed"
+msgstr ""
+
+#: imic-framework/meta_fields.php:116
+msgid "Select completed steps of this listing."
+msgstr ""
+
+#: imic-framework/meta_fields.php:122
+msgid "Three"
+msgstr ""
+
+#: imic-framework/meta_fields.php:123
+msgid "Four"
+msgstr ""
+
+#: imic-framework/meta_fields.php:124 imic-framework/shortcodes.php:1778
+msgid "All"
+msgstr ""
+
+#: imic-framework/meta_fields.php:129
+msgid "Payment Status"
+msgstr ""
+
+#: imic-framework/meta_fields.php:131
+msgid "Select Ad payment status."
+msgstr ""
+
+#: imic-framework/meta_fields.php:143
+msgid "Paid Price"
+msgstr ""
+
+#: imic-framework/meta_fields.php:145
+msgid "This field will automatically upated on paypal verification."
+msgstr ""
+
+#: imic-framework/meta_fields.php:152
+msgid "Enter Plan ID."
+msgstr ""
+
+#: imic-framework/meta_fields.php:157
+msgid "Manual"
+msgstr ""
+
+#: imic-framework/meta_fields.php:159
+msgid "Upload Vehicle Manual."
+msgstr ""
+
+#: imic-framework/meta_fields.php:164
+msgid "Contact Phone"
+msgstr ""
+
+#: imic-framework/meta_fields.php:166
+msgid "Enter Contact Phone."
+msgstr ""
+
+#: imic-framework/meta_fields.php:173
+msgid "Enter Contact Email."
+msgstr ""
+
+#: imic-framework/meta_fields.php:178
+msgid "Video URL"
+msgstr ""
+
+#: imic-framework/meta_fields.php:180
+msgid "Enter Video URL."
+msgstr ""
+
+#: imic-framework/meta_fields.php:185
+msgid "Listing End Date"
+msgstr ""
+
+#: imic-framework/meta_fields.php:187
+msgid "Insert date of Listing end."
+msgstr ""
+
+#: imic-framework/meta_fields.php:197
+msgid "Property Sights"
+msgstr ""
+
+#: imic-framework/meta_fields.php:199
+msgid "Upload Property sights."
+msgstr ""
+
+#: imic-framework/meta_fields.php:206
+msgid "Select listing view."
+msgstr ""
+
+#: imic-framework/meta_fields.php:209
+msgid "Publicly"
+msgstr ""
+
+#: imic-framework/meta_fields.php:210
+msgid "Dealer"
+msgstr ""
+
+#: imic-framework/meta_fields.php:227
+msgid "Car Details"
+msgstr ""
+
+#: imic-framework/meta_fields.php:238
+msgid "Values"
+msgstr ""
+
+#: imic-framework/meta_fields.php:240
+msgid "Enter values for specifications."
+msgstr ""
+
+#: imic-framework/meta_fields.php:247
+msgid "Child Values"
+msgstr ""
+
+#: imic-framework/meta_fields.php:249
+msgid "Enter comma seperated values to be child of above value."
+msgstr ""
+
+#: imic-framework/meta_fields.php:259
+msgid "Insert Image."
+msgstr ""
+
+#: imic-framework/modrator/wp_media_custom.php:60
+#: imic-framework/modrator/wp_media_custom.php:272
+#, php-format
+msgid "All <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: imic-framework/modrator/wp_media_custom.php:70
+#: imic-framework/modrator/wp_media_custom.php:282
+#, php-format
+msgid "Unattached <span class=\"count\">(%s)</span>"
+msgstr ""
+
+#: imic-framework/modrator/wp_media_custom.php:105
+msgid "Upload"
+msgstr ""
+
+#: imic-framework/plugin-includes.php:46
+msgid "Breadcrumb NavXT"
+msgstr ""
+
+#: imic-framework/plugin-includes.php:81
+msgid "Pojo Sidebars"
+msgstr ""
+
+#: imic-framework/plugin-includes.php:86
+msgid "WooCommerce - excelling eCommerce"
+msgstr ""
+
+#: imic-framework/plugin-includes.php:114
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to install the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"installed."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to install the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins installed."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/plugin-includes.php:117
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugin. Contact the administrator of this site for help on getting the "
+"plugin activated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to activate the %s "
+"plugins. Contact the administrator of this site for help on getting the "
+"plugins activated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/plugin-includes.php:119
+#, php-format
+msgid ""
+"Sorry, but you do not have the correct permissions to update the %s plugin. "
+"Contact the administrator of this site for help on getting the plugin "
+"updated."
+msgid_plural ""
+"Sorry, but you do not have the correct permissions to update the %s plugins. "
+"Contact the administrator of this site for help on getting the plugins "
+"updated."
+msgstr[0] ""
+msgstr[1] ""
+
+#: imic-framework/plugin-includes.php:124
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: imic-framework/shortcodes.php:67
+msgid "Team Members"
+msgstr ""
+
+#: imic-framework/shortcodes.php:384 imic-framework/shortcodes.php:569
+#: single-cars.php:508 template-home-second.php:151 template-home.php:154
+msgid "by"
+msgstr ""
+
+#: imic-framework/shortcodes.php:385 imic-framework/shortcodes.php:570
+msgid "Listed by "
+msgstr ""
+
+#: imic-framework/shortcodes.php:774 pages-flex.php:52 pages-nivo.php:47
+#: pages-revolution.php:39 search-one.php:35
+msgid "Any"
+msgstr ""
+
+#: imic-framework/shortcodes.php:791 pages-flex.php:69 search-one.php:54
+#: template-add-listing.php:345 template-add-listing.php:490
+#: template-add-listing.php:656
+msgid "Select "
+msgstr ""
+
+#: imic-framework/shortcodes.php:798 pages-flex.php:77 pages-nivo.php:60
+#: pages-revolution.php:52 search-one.php:63
+msgid "Please select search fields from Theme Options"
+msgstr ""
+
+#: imic-framework/shortcodes.php:899
+msgid "view all"
+msgstr ""
+
+#: imic-framework/shortcodes.php:939 template-add-listing.php:910
+#: template-home-third.php:251
+msgid "Until Sold"
+msgstr ""
+
+#: imic-framework/shortcodes.php:944 template-home-third.php:253
+msgid "Create Ad Now"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1005
+msgid "Sign up now!"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1717
+#: imic-framework/widgets/Newsletter/newsletter.php:64
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:8
+#: imic-framework/widgets/enquiry.php:58
+msgid "Name"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1722 template-add-listing.php:800
+#: template-contact.php:68 template-dashboard.php:508
+msgid "Last name"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1732 single-cars.php:575 single-cars.php:582
+#: single-cars.php:618 single-cars.php:639 single-cars.php:675
+#: template-add-listing.php:810 template-contact.php:74
+#: template-dashboard.php:518
+msgid "Phone"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1739 template-contact.php:79
+msgid "Message"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1747 imic-framework/widgets/enquiry.php:71
+#: single-cars.php:698
+msgid "Submit"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1780
+msgid "Google"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1813
+msgid "d"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1814
+msgid "h"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1815
+msgid "m"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1816
+msgid "s"
+msgstr ""
+
+#: imic-framework/shortcodes.php:1844
+msgid "Event Preview"
+msgstr ""
+
+#: imic-framework/user-role-fields.php:80 includes/sample/sample-config.php:655
+msgid "Categories"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletter.php:6
+msgid "Newsletter Listing."
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletter.php:7
+#: imic-framework/widgets/enquiry.php:66
+msgid "Newsletter"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletter.php:66
+msgid "Sign up now"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletter.php:81
+msgid "NewsLetter"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:2
+msgid "Email For Newsletter"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:7
+msgid "Serial"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:9
+msgid "Email Id"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:10
+msgid "On Date"
+msgstr ""
+
+#: imic-framework/widgets/Newsletter/newsletterEmail.php:29
+msgid "There is no Emails"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:6
+msgid "Show listings."
+msgstr ""
+
+#: imic-framework/widgets/cars.php:7
+msgid "Cars"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:28 search-one.php:75
+#: template-add-listing.php:158 template-add-listing.php:187
+#: template-add-listing.php:208 template-listing.php:330
+#: template-listing.php:358 template-listing.php:380
+msgid "Select Category"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:30
+msgid "Recent"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:35
+#: imic-framework/widgets/latest_posts.php:25
+#: imic-framework/widgets/reviews.php:27
+msgid "Number"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:55 imic-framework/widgets/enquiry.php:44
+#: imic-framework/widgets/mortgage.php:43 imic-framework/widgets/reviews.php:54
+msgid "Latest Added"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:133
+msgid " by "
+msgstr ""
+
+#: imic-framework/widgets/cars.php:133
+msgid "Listed by"
+msgstr ""
+
+#: imic-framework/widgets/cars.php:135 single-cars.php:510
+msgid "View all "
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:6
+msgid "Enquiry form"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:7
+msgid "Enquiry Form Widget"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:25
+msgid "Subject"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:46 includes/sample/sample-config.php:1138
+msgid "Enquiry Form"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:59
+msgid "Email address"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:61
+msgid "Phone no."
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:62 template-add-listing.php:820
+#: template-dashboard.php:599
+msgid "Zip"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:64
+msgid "Your comments"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:66
+msgid "Subscribe To"
+msgstr ""
+
+#: imic-framework/widgets/enquiry.php:69
+msgid "Remember my details"
+msgstr ""
+
+#: imic-framework/widgets/latest_posts.php:6
+msgid "Show Recent Posts."
+msgstr ""
+
+#: imic-framework/widgets/latest_posts.php:7
+msgid "Latest Posts"
+msgstr ""
+
+#: imic-framework/widgets/latest_posts.php:44
+msgid "Recent Posts"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:6
+msgid "Mortgage Calculator."
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:7
+msgid "Calculate Loan"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:24
+msgid "Currency Symbol"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:56
+msgid "Loan amount"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:58
+msgid "Loan term in months"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:75
+msgid "Down payment"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:76
+msgid "Rate of Interest eg.10"
+msgstr ""
+
+#: imic-framework/widgets/mortgage.php:81
+msgid "Results"
+msgstr ""
+
+#: imic-framework/widgets/registration.php:6
+msgid "Registration/Login Form."
+msgstr ""
+
+#: imic-framework/widgets/registration.php:7
+msgid "Registration/Login"
+msgstr ""
+
+#: imic-framework/widgets/registration.php:26
+msgid "Registration"
+msgstr ""
+
+#: imic-framework/widgets/registration.php:46
+msgid "Create an account"
+msgstr ""
+
+#: imic-framework/widgets/registration.php:76
+msgid "Create Account"
+msgstr ""
+
+#: imic-framework/widgets/reviews.php:6
+msgid "Show Reviews."
+msgstr ""
+
+#: imic-framework/widgets/reviews.php:31
+msgid "Show Date"
+msgstr ""
+
+#: imic-framework/widgets/reviews.php:80 single.php:77
+msgid "Out of 5"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/tweets.php:5
+#: imic-framework/widgets/twitter_feeds/tweets.php:7
+#: imic-framework/widgets/twitter_feeds/tweets.php:9
+#: imic-framework/widgets/twitter_feeds/tweets.php:11
+msgid "Not properly configured, check settings"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:6
+msgid "Show latest twitter feeds."
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:7
+msgid "Twitter Feeds"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:35
+msgid "Twitter Username"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:39
+msgid "Number of Feeds"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:43
+msgid "Consumer Key"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:47
+msgid "Consumer Key Secret"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:51
+msgid "Access Token"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:55
+msgid "Access Token Secret"
+msgstr ""
+
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:111
+#: imic-framework/widgets/twitter_feeds/twitter_feeds.php:114
+msgid "Loading ..."
+msgstr ""
+
+#: includes/sample/sample-config.php:87
+msgid "Section via hook"
+msgstr ""
+
+#: includes/sample/sample-config.php:88
+msgid ""
+"<p>Did you know that IMIC Framework sets a global variable for you? To "
+"access any of your saved options from within your code you can use your "
+"global variable: <strong>$imic_options</strong></p>"
+msgstr ""
+
+#: includes/sample/sample-config.php:106
+msgid "Testing filter hook!"
+msgstr ""
+
+#: includes/sample/sample-config.php:145
+#, php-format
+msgid "Customize &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/sample/sample-config.php:152 includes/sample/sample-config.php:155
+msgid "Current theme preview"
+msgstr ""
+
+#: includes/sample/sample-config.php:160
+#, php-format
+msgid "By %s"
+msgstr ""
+
+#: includes/sample/sample-config.php:161
+#, php-format
+msgid "Version %s"
+msgstr ""
+
+#: includes/sample/sample-config.php:162
+msgid "Tags"
+msgstr ""
+
+#: includes/sample/sample-config.php:167
+#, php-format
+msgid "This <a href=\"%1$s\">child theme</a> requires its parent theme, %2$s."
+msgstr ""
+
+#: includes/sample/sample-config.php:167
+msgid "http://codex.wordpress.org/Child_Themes"
+msgstr ""
+
+#: includes/sample/sample-config.php:196
+msgid "General Settings"
+msgstr ""
+
+#: includes/sample/sample-config.php:201
+msgid "Enable Maintenance"
+msgstr ""
+
+#: includes/sample/sample-config.php:202
+msgid "Enable the themes in maintenance mode."
+msgstr ""
+
+#: includes/sample/sample-config.php:210
+msgid "Enable Responsive"
+msgstr ""
+
+#: includes/sample/sample-config.php:211
+msgid "Enable/Disable the responsive behaviour of the theme"
+msgstr ""
+
+#: includes/sample/sample-config.php:217
+msgid "Enable Back To Top"
+msgstr ""
+
+#: includes/sample/sample-config.php:218
+msgid ""
+"Enable the back to top button that appears in the bottom right corner of the "
+"screen."
+msgstr ""
+
+#: includes/sample/sample-config.php:225
+msgid "Custom favicon"
+msgstr ""
+
+#: includes/sample/sample-config.php:226
+msgid "Upload a image that will represent your website favicon"
+msgstr ""
+
+#: includes/sample/sample-config.php:232
+msgid "Tracking Code"
+msgstr ""
+
+#: includes/sample/sample-config.php:233
+msgid ""
+"Paste your Google Analytics (or other) tracking code here. This will be "
+"added into the header template of your theme. Please put code without "
+"opening and closing script tags."
+msgstr ""
+
+#: includes/sample/sample-config.php:240
+msgid "Custom admin login logo"
+msgstr ""
+
+#: includes/sample/sample-config.php:243
+msgid "Upload a 254 x 95px image here to replace the admin login logo."
+msgstr ""
+
+#: includes/sample/sample-config.php:252
+msgid "Header Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:253
+msgid "<p class=\"description\">These are the options for the header.</p>"
+msgstr ""
+
+#: includes/sample/sample-config.php:259
+msgid "Header Image"
+msgstr ""
+
+#: includes/sample/sample-config.php:260
+msgid "Default header image for post types."
+msgstr ""
+
+#: includes/sample/sample-config.php:261
+msgid ""
+"Set this image as default page header image for all Pages/Posts/Cars/Team/"
+"Gallery"
+msgstr ""
+
+#: includes/sample/sample-config.php:268
+msgid "Upload Logo"
+msgstr ""
+
+#: includes/sample/sample-config.php:269
+msgid "Basic media uploader with disabled URL input field."
+msgstr ""
+
+#: includes/sample/sample-config.php:270 includes/sample/sample-config.php:279
+msgid "Upload site logo to display in header."
+msgstr ""
+
+#: includes/sample/sample-config.php:277
+msgid "Upload Logo for Retina Devices"
+msgstr ""
+
+#: includes/sample/sample-config.php:278
+msgid ""
+"Retina Display is a marketing term developed by Apple to refer to devices "
+"and monitors that have a resolution and pixel density so high – roughly 300 "
+"or more pixels per inch"
+msgstr ""
+
+#: includes/sample/sample-config.php:285
+msgid "Standard Logo Width for Retina Logo"
+msgstr ""
+
+#: includes/sample/sample-config.php:286
+msgid ""
+"If retina logo is uploaded, enter the standard logo (1x) version width, do "
+"not enter the retina logo width."
+msgstr ""
+
+#: includes/sample/sample-config.php:292
+msgid "Standard Logo Height for Retina Logo"
+msgstr ""
+
+#: includes/sample/sample-config.php:293
+msgid ""
+"If retina logo is uploaded, enter the standard logo (1x) version height, do "
+"not enter the retina logo height."
+msgstr ""
+
+#: includes/sample/sample-config.php:299
+msgid "Enable Header Stick"
+msgstr ""
+
+#: includes/sample/sample-config.php:300
+msgid "Enable/Disable Header Stick behaviour of the theme"
+msgstr ""
+
+#: includes/sample/sample-config.php:307
+msgid "Search Form Position"
+msgstr ""
+
+#: includes/sample/sample-config.php:308
+msgid "Choose the position of search form"
+msgstr ""
+
+#: includes/sample/sample-config.php:311
+msgid "Below Slider/Banner"
+msgstr ""
+
+#: includes/sample/sample-config.php:312
+msgid "Over Slider/Banner"
+msgstr ""
+
+#: includes/sample/sample-config.php:320
+msgid "Search Title"
+msgstr ""
+
+#: includes/sample/sample-config.php:321
+msgid "Enter title for search form"
+msgstr ""
+
+#: includes/sample/sample-config.php:329 includes/sample/sample-config.php:396
+msgid "Social Links"
+msgstr ""
+
+#: includes/sample/sample-config.php:330
+msgid ""
+"Enter the social links and sort to active and display according to sequence "
+"in header."
+msgstr ""
+
+#: includes/sample/sample-config.php:358
+msgid "Header Layout"
+msgstr ""
+
+#: includes/sample/sample-config.php:359
+msgid "Select the Header layout"
+msgstr ""
+
+#: includes/sample/sample-config.php:372
+msgid "Footer Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:373
+msgid "<p class=\"description\">These are the options for the footer.</p>"
+msgstr ""
+
+#: includes/sample/sample-config.php:379
+msgid "Rss"
+msgstr ""
+
+#: includes/sample/sample-config.php:380
+msgid "Rss URL to link your  Rss icon."
+msgstr ""
+
+#: includes/sample/sample-config.php:381
+msgid "Enter your Rss URL for you theme footer."
+msgstr ""
+
+#: includes/sample/sample-config.php:387
+msgid "Footer Copyright Text"
+msgstr ""
+
+#: includes/sample/sample-config.php:388
+msgid " Enter Copyright Text"
+msgstr ""
+
+#: includes/sample/sample-config.php:389
+msgid "All Rights Reserved"
+msgstr ""
+
+#: includes/sample/sample-config.php:397
+msgid ""
+"Insert Social URL in their respective fields and sort as your desired order."
+msgstr ""
+
+#: includes/sample/sample-config.php:424
+msgid "Footer Layout"
+msgstr ""
+
+#: includes/sample/sample-config.php:425
+msgid "Select the footer layout"
+msgstr ""
+
+#: includes/sample/sample-config.php:439
+msgid "Layout Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:445
+msgid "Page Layout"
+msgstr ""
+
+#: includes/sample/sample-config.php:446
+msgid "Select the page layout type"
+msgstr ""
+
+#: includes/sample/sample-config.php:457
+msgid "Repeatable Background Images"
+msgstr ""
+
+#: includes/sample/sample-config.php:458
+msgid "Select image to set in background."
+msgstr ""
+
+#: includes/sample/sample-config.php:498
+msgid "Upload Repeatable Background Image"
+msgstr ""
+
+#: includes/sample/sample-config.php:506
+msgid "Upload Full Screen Background Image"
+msgstr ""
+
+#: includes/sample/sample-config.php:513
+msgid "Theme Color Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:519
+msgid "Website primary color"
+msgstr ""
+
+#: includes/sample/sample-config.php:520
+msgid "Select the website primary color"
+msgstr ""
+
+#: includes/sample/sample-config.php:522
+msgid "Pre-Defined Color Schemes"
+msgstr ""
+
+#: includes/sample/sample-config.php:523
+msgid "Custom Color"
+msgstr ""
+
+#: includes/sample/sample-config.php:531
+msgid "Theme Color Scheme"
+msgstr ""
+
+#: includes/sample/sample-config.php:532
+msgid "Select your website primary color scheme."
+msgstr ""
+
+#: includes/sample/sample-config.php:540
+msgid "Primary Theme Color"
+msgstr ""
+
+#: includes/sample/sample-config.php:541
+msgid "Pick a primary color for the website"
+msgstr ""
+
+#: includes/sample/sample-config.php:549
+msgid "Global Font Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:550
+msgid ""
+"Global Font Family Sets (Can be override with dedicated styling options "
+"available below)"
+msgstr ""
+
+#: includes/sample/sample-config.php:551
+msgid ""
+"These options are as per the design which consists of 3 fonts. For more "
+"advanced typography options see Sub Sections below this in Left Sidebar. "
+"Make sure you set these options only if you have knowledge about every "
+"property to avoid disturbing the whole layout. If something went wrong just "
+"reset this section to reset all fields in Typography Options or click the "
+"small cross signs in each select field/delete text from input fields to "
+"reset them."
+msgstr ""
+
+#: includes/sample/sample-config.php:556
+msgid "Primary font"
+msgstr ""
+
+#: includes/sample/sample-config.php:570
+msgid "Please Enter Body Font."
+msgstr ""
+
+#: includes/sample/sample-config.php:578
+msgid "Secondary font"
+msgstr ""
+
+#: includes/sample/sample-config.php:592
+msgid "Please Enter Heading Font"
+msgstr ""
+
+#: includes/sample/sample-config.php:601
+msgid "Metatext/Quotes Cursive Font"
+msgstr ""
+
+#: includes/sample/sample-config.php:615
+msgid "Please Enter Metatext date Font"
+msgstr ""
+
+#: includes/sample/sample-config.php:626
+msgid "Listing Settings"
+msgstr ""
+
+#: includes/sample/sample-config.php:632
+msgid "File Upload Type Method"
+msgstr ""
+
+#: includes/sample/sample-config.php:633
+msgid "Choose the upload file input method."
+msgstr ""
+
+#: includes/sample/sample-config.php:636
+msgid "Wordpress Media"
+msgstr ""
+
+#: includes/sample/sample-config.php:644
+msgid "File Upload"
+msgstr ""
+
+#: includes/sample/sample-config.php:645
+msgid "Make file upload mandatory."
+msgstr ""
+
+#: includes/sample/sample-config.php:656
+msgid "Show categories for listing."
+msgstr ""
+
+#: includes/sample/sample-config.php:664
+msgid "Badges"
+msgstr ""
+
+#: includes/sample/sample-config.php:665
+msgid ""
+"Select specification for badges on listing featured image, can show upto 4 "
+"only."
+msgstr ""
+
+#: includes/sample/sample-config.php:676
+msgid "Additional Specification"
+msgstr ""
+
+#: includes/sample/sample-config.php:677
+msgid ""
+"Select specification to show on homepage grid, numeric specifications could "
+"not work for this area."
+msgstr ""
+
+#: includes/sample/sample-config.php:688
+msgid "Select specifications which makes a listing title in together"
+msgstr ""
+
+#: includes/sample/sample-config.php:699
+msgid "Select specification to show for price."
+msgstr ""
+
+#: includes/sample/sample-config.php:709
+msgid "Detail Specification"
+msgstr ""
+
+#: includes/sample/sample-config.php:710
+msgid "Select detail specification for homepage, can show upto 4 only."
+msgstr ""
+
+#: includes/sample/sample-config.php:720
+msgid "Specification for listing"
+msgstr ""
+
+#: includes/sample/sample-config.php:721
+msgid "Select specification for listing page."
+msgstr ""
+
+#: includes/sample/sample-config.php:731
+msgid "Compare Specifications"
+msgstr ""
+
+#: includes/sample/sample-config.php:732
+msgid "Select specification for vehicle comparision page."
+msgstr ""
+
+#: includes/sample/sample-config.php:741
+msgid "Vehicle Image"
+msgstr ""
+
+#: includes/sample/sample-config.php:742
+msgid "Upload a default image for vehicle"
+msgstr ""
+
+#: includes/sample/sample-config.php:749
+msgid "Dealer Image"
+msgstr ""
+
+#: includes/sample/sample-config.php:750
+msgid "Upload a default image for dealers"
+msgstr ""
+
+#: includes/sample/sample-config.php:756
+msgid "Distance"
+msgstr ""
+
+#: includes/sample/sample-config.php:757
+msgid "Show distance in."
+msgstr ""
+
+#: includes/sample/sample-config.php:764
+msgid "Enable Paid Listing"
+msgstr ""
+
+#: includes/sample/sample-config.php:765
+msgid "Enable Paid Listing, if using plan for listing."
+msgstr ""
+
+#: includes/sample/sample-config.php:776
+msgid "Listing Status"
+msgstr ""
+
+#: includes/sample/sample-config.php:777
+msgid "Select status of listing after adding."
+msgstr ""
+
+#: includes/sample/sample-config.php:796
+msgid "Badges Type"
+msgstr ""
+
+#: includes/sample/sample-config.php:797
+msgid "Select badge type."
+msgstr ""
+
+#: includes/sample/sample-config.php:804
+msgid "Short Specifications"
+msgstr ""
+
+#: includes/sample/sample-config.php:805
+msgid "Select short specifications."
+msgstr ""
+
+#: includes/sample/sample-config.php:812
+msgid "Filters"
+msgstr ""
+
+#: includes/sample/sample-config.php:813
+msgid "Select filters type."
+msgstr ""
+
+#: includes/sample/sample-config.php:820
+msgid "Ad listing fields"
+msgstr ""
+
+#: includes/sample/sample-config.php:821
+msgid "Select ad listing fields type."
+msgstr ""
+
+#: includes/sample/sample-config.php:829
+msgid "Select search form type."
+msgstr ""
+
+#: includes/sample/sample-config.php:836 includes/sample/sample-config.php:967
+msgid "Listing Details"
+msgstr ""
+
+#: includes/sample/sample-config.php:837
+msgid "Select listing details type."
+msgstr ""
+
+#: includes/sample/sample-config.php:846
+msgid "Add Listing Fields"
+msgstr ""
+
+#: includes/sample/sample-config.php:851
+msgid "Set Default Form"
+msgstr ""
+
+#: includes/sample/sample-config.php:852
+msgid "Select default form on ad listing."
+msgstr ""
+
+#: includes/sample/sample-config.php:861
+msgid "Search Vehicle"
+msgstr ""
+
+#: includes/sample/sample-config.php:862
+msgid "Select specification search vehicle tab."
+msgstr ""
+
+#: includes/sample/sample-config.php:872
+msgid "Custom Details"
+msgstr ""
+
+#: includes/sample/sample-config.php:873
+msgid "Select specification to show custom details."
+msgstr ""
+
+#: includes/sample/sample-config.php:883
+msgid "More Details tab"
+msgstr ""
+
+#: includes/sample/sample-config.php:884
+msgid "Select specification for more details tab."
+msgstr ""
+
+#: includes/sample/sample-config.php:894 template-add-listing.php:709
+msgid "Price Guide"
+msgstr ""
+
+#: includes/sample/sample-config.php:895
+msgid "Select specification to find best price while listing."
+msgstr ""
+
+#: includes/sample/sample-config.php:905
+msgid "Find value for above specifications."
+msgstr ""
+
+#: includes/sample/sample-config.php:906
+msgid "Select specification which need to find by above matched value."
+msgstr ""
+
+#: includes/sample/sample-config.php:916
+msgid "Search Fields"
+msgstr ""
+
+#: includes/sample/sample-config.php:924
+msgid "Select specification for search form."
+msgstr ""
+
+#: includes/sample/sample-config.php:934
+msgid "Search Filter"
+msgstr ""
+
+#: includes/sample/sample-config.php:935
+msgid "Select specification for search filter."
+msgstr ""
+
+#: includes/sample/sample-config.php:945
+msgid "Search Shortcode 1"
+msgstr ""
+
+#: includes/sample/sample-config.php:946
+msgid "Select specifications for search shortcode type 1."
+msgstr ""
+
+#: includes/sample/sample-config.php:957
+msgid "Select specifications for search shortcode type 2."
+msgstr ""
+
+#: includes/sample/sample-config.php:973
+msgid "Enquiry Form 1"
+msgstr ""
+
+#: includes/sample/sample-config.php:974 includes/sample/sample-config.php:1000
+#: includes/sample/sample-config.php:1026
+msgid "Choose the form type for listing details."
+msgstr ""
+
+#: includes/sample/sample-config.php:986
+msgid "Editor Form1"
+msgstr ""
+
+#: includes/sample/sample-config.php:987 includes/sample/sample-config.php:1013
+#: includes/sample/sample-config.php:1039
+msgid "You can insert any form shortcode here."
+msgstr ""
+
+#: includes/sample/sample-config.php:999
+msgid "Enquiry Form 2"
+msgstr ""
+
+#: includes/sample/sample-config.php:1012
+msgid "Editor Form2"
+msgstr ""
+
+#: includes/sample/sample-config.php:1025
+msgid "Enquiry Form 3"
+msgstr ""
+
+#: includes/sample/sample-config.php:1038
+msgid "Editor Form3"
+msgstr ""
+
+#: includes/sample/sample-config.php:1052
+msgid "Featured Specifications"
+msgstr ""
+
+#: includes/sample/sample-config.php:1053
+msgid "Select specification for list."
+msgstr ""
+
+#: includes/sample/sample-config.php:1063
+msgid "Detailed Specifications"
+msgstr ""
+
+#: includes/sample/sample-config.php:1064
+msgid "Select specification."
+msgstr ""
+
+#: includes/sample/sample-config.php:1074
+msgid "Related Vehicles"
+msgstr ""
+
+#: includes/sample/sample-config.php:1075
+msgid "Select specification to find related vehicles."
+msgstr ""
+
+#: includes/sample/sample-config.php:1083
+msgid "Listing Details Tab"
+msgstr ""
+
+#: includes/sample/sample-config.php:1084
+msgid ""
+"Add tabs for listing, use [content], [specifications], [location], [tab-"
+"area1], [tab-area2], [tab-area3], [tab-area4] & [features]."
+msgstr ""
+
+#: includes/sample/sample-config.php:1086
+msgid "Enter tab name"
+msgstr ""
+
+#: includes/sample/sample-config.php:1087
+msgid "Enter shortcode Ex-[content], [specifications], [features]."
+msgstr ""
+
+#: includes/sample/sample-config.php:1096
+msgid "Paypal Settings"
+msgstr ""
+
+#: includes/sample/sample-config.php:1101
+msgid "Paypal Email Address"
+msgstr ""
+
+#: includes/sample/sample-config.php:1102
+msgid "Enter Paypal Business Email Address."
+msgstr ""
+
+#: includes/sample/sample-config.php:1108
+msgid "Paypal Token"
+msgstr ""
+
+#: includes/sample/sample-config.php:1109
+msgid "Enter Paypal Token ID."
+msgstr ""
+
+#: includes/sample/sample-config.php:1115
+msgid "Paypal Site"
+msgstr ""
+
+#: includes/sample/sample-config.php:1116
+msgid "Select paypal site."
+msgstr ""
+
+#: includes/sample/sample-config.php:1123
+msgid "Payment Currency"
+msgstr ""
+
+#: includes/sample/sample-config.php:1124
+msgid "Select payment currency."
+msgstr ""
+
+#: includes/sample/sample-config.php:1133
+msgid "Email Messages"
+msgstr ""
+
+#: includes/sample/sample-config.php:1139
+#: includes/sample/sample-config.php:1149
+msgid "Paste your HTML email code here."
+msgstr ""
+
+#: includes/sample/sample-config.php:1148
+msgid "Dealer Registration"
+msgstr ""
+
+#: includes/sample/sample-config.php:1158
+msgid "Payment Success"
+msgstr ""
+
+#: includes/sample/sample-config.php:1159
+msgid "Enter html code for email on successfull payment."
+msgstr ""
+
+#: includes/sample/sample-config.php:1169
+msgid "Share Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:1174
+msgid "Social Sharing"
+msgstr ""
+
+#: includes/sample/sample-config.php:1175
+msgid ""
+"Enable/Disable theme default social sharing buttons for posts/pages/cars "
+"single pages"
+msgstr ""
+
+#: includes/sample/sample-config.php:1183
+msgid "Share Buttons Style"
+msgstr ""
+
+#: includes/sample/sample-config.php:1184
+msgid "Choose the style of share button icons"
+msgstr ""
+
+#: includes/sample/sample-config.php:1187
+msgid "Squared"
+msgstr ""
+
+#: includes/sample/sample-config.php:1195
+msgid "Share Buttons Color"
+msgstr ""
+
+#: includes/sample/sample-config.php:1196
+msgid "Choose the color scheme of the share button icons"
+msgstr ""
+
+#: includes/sample/sample-config.php:1198
+msgid "Brand Colors"
+msgstr ""
+
+#: includes/sample/sample-config.php:1199
+msgid "Theme Color"
+msgstr ""
+
+#: includes/sample/sample-config.php:1200
+msgid "GrayScale"
+msgstr ""
+
+#: includes/sample/sample-config.php:1208
+msgid "Social share options"
+msgstr ""
+
+#: includes/sample/sample-config.php:1209
+msgid "Click on the buttons to disable/enable share buttons"
+msgstr ""
+
+#: includes/sample/sample-config.php:1235
+msgid "Select share buttons for post types"
+msgstr ""
+
+#: includes/sample/sample-config.php:1236
+msgid "Uncheck to disable for any type"
+msgstr ""
+
+#: includes/sample/sample-config.php:1252
+msgid "Custom CSS/JS"
+msgstr ""
+
+#: includes/sample/sample-config.php:1258
+msgid "CSS Code"
+msgstr ""
+
+#: includes/sample/sample-config.php:1259
+msgid "Paste your CSS code here."
+msgstr ""
+
+#: includes/sample/sample-config.php:1269
+msgid "JS Code"
+msgstr ""
+
+#: includes/sample/sample-config.php:1270
+msgid "Paste your JS code here."
+msgstr ""
+
+#: includes/sample/sample-config.php:1279
+msgid "Import / Export"
+msgstr ""
+
+#: includes/sample/sample-config.php:1280
+msgid "Import and Export your Theme Framework settings from file, text or URL."
+msgstr ""
+
+#: includes/sample/sample-config.php:1286
+msgid "Import Export"
+msgstr ""
+
+#: includes/sample/sample-config.php:1287
+msgid "Save and restore your Theme options"
+msgstr ""
+
+#: includes/sample/sample-config.php:1295
+msgid "Documentation"
+msgstr ""
+
+#: includes/sample/sample-config.php:1304
+msgid "Theme Information 1"
+msgstr ""
+
+#: includes/sample/sample-config.php:1305
+#: includes/sample/sample-config.php:1310
+msgid "<p>This is the tab content, HTML is allowed.</p>"
+msgstr ""
+
+#: includes/sample/sample-config.php:1309
+msgid "Theme Information 2"
+msgstr ""
+
+#: includes/sample/sample-config.php:1313
+msgid "<p>This is the sidebar content, HTML is allowed.</p>"
+msgstr ""
+
+#: includes/sample/sample-config.php:1328
+msgid "Theme Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:1329
+msgid "IMIC Options"
+msgstr ""
+
+#: includes/sample/sample-config.php:1411
+#, php-format
+msgid ""
+"<p>Did you know that we sets a global variable for you? To access any of "
+"your saved options from within your code you can use your global variable: "
+"<strong>$%1$s</strong></p>"
+msgstr ""
+
+#: pages-flex.php:24 pages-nivo.php:20 pages-revolution.php:12
+msgid "Looking for a used or new listing?"
+msgstr ""
+
+#: pages-flex.php:25 pages-nivo.php:21 pages-revolution.php:13
+msgid ""
+"Our range of vehicles is capable of finding every possible car you like to "
+"buy."
+msgstr ""
+
+#: pages-flex.php:30 pages-nivo.php:26 pages-revolution.php:18
+msgid "Enter zip, model, make.."
+msgstr ""
+
+#: search-one.php:10
+msgid "Find a Car with our Quick Search"
+msgstr ""
+
+#: search-one.php:70
+msgid "Enter Keyword"
+msgstr ""
+
+#: search-one.php:71
+msgid "Keyword"
+msgstr ""
+
+#: search-one.php:84
+msgid "Loading Child Field..."
+msgstr ""
+
+#: search-one.php:92
+msgid "Find my vehicle now"
+msgstr ""
+
+#: search.php:14
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: search.php:57
+msgid "sorry, no posts to display"
+msgstr ""
+
+#: searchform.php:3
+msgid "Search Posts..."
+msgstr ""
+
+#: single-cars.php:74
+msgid "Vehicle might be sold or not active"
+msgstr ""
+
+#: single-cars.php:103
+msgid "Premium listing"
+msgstr ""
+
+#: single-cars.php:108
+msgid "Save this listing"
+msgstr ""
+
+#: single-cars.php:109 single-cars.php:552
+msgid "Request more info"
+msgstr ""
+
+#: single-cars.php:110 single-cars.php:595
+msgid "Book a test drive"
+msgstr ""
+
+#: single-cars.php:111 single-cars.php:652 single-cars.php:659
+msgid "Make an offer"
+msgstr ""
+
+#: single-cars.php:113
+msgid "Download Manual"
+msgstr ""
+
+#: single-cars.php:114
+msgid "Print"
+msgstr ""
+
+#: single-cars.php:461
+msgid "Related Listings"
+msgstr ""
+
+#: single-cars.php:535
+msgid "Seller:"
+msgstr ""
+
+#: single-cars.php:556 single-cars.php:599 single-cars.php:656
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis "
+"egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. "
+"Donec vel mauris quam."
+msgstr ""
+
+#: single-cars.php:563 single-cars.php:606 single-cars.php:663
+msgid "Full Name"
+msgstr ""
+
+#: single-cars.php:579
+msgid "Request Info"
+msgstr ""
+
+#: single-cars.php:580 single-cars.php:637
+msgid "Preferred Contact"
+msgstr ""
+
+#: single-cars.php:626
+msgid "Preferred Date"
+msgstr ""
+
+#: single-cars.php:632
+msgid "Preferred time"
+msgstr ""
+
+#: single-cars.php:636
+msgid "Schedule Now"
+msgstr ""
+
+#: single-cars.php:683
+msgid "Offered Price"
+msgstr ""
+
+#: single-cars.php:690
+msgid "Financing required?"
+msgstr ""
+
+#: single-cars.php:697
+msgid "Additional comments"
+msgstr ""
+
+#: single-cars.php:729 template-add-listing.php:929
+#: template-add-listing.php:943 template-compare.php:173
+#: template-dashboard.php:698 template-dealer-search.php:96
+#: template-gallery.php:117 template-listing.php:814
+msgid "Sorry"
+msgstr ""
+
+#: single-cars.php:731 template-add-listing.php:945 template-compare.php:175
+#: template-dashboard.php:700 template-dealer-search.php:98
+#: template-gallery.php:119 template-listing.php:816
+msgid "Sorry - Plugin not active"
+msgstr ""
+
+#: single-cars.php:732 template-add-listing.php:946 template-compare.php:176
+#: template-dashboard.php:701 template-dealer-search.php:99
+#: template-gallery.php:120 template-listing.php:817
+msgid "Please install and activate required plugins of theme."
+msgstr ""
+
+#: single.php:131
+msgid "Author"
+msgstr ""
+
+#: template-add-listing.php:208 template-listing.php:380
+msgid "Loading..."
+msgstr ""
+
+#: template-add-listing.php:215
+msgid "Ad Completeness"
+msgstr ""
+
+#: template-add-listing.php:226
+msgid "Create Listing"
+msgstr ""
+
+#: template-add-listing.php:227
+msgid "Select your listing"
+msgstr ""
+
+#: template-add-listing.php:234
+msgid "Select Features"
+msgstr ""
+
+#: template-add-listing.php:235
+msgid "Select features of your listing"
+msgstr ""
+
+#: template-add-listing.php:242
+msgid "Add details"
+msgstr ""
+
+#: template-add-listing.php:243
+msgid "Your contact details "
+msgstr ""
+
+#: template-add-listing.php:243
+msgid " more"
+msgstr ""
+
+#: template-add-listing.php:250
+msgid "Add photos "
+msgstr ""
+
+#: template-add-listing.php:250
+msgid " comments"
+msgstr ""
+
+#: template-add-listing.php:251
+msgid "Add some pics "
+msgstr ""
+
+#: template-add-listing.php:251
+msgid " description"
+msgstr ""
+
+#: template-add-listing.php:258
+msgid "Publish Listing"
+msgstr ""
+
+#: template-add-listing.php:259
+msgid "Pay "
+msgstr ""
+
+#: template-add-listing.php:259
+msgid " publish your listing"
+msgstr ""
+
+#: template-add-listing.php:286
+msgid "Enter your vehicle details"
+msgstr ""
+
+#: template-add-listing.php:287
+msgid ""
+"Listing can be added with a starting point of choosing your vehicle wither "
+"by searching listing using Make, Model, Year or can add a completely unique "
+"listing."
+msgstr ""
+
+#: template-add-listing.php:294
+msgid "Search vehicle by Make, Model, Year"
+msgstr ""
+
+#: template-add-listing.php:295 template-add-listing.php:305
+msgid "Add custom vehicle details"
+msgstr ""
+
+#: template-add-listing.php:305 template-add-listing.php:373
+msgid "Find"
+msgstr ""
+
+#: template-add-listing.php:305
+msgid ""
+" your listing using the dropdowns below. First select its Make, then Model "
+"and later select its year. "
+msgstr ""
+
+#: template-add-listing.php:373 template-add-listing.php:543
+#: template-add-listing.php:609 template-add-listing.php:704
+#: template-add-listing.php:768 template-add-listing.php:846
+#: template-dashboard.php:135
+msgid "Login/Register"
+msgstr ""
+
+#: template-add-listing.php:379
+msgid "Searching..."
+msgstr ""
+
+#: template-add-listing.php:388
+msgid ""
+"Custom vehicle ad listing can take more days to review as compared to "
+"searched vehicle listing. "
+msgstr ""
+
+#: template-add-listing.php:388
+msgid "Try search again"
+msgstr ""
+
+#: template-add-listing.php:540
+msgid "Please select category"
+msgstr ""
+
+#: template-add-listing.php:543
+msgid "continue"
+msgstr ""
+
+#: template-add-listing.php:554
+msgid "Select additional features your car have"
+msgstr ""
+
+#: template-add-listing.php:555
+msgid "Features selected can either factory fitted or after market features."
+msgstr ""
+
+#: template-add-listing.php:609 template-add-listing.php:704
+#: template-add-listing.php:768
+msgid "Save "
+msgstr ""
+
+#: template-add-listing.php:609 template-add-listing.php:704
+#: template-add-listing.php:768
+msgid " continue"
+msgstr ""
+
+#: template-add-listing.php:614
+msgid "Tell us more about your listing specific details"
+msgstr ""
+
+#: template-add-listing.php:615
+msgid ""
+"Be specific and clear about this details to make your listing selling "
+"quickly."
+msgstr ""
+
+#: template-add-listing.php:696
+msgid "How can buyers contact you?"
+msgstr ""
+
+#: template-add-listing.php:697
+msgid "Make sure to enter them right as your Ad listing depends on this only."
+msgstr ""
+
+#: template-add-listing.php:698
+msgid "Enter Your Phone Number*"
+msgstr ""
+
+#: template-add-listing.php:700
+msgid "Enter Your Email Address"
+msgstr ""
+
+#: template-add-listing.php:725
+msgid "Upload your listing photos"
+msgstr ""
+
+#: template-add-listing.php:726
+msgid ""
+"Registered listing owners should include a picture which shows a clear "
+"registeration plate."
+msgstr ""
+
+#: template-add-listing.php:758
+msgid "Provide a hosted video URL of your listing"
+msgstr ""
+
+#: template-add-listing.php:759
+msgid ""
+"As per our experience and selling stats we found that listings with video "
+"available sell more faster than the one which do not have any video."
+msgstr ""
+
+#: template-add-listing.php:763
+msgid "Add some comments about your listing"
+msgstr ""
+
+#: template-add-listing.php:764
+msgid ""
+"Enter here some impressive wording about your car to attract more buyers "
+"ineterest in your Ad listing. this will appear on the search results page as "
+"well."
+msgstr ""
+
+#: template-add-listing.php:773
+msgid "Choose how you would like to sell your listing"
+msgstr ""
+
+#: template-add-listing.php:774
+msgid ""
+"We offer two ways to sell you listing, one is to to public where any user of "
+"our website can contact you to buy and another way is to sell directly to "
+"out dealers network which will get you offers from our verified dealers "
+"directly."
+msgstr ""
+
+#: template-add-listing.php:778
+msgid "Sell Your listing publicaly"
+msgstr ""
+
+#: template-add-listing.php:781
+msgid "Sell Your listing to dealers"
+msgstr ""
+
+#: template-add-listing.php:786
+msgid "Enter your billing info"
+msgstr ""
+
+#: template-add-listing.php:787
+msgid ""
+"Payment are accepted using Paypal secure payment gateway and you will be "
+"redirected to Paypal payment page."
+msgstr ""
+
+#: template-add-listing.php:796 template-contact.php:65
+msgid "First name"
+msgstr ""
+
+#: template-add-listing.php:827 template-dashboard.php:606
+msgid "Select State"
+msgstr ""
+
+#: template-add-listing.php:846
+msgid "Pay"
+msgstr ""
+
+#: template-add-listing.php:846
+msgid "Publish"
+msgstr ""
+
+#: template-add-listing.php:847
+msgid ""
+"You will be redirected to Paypal secure payment page for the payment which "
+"can be done using your Paypal account or via Credit Card"
+msgstr ""
+
+#: template-add-listing.php:854
+msgid "Your advert plan"
+msgstr ""
+
+#: template-add-listing.php:857
+msgid "Select Plan"
+msgstr ""
+
+#: template-add-listing.php:858
+msgid "Change"
+msgstr ""
+
+#: template-add-listing.php:878
+msgid "Plans"
+msgstr ""
+
+#: template-add-listing.php:919
+msgid "Close"
+msgstr ""
+
+#: template-add-listing.php:931
+msgid "You do not have rights to ad listing."
+msgstr ""
+
+#: template-add-listing.php:932
+msgid ""
+"Please register with another role which have sufficient rights to ad listing."
+msgstr ""
+
+#: template-blog.php:94 template-blog.php:126
+msgid "No Posts to display"
+msgstr ""
+
+#: template-compare.php:108
+msgid "This vehicle might be sold or not active"
+msgstr ""
+
+#: template-compare.php:123
+msgid "Vehicle details"
+msgstr ""
+
+#: template-compare.php:130
+msgid "Additional Options"
+msgstr ""
+
+#: template-compare.php:158
+msgid "View listing"
+msgstr ""
+
+#: template-compare.php:163
+msgid "You have not selected any listing to compare."
+msgstr ""
+
+#: template-contact.php:83
+msgid "Submit now!"
+msgstr ""
+
+#: template-dashboard.php:134
+msgid "Login or Register to access this page"
+msgstr ""
+
+#: template-dashboard.php:141
+msgid "New Ad listing"
+msgstr ""
+
+#: template-dashboard.php:146 template-dashboard.php:315
+msgid "Saved Cars"
+msgstr ""
+
+#: template-dashboard.php:147
+msgid "Create new Ad"
+msgstr ""
+
+#: template-dashboard.php:150
+msgid "Account Settings"
+msgstr ""
+
+#: template-dashboard.php:160
+msgid ""
+"Thanks for submiting your listing. You can visit dashboard for further "
+"reference"
+msgstr ""
+
+#: template-dashboard.php:166
+msgid "successfully added listing."
+msgstr ""
+
+#: template-dashboard.php:167
+msgid " has added Ad listing."
+msgstr ""
+
+#: template-dashboard.php:170
+msgid "Ad: "
+msgstr ""
+
+#: template-dashboard.php:196
+msgid "See all Ads "
+msgstr ""
+
+#: template-dashboard.php:197 template-dashboard.php:301
+msgid "My Ads"
+msgstr ""
+
+#: template-dashboard.php:205 template-dashboard.php:324
+msgid "Price/Status"
+msgstr ""
+
+#: template-dashboard.php:206 template-dashboard.php:325
+#: template-dashboard.php:395
+msgid "Timestamp"
+msgstr ""
+
+#: template-dashboard.php:207
+msgid "Payment"
+msgstr ""
+
+#: template-dashboard.php:208 template-dashboard.php:326
+#: template-dashboard.php:396
+msgid "Actions"
+msgstr ""
+
+#: template-dashboard.php:218
+msgid "Pending Payment"
+msgstr ""
+
+#: template-dashboard.php:280
+msgid "Created on"
+msgstr ""
+
+#: template-dashboard.php:280 template-dashboard.php:367
+#: template-dashboard.php:408
+msgid " @ "
+msgstr ""
+
+#: template-dashboard.php:284
+msgid "Archive"
+msgstr ""
+
+#: template-dashboard.php:288 template-dashboard.php:368
+#: template-dashboard.php:409
+msgid "Delete"
+msgstr ""
+
+#: template-dashboard.php:289
+msgid "Edit"
+msgstr ""
+
+#: template-dashboard.php:296 template-dashboard.php:374
+#: template-dashboard.php:415
+msgid "Delete Selected"
+msgstr ""
+
+#: template-dashboard.php:304
+msgid "You have not created any Ads yet."
+msgstr ""
+
+#: template-dashboard.php:314
+msgid "See all cars "
+msgstr ""
+
+#: template-dashboard.php:367 template-dashboard.php:408
+msgid "Saved on"
+msgstr ""
+
+#: template-dashboard.php:375
+msgid "Compare Selected"
+msgstr ""
+
+#: template-dashboard.php:376
+msgid "You don't have any saved listing in your dashboard"
+msgstr ""
+
+#: template-dashboard.php:384
+msgid "See all searches "
+msgstr ""
+
+#: template-dashboard.php:392
+msgid "Custom search name"
+msgstr ""
+
+#: template-dashboard.php:394
+msgid "Receive alerts"
+msgstr ""
+
+#: template-dashboard.php:417
+msgid "You don't have any saved searches in your dashboard"
+msgstr ""
+
+#: template-dashboard.php:448
+msgid "Please fill first name"
+msgstr ""
+
+#: template-dashboard.php:449
+msgid "Please fill zip code"
+msgstr ""
+
+#: template-dashboard.php:476 template-dashboard.php:481
+msgid "Profile Updated Successfully"
+msgstr ""
+
+#: template-dashboard.php:478
+msgid "Please confirm password again"
+msgstr ""
+
+#: template-dashboard.php:491
+msgid "Personal Info"
+msgstr ""
+
+#: template-dashboard.php:492
+msgid "Social Info"
+msgstr ""
+
+#: template-dashboard.php:493
+msgid "Billing Info"
+msgstr ""
+
+#: template-dashboard.php:494
+msgid "Change Password"
+msgstr ""
+
+#: template-dashboard.php:504
+msgid "First name*"
+msgstr ""
+
+#: template-dashboard.php:524
+msgid "Company Name"
+msgstr ""
+
+#: template-dashboard.php:528
+msgid "Company Tagline"
+msgstr ""
+
+#: template-dashboard.php:532
+msgid "Website"
+msgstr ""
+
+#: template-dashboard.php:554
+msgid "Company/User Image"
+msgstr ""
+
+#: template-dashboard.php:622
+msgid "Old Password"
+msgstr ""
+
+#: template-dashboard.php:628
+msgid "New password"
+msgstr ""
+
+#: template-dashboard.php:632
+msgid "Confirm new password"
+msgstr ""
+
+#: template-dashboard.php:640
+msgid "Update details"
+msgstr ""
+
+#: template-dealer-search.php:85
+msgid "Enter your zip or address and click Search Icon"
+msgstr ""
+
+#: template-gallery.php:72
+msgid "Show All"
+msgstr ""
+
+#: template-home-second.php:243 template-home.php:213
+msgid "Posted in: "
+msgstr ""
+
+#: template-home-second.php:293
+msgid " sales"
+msgstr ""
+
+#: template-home-second.php:342 template-home.php:308
+msgid "All make &amp; models"
+msgstr ""
+
+#: template-home-third.php:250
+msgid "Free"
+msgstr ""
+
+#: template-listing.php:55
+msgid "Saved cars"
+msgstr ""
+
+#: template-listing.php:200
+msgid "Recently viewed cars"
+msgstr ""
+
+#: template-listing.php:265
+msgid "Sort by"
+msgstr ""
+
+#: template-listing.php:268
+msgid "Toggle Dropdown"
+msgstr ""
+
+#: template-listing.php:273
+msgid "DESC"
+msgstr ""
+
+#: template-listing.php:273
+msgid "(High to Low)"
+msgstr ""
+
+#: template-listing.php:274
+msgid "ASC"
+msgstr ""
+
+#: template-listing.php:274
+msgid "(Low to Hight)"
+msgstr ""
+
+#: template-listing.php:280
+msgid "Show"
+msgstr ""
+
+#: template-listing.php:289
+msgid "View"
+msgstr ""
+
+#: template-listing.php:296
+msgid "Search Filters"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "AutoStars"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://preview.imithemes.com/autostars-wp"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"<strong>Responsive Wordpress Theme for Car dealership business and Listings "
+"Websites, Designed & Developed by imithemes</strong> - <a href=\"http://www."
+"imithemes.com\">www.imithemes.com</a>. Follow us for update notifications:"
+"<br/> <a href='http://twitter.com/imithemes'>Twitter</a><br/> | <a "
+"href='http://www.facebook.com/imithemes'>Facebook</a>"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "imithemes"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "www.imithemes.com"
+msgstr ""

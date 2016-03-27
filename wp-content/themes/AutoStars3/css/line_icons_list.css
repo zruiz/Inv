@@ -1,0 +1,39 @@
+.font-icon-grid {
+	height: auto;
+	overflow: hidden;
+	clear: both;
+}
+.font-icon-grid li {
+	float: left;
+	width: 44px;
+}
+.font-icon-grid li:hover {
+	cursor: pointer;
+}
+.font-icon-grid li i {
+	font-size: 18px;
+	border: 1px solid #e4e4e4;
+	padding: 9px 4px;
+	display: inline-block;
+	text-align: center;
+	width: 28px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+}
+.font-icon-grid li i[class^="ss-"] {
+	padding: 12px 4px 6px;
+}
+.font-icon-grid li.selected i {
+	background: #1dc6df;
+	color: #fff;
+	border-color: #1dc6df;
+}
+.font-icon-grid li .icon-name, .font-icon-grid li .icon-value {
+	display: none;
+}
+.field_right {
+        float:right;
+        margin-left:10px;
+      }
