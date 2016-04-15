@@ -1,6 +1,4 @@
 <?php
-update_option( 'siteurl', 'http://wp.loc' );
-update_option( 'home', 'http://wp.loc' );
 /* -----------------------------------------------------------------------------------
   Here we have all the custom functions for the theme
   Please be extremely cautious editing this file,
