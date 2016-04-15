@@ -4,7 +4,7 @@
  * Plugin URI:  http://www.imithemes.com
  * Description: Creates listing post types for theme
  * Author:      imithemes
- * Version:     1.0.3
+ * Version:     1.0.4
  * Author URI:  http://www.imithemes.com
  * Licence:     GPLv2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html

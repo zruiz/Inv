@@ -34,7 +34,7 @@ __( 'Listings Categories base', 'imic-framework-admin' ), // setting title
 function properties_type_slug_input() {
 $permalinks = get_option('imic_property_permalinks');
 ?>
-<input name="properties_type_slug" type="text" class="regular-text code" value="<?php if ( isset( $permalinks['type_base'] ) ) echo esc_attr( $permalinks['type_base'] ); ?>" placeholder="<?php echo _x('yachts-tag', 'slug', 'imic-framework-admin') ?>" />
+<input name="properties_type_slug" type="text" class="regular-text code" value="<?php if ( isset( $permalinks['type_base'] ) ) echo esc_attr( $permalinks['type_base'] ); ?>" placeholder="<?php echo _x('cars-tag', 'slug', 'imic-framework-admin') ?>" />
 <?php
 }
 function properties_contract_type_slug_input() {
@@ -50,8 +50,8 @@ function permalink_settings() {
     echo wpautop(__('These settings control the permalinks used for property items. These settings only apply when <strong>not using "default" permalinks above</strong>.', 'imic-framework-admin'));
     $permalinks = get_option('imic_property_permalinks');
     $property_permalink = $permalinks['property_structure'];
-    $base_slug = _x('yachts', 'default-slug', 'imic-framework-admin');
-    $property_structure = _x('yachts', 'default-slug', 'imic-framework-admin');
+    $base_slug = _x('cars', 'default-slug', 'imic-framework-admin');
+    $property_structure = _x('cars', 'default-slug', 'imic-framework-admin');
     $structures = array(
         0 => '',
         1 => '/' . trailingslashit($property_structure),

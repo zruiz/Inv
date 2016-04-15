@@ -86,100 +86,132 @@ if((!empty($custom_details))&&($imic_options['ad_listing_fields']==1))
 		echo '<div class="col-md-6">'; 
 	}
 	$values = get_post_meta($field,'specifications_value',true);
-	$post_data = get_post($field);
-	$spec_slug = $post_data->post_name;
-	$required = get_post_meta($field,'imic_plugin_required_mandatory',true);
-	$integer = get_post_meta($field,'imic_plugin_spec_char_type',true);
-	$sub_fields = get_post_meta($field,'imic_plugin_sub_field_switch',true);
-	$sortable_class = ($sub_fields==1)?"sortable-specs":"";
-	$input_id = ($integer!=1)?'field-'.($field+2648):'int-'.$field;
-	$required = ($required==1)?'mandatory':'';
-	echo '<label>Select '.get_the_title($field).'</label>';
-	if((count($values)>1)&&$integer==0) 
+											$post_data = get_post($field);
+											$spec_slug = $post_data->post_name;
+											$required = get_post_meta($field,'imic_plugin_required_mandatory',true);
+											$integer = get_post_meta($field,'imic_plugin_spec_char_type',true);
+											$sub_fields = get_post_meta($field,'imic_plugin_sub_field_switch',true);
+											$sortable_class = ($sub_fields==1)?"sortable-specs":"";
+											if($integer==0)
+											{
+												$input_id = 'field-'.($field+2648);
+											}
+											elseif($integer==2)
+											{
+												$input_id = 'char-'.($field+2648);
+											}
+											else
+											{
+												$input_id = 'int-'.$field;
+											}
+											$required = ($required==1)?'mandatory':'';
+											$int_value = ($integer==1)?'integer-val':'';
+											echo '<label>'.__('Select ', 'framework').get_the_title($field).'</label>';
+	if((count($values)>1)&&($integer==0||$integer==2)) 
 	{ 
 		echo '<select '.$disable.' name="'.basename(get_permalink($field)).'" id="'.$input_id.'" class="'.$sortable_class.' form-control selectpicker custom-cars-fields '.$required.'">';
 		echo '<option value="0">'.__('Select','framework').'</option>';
 		if($update_id!='') 
-		{
-			if($integer!=1) 
-			{
-				$key = array_search($field,$specifications['sch_title']);
-				$required_value = $specifications['start_time'][$key];
-			} 
-			else 
-			{
-				$required_value = get_post_meta($update_id,'int_'.$spec_slug,true);
-			}
-		}
+												{
+													if($integer==0) 
+													{
+														$key = array_search($field,$specifications['sch_title']);
+														$required_value = $specifications['start_time'][$key];
+													} 
+													elseif($integer==2)
+													{
+														$required_value = get_post_meta($update_id,'char_'.$spec_slug,true);
+													}
+													else 
+													{
+														$required_value = get_post_meta($update_id,'int_'.$spec_slug,true);
+													}
+												}
 		$key_select = $count = 0;
-		foreach($values as $value) 
-		{
-			$required_select = ($required_value==$value['imic_plugin_specification_values'])?'selected':'';
-			if($required_select!='') 
-			{ 
-				$key_select = $count; 
-			}
-			echo '<option '.esc_attr($required_select).' value="'.$value['imic_plugin_specification_values'].'">'.$value['imic_plugin_specification_values'].'</option>';
-			$count++;
-		} echo '</select>';
-		if($sub_fields==1&&$integer==0) 
-		{
-			echo '<div class="field-'.(($field*111)+2648).' sorting-dynamic">';
-			if((!empty($values[$key_select]['imic_plugin_specification_values_child']))) 
-			{
-				echo '<label>Select '.get_post_meta($field,'imic_plugin_sub_field_label',true).'</label>';
-				echo '<select '.$disable.' id="field-'.(($field*111)+2648).'" name="'.($field*111).'" class="form-control selectpicker custom-cars-fields">';
-				echo '<option value="0">'.__('Select ','framework').get_the_title($field).'</option>';
-				if($update_id!='') 
-				{
-					$key = array_search($field*111,$specifications['sch_title']);
-					$required_value = $specifications['start_time'][$key];
-					$child_vals = $values[$key_select]['imic_plugin_specification_values_child'];
-					if(!empty($child_vals)) 
-					{
-						$child_values = explode(',',$child_vals);
-					}
-					foreach($child_values as $value) 
-					{
-						$required_select = ($required_value==$value)?'selected':'';
-						echo '<option '.$required_select.' value="'.$value.'">'.$value.'</option>';
-					} 
-				}
-				echo '</select>'; 
-			}
-			echo '</div>';
-		} 
-	}
+												foreach($values as $value) 
+												{
+													$required_select = ($required_value==$value['imic_plugin_specification_values'])?'selected':'';
+													if($required_select!='') 
+													{ 
+														$key_select = $count; 
+													}
+                                                   	echo '<option '.esc_attr($required_select).' value="'.$value['imic_plugin_specification_values'].'">'.$value['imic_plugin_specification_values'].'</option>';
+													$count++;
+												} 
+												echo '</select>';
+												if(($sub_fields==1&&$integer==0)||($sub_fields==1&&$integer==2)) 
+												{
+													$child_field_class = ($integer==0)?"field-":"char-";
+													$child_field_class_select = ($integer==0)?"field-":"child-";
+													echo '<div class="'.$child_field_class.(($field*111)+2648).' sorting-dynamic">';
+													if((!empty($values[$key_select]['imic_plugin_specification_values_child']))) 
+													{
+														echo '<label>'.__('Select ', 'framework').get_post_meta($field,'imic_plugin_sub_field_label',true).'</label>';
+														echo '<select '.$disable.' id="'.$child_field_class_select.(($field*111)+2648).'" name="'.($field*111).'" class="form-control selectpicker custom-cars-fields">';
+														echo '<option value="0">'.__('Select ','framework').get_the_title($field).'</option>';
+														if($update_id!='') 
+														{
+															if($specification_data_type=="0")
+															{
+																$key = array_search($field*111,$specifications['sch_title']);
+																$required_value = $specifications['start_time'][$key];
+															}
+															else
+															{
+																$child_field_slug = imic_the_slug($field);
+																$required_value = get_post_meta($update_id, 'child_'.$child_field_slug, true);
+															}
+																$child_vals = $values[$key_select]['imic_plugin_specification_values_child'];
+																if(!empty($child_vals)) 
+															{
+																$child_values = explode(',',$child_vals);
+															}
+															foreach($child_values as $value) 
+															{
+																$required_select = ($required_value==$value)?'selected':'';
+                                                            	echo '<option '.$required_select.' value="'.$value.'">'.$value.'</option>';
+															} 
+														}
+                                                        echo '</select>'; 
+													}
+													echo '</div>';
+												} 
+											}
 	else 
 	{
 		if($update_id!='') 
-		{
-			$required_value = '';
-			if($integer==0) 
-			{
-				$key = array_search($field,$specifications['sch_title']);
-				$required_value = $specifications['start_time'][$key]; 
-			}
-			else 
-			{
-				$required_value = get_post_meta($update_id,'int_'.$spec_slug,true); 
-			}
-		}
-		if($label!='') 
-		{
-			echo '<div class="input-group"><input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.'" placeholder="'.get_the_title($field).'"><span class="input-group-addon">'.$label.'</span></div>'; 
-		}
-		else 
-		{
-			echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.'" placeholder="'.get_the_title($field).'">'; 
-		}	
-	}
-	if(($st==$half)) 
-	{ 
-		echo '</div>'; 
-	} 
-	$st++;   
-	}
+												{
+													$required_value = '';
+													if($integer==0) 
+													{
+														$key = array_search($field,$specifications['sch_title']);
+														$required_value = $specifications['start_time'][$key];
+													}
+													elseif($integer==2)
+													{
+														$required_value = get_post_meta($update_id,'char_'.$spec_slug,true);
+													}
+													else 
+													{
+														$required_value = get_post_meta($update_id,'int_'.$spec_slug,true); }
+													}
+													if($label!='') 
+													{
+														echo '<div class="input-group">
+														<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="'.get_the_title($field).'">
+														<span class="input-group-addon">'.$label.'</span></div>'; 
+													}
+													else 
+													{
+														echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="'.get_the_title($field).'">'; 
+													}	
+												}
+                                               	if(($st==$half)||(count($custom_details)==$st)) 
+												{ 
+													echo '</div>'; 
+												} 
+												$st++;   
+											} 
 	//echo "</div>"; 
 	if(is_user_logged_in()) 
 { ?>
@@ -206,8 +238,8 @@ if(!function_exists('imic_set_tags_fields'))
 		$term_id = get_term_by('slug', $category_slug, 'listing-category');
 		$parents = get_ancestors( $term_id->term_id, 'listing-category' );
 		array_push($parents, $term_id->term_id);
-		$list_tags = get_terms('yachts-tag',array('hide_empty'=>false));
-		$term_list = wp_get_post_terms($update_id, 'yachts-tag', array("fields" => "ids"));
+		$list_tags = get_terms('cars-tag',array('hide_empty'=>false));
+		$term_list = wp_get_post_terms($update_id, 'cars-tag', array("fields" => "ids"));
 		foreach($list_tags as $tag)
 		{ 
 			$cat_slugs = get_option('taxonomy_'.$tag->term_id.'_metas');

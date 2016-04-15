@@ -2,15 +2,21 @@ jQuery(function($){
 	"use strict";
 	$("form.searchoneform").submit(function()
     { 
+    	if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
+		if ($("input[name='builder-year']").val() == '') $("input[name='builder-year']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits
     });
 	$("form.search1, form.search2").submit(function()
     { 
+        if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
+		if ($("input[name='builder-year']").val() == '') $("input[name='builder-year']").attr("disabled", "disabled");
+		if ($("input[name='range_loa']").val() == '') $("input[name='range_loa']").attr("disabled", "disabled");
+		if ($("input[name='range_price']").val() == '') $("input[name='range_price']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits
     });
-    $(".add-listing").click(function()
+     $(".add-listing").click(function()
     { 
         jQuery("#PaymentModal").modal('show');
     });
@@ -69,7 +75,9 @@ AUTOSTARS.megaMenu = function() {
 				email: $('#email').val(),
 				phone: $('#phone').val(),
 				comments: $('#comments').val(),
-				recipients: $('#recipients').val()
+				recipients: $('#recipients').val(),
+				captcha_q: jQuery('#captcha').text(),
+				captcha_a: jQuery('#captcha_val').val()
 			},
 				function(data){
 					document.getElementById('message').innerHTML = data;
@@ -556,11 +564,41 @@ $(document).ready(function(){
       .on('slide', function(ev){
 				//$(this).attr("data-imic-start", ev.value[0]);
 				//$(this).attr("data-imic-end", ev.value[1]);
-          $(this).parents().find('.left').text(ev.value[0]);
-					$(this).parents().find('.right').text(ev.value[1]);
+					$(this).parent().parent().find('input.search-range').val(ev.value[0]+"-"+ev.value[1]);
+          			$(this).parent().parent().find('.left').text(ev.value[0]);
+					$(this).parent().parent().find('.right').text(ev.value[1]);
 					$(this).parent().parent().find('.range-val').attr("data-range", ev.value[0]+"-"+ev.value[1]);
+					//$( "#range1" ).val( "$" + ev.value[0] );
+					//$( "#range2" ).val( "$" + ev.value[1] );
           //$('#right').text(ev.value[1]);
       });
+
+    $("#range1_range_loa").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range2_range_loa").val();
+	    $(this).parent().find('input.search-range').val(value+"-"+value2);
+	    //$(".span2").slider('values',parseInt(value),parseInt(value2)); 
+	    //$(".span2").slider('setValue',[value,value2]);
+	});
+
+	$("#range2_range_loa").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range1_range_loa").val();
+	    $(this).parent().find('input.search-range').val(value2+"-"+value);
+	});
+
+	$("#range1_range_price").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range2_range_price").val();
+	    $(this).parent().find('input.search-range').val(value+"-"+value2);
+	});
+
+	$("#range2_range_price").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range1_range_price").val();
+	    $(this).parent().find('input.search-range').val(value2+"-"+value);
+	});
+
 	$('.password-show').click(function(){
 		var $rel = $(this).attr("rel");
 		if($rel=="0") { $(this).attr("rel","1"); $("#pwd1").attr("type","text"); $("#pwd2").attr("type","text"); }

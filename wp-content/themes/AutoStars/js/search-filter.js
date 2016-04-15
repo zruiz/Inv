@@ -150,9 +150,13 @@ function getUrlVars()
 			var $element = jQuery(this).attr('id');
 			jQuery("li#"+$element).remove();
 			//alert($element);
+
 			HistoryPush(UpdateQueryString($element,null,''));
 			//history.pushState('', '', UpdateQueryString($element,null,''));
 			var $vars = getUrlParams();
+
+			console.log($vars);
+
 			jQuery(".waiting").fadeIn();
         jQuery.ajax({
             type: 'POST',
@@ -168,7 +172,7 @@ function getUrlVars()
 				jQuery("#results-holder").html(data);
 				jQuery('ul.inline li').prepend('<i class="fa fa-caret-right"></i> ');
 				jQuery(".format-standard").each(function(){
-					jQuery(this).find(".media-box").append("<span class='zoom'><span class='icon'><i class='icon-plus'></i></span></span>");
+					//jQuery(this).find(".media-box").append("<span class='zoom'><span class='icon'><i class='icon-plus'></i></span></span>");
 				});
             },
             error: function(errorThrown) {
@@ -222,10 +226,8 @@ function getUrlVars()
 		});
 		jQuery(".search-fields li a").live('click',function() {
 			$query_var = jQuery(this).parent().parent().attr('id');
-			if($query_var == 'int_price')
-				$query_val = parseFloat(((jQuery(this).text()).replace(',','')).replace(',',''));
-			else $query_val = jQuery(this).text(); // gets text contents of clicked li
-//});
+			$query_val = jQuery(this).text(); // gets text contents of clicked li
+//});		
 			if($query_val=="Filter")
 			{
 				$query_val = jQuery(this).attr("data-range");
@@ -236,6 +238,7 @@ function getUrlVars()
 	HistoryPush(UpdateQueryString($query_var,$query_val,''));
     //history.pushState('', '', UpdateQueryString($query_var,$query_val,''));
 		var $vars = getUrlParams();
+
 		jQuery(".waiting").fadeIn();
         jQuery.ajax({
             type: 'POST',

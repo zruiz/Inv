@@ -77,6 +77,7 @@ if ( !class_exists( 'ReduxFramework_extension_wbc_importer' ) ) {
 		if ( isset( $demo_active_import[$current_key]['directory'] ) && !empty( $demo_active_import[$current_key]['directory'] ) && array_key_exists( $demo_active_import[$current_key]['directory'], $wbc_home_pages ) ) {
 			$page = get_page_by_title( $wbc_home_pages[$demo_active_import[$current_key]['directory']] );
 			if ( isset( $page->ID ) ) {
+				update_option('imic_data_imported_status', 1);
 				if($demo_active_import[$current_key]['directory']=="demo2")
 				{
 				//Update Classified Data
@@ -84,6 +85,7 @@ if ( !class_exists( 'ReduxFramework_extension_wbc_importer' ) ) {
 				$sn = unserialize($sb);
 				update_option('imic_classifieds', '');
 				update_option('imic_classifieds', $sn);
+				
 				//Update User ID for User Info
 				$userdata_services = array(
 					'user_login'  =>  'services inc',

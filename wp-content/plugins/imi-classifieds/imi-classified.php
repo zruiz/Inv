@@ -4,7 +4,7 @@
  * Plugin URI:  http://www.imithemes.com
  * Description: Adds classified feature in AutoStars theme
  * Author:      imithemes
- * Version:     1.0.2
+ * Version:     1.0.5
  * Author URI:  http://www.imithemes.com
  * Copyright:   (c) 2015 imithemes. All rights reserved
  */

@@ -17,15 +17,14 @@ jQuery(document).ready(function() {
 			data: {
 				action: 'imic_agent_register',
 				role: jQuery('#role').val(),
-				firstname: jQuery('#firstname').val(),
-				lastname: jQuery('#lastname').val(),
-				company: jQuery('#company').val(),
 				username: jQuery('#username').val(),
 				email: jQuery('#email').val(),
 				pwd1: jQuery('#pwd1').val(),
 				pwd2: jQuery('#pwd2').val(),
 				task: jQuery('#task').val(),
 				roles: jQuery('#user-role').val(),
+				captcha_q: jQuery('#captcha').text(),
+				captcha_a: jQuery('#captcha_val').val()
 				},
 			success: function(data) {
 				document.getElementById('message').innerHTML = data;
@@ -53,29 +52,24 @@ jQuery(document).ready(function() {
 			url: agent_register.ajaxurl,
 			data: {
 				action: 'imic_agent_register',
-				role: jQuery('#role-popup').val(),
-				firstname: jQuery('#firstname-popup').val(),
-				lastname: jQuery('#lastname-popup').val(),
-				company: jQuery('#company-popup').val(),
+				//role: jQuery('#role-popup').val(),
 				username: jQuery('#username-popup').val(),
 				email: jQuery('#email-popup').val(),
 				pwd1: jQuery('#pwd1-popup').val(),
 				pwd2: jQuery('#pwd2-popup').val(),
 				task: jQuery('#task-popup').val(),
-				roles: jQuery('#user-role-popup').val()
+				roles: jQuery('#user-role-popup').val(),
+				captcha_q: jQuery('#captcha-popup').text(),
+				captcha_a: jQuery('#captcha_val-popup').val()
 				},
 			success: function(data) {
 				
-				//document.getElementById('message-popup').innerHTML = data;
-				//jQuery('#message-popup').slideDown('slow');
+				document.getElementById('message-popup').innerHTML = data;
+				jQuery('#message-popup').slideDown('slow');
 				jQuery('.register-form-popup img.loader').fadeOut('slow',function(){jQuery(this).remove()});
 				jQuery('#submit-popup').removeAttr('disabled');
-				if(data.match('registration') != null) { document.getElementById('registerformpopup').reset();
-				var delay=2000; //1 seconds
-				setTimeout(function(){
-				  document.location.href = jQuery('.redirect_register').val();
-				}, delay);
-                                
+				if(data.match('successfully') != null) { document.getElementById('registerformpopup').reset();
+                                document.location.href = jQuery('.redirect_register').val();
 				}
 			},
 			error: function(errorThrown) {

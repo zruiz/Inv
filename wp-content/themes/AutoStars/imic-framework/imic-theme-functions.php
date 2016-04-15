@@ -289,7 +289,7 @@ if (!function_exists('imic_custom_script')) {
         $custom_js = $options['custom_js'];
         if ($custom_js) {
             echo'<script type ="text/javascript">';
-            echo esc_attr($custom_js);
+            echo $custom_js;
             echo '</script>';
         }
     }
@@ -466,7 +466,44 @@ if (!function_exists('imic_custom_taxonomies_terms_links')) {
     return $out;
 }
 }
-//Event Recurring Date/Time
+if(!function_exists('imic_langcode_post_id'))
+{
+	function imic_langcode_post_id($post_id)
+	{
+		if (class_exists('SitePress')) 
+		{
+    global $wpdb;
+ 
+    $query = $wpdb->prepare('SELECT language_code FROM ' . $wpdb->prefix . 'icl_translations WHERE element_id="%d"', $post_id);
+    $query_exec = $wpdb->get_row($query);
+ 
+    return $query_exec->language_code;
+		}
+	}
+}
+if(!function_exists('imic_filter_lang_specs_admin'))
+{
+	function imic_filter_lang_specs_admin($specs, $id)
+	{
+		$new_specs = array();
+		if((!empty($specs))&&(class_exists('SitePress')))
+		{
+			foreach($specs as $spec)
+			{
+				if(class_exists('SitePress')&&imic_langcode_post_id( $id )==imic_langcode_post_id( $spec ))
+				{
+					$new_specs[] = $spec;
+				}
+			}
+		}
+		else
+		{
+			$new_specs = $specs;
+		}
+		return $new_specs;
+	}
+}
+//Listing Details update while updating through Admin
 if (!function_exists('imic_afterSavePost')) {
 function imic_afterSavePost()
 {
@@ -478,6 +515,8 @@ function imic_afterSavePost()
 	$post_type = get_post_type($postId);
 	if($post_type=='yachts')
 		{
+			$new_title = imic_filter_lang_specs_admin($title, $postId);
+			$title = $new_title;
 			$listing_end_date = get_post_meta($postId, 'imic_plugin_listing_end_dt', true);
 			if($listing_end_date=='')
 			{
@@ -794,15 +833,15 @@ $posttitle = get_the_title();
 $postpermalink = get_permalink();
 $postexcerpt = get_the_excerpt();
 global $imic_options;
-$facebook_share_alt = $imic_options['facebook_share_alt'];
-$twitter_share_alt = $imic_options['twitter_share_alt'];
-$google_share_alt = $imic_options['google_share_alt'];
-$tumblr_share_alt = $imic_options['tumblr_share_alt'];
-$pinterest_share_alt = $imic_options['pinterest_share_alt'];
-$reddit_share_alt = $imic_options['reddit_share_alt'];
-$linkedin_share_alt = $imic_options['linkedin_share_alt'];
-$email_share_alt = $imic_options['email_share_alt'];
-$vk_share_alt = $imic_options['vk_share_alt'];
+$facebook_share_alt = (isset($imic_options['facebook_share_alt']))?$imic_options['facebook_share_alt']:'';
+$twitter_share_alt = (isset($imic_options['twitter_share_alt']))?$imic_options['twitter_share_alt']:'';
+$google_share_alt = (isset($imic_options['google_share_alt']))?$imic_options['google_share_alt']:'';
+$tumblr_share_alt = (isset($imic_options['tumblr_share_alt']))?$imic_options['tumblr_share_alt']:'';
+$pinterest_share_alt = (isset($imic_options['pinterest_share_alt']))?$imic_options['pinterest_share_alt']:'';
+$reddit_share_alt = (isset($imic_options['reddit_share_alt']))?$imic_options['reddit_share_alt']:'';
+$linkedin_share_alt = (isset($imic_options['linkedin_share_alt']))?$imic_options['linkedin_share_alt']:'';
+$email_share_alt = (isset($imic_options['email_share_alt']))?$imic_options['email_share_alt']:'';
+$vk_share_alt = (isset($imic_options['vk_share_alt']))?$imic_options['vk_share_alt']:'';
 			
             //echo '<div class="social-share-bar">';
 			if($imic_options['sharing_style'] == '0'){
@@ -891,7 +930,7 @@ $value = $pagin = $offset = $off = '';
 $count = 1;
 $filters_type = (isset($imic_options['filters_type']))?$imic_options['filters_type']:'';
 $data_page = ($filters_type==1)?'yes':'';
-//print_r($tags);
+$default_image_src = (isset($imic_options['default_car_image']))?$imic_options['default_car_image']['url']:'';
 if(!empty($data)) {
 foreach($data as $key=>$value)
     {
@@ -981,7 +1020,7 @@ foreach($data as $key=>$value)
 	if(!empty($tags))
 	{
 		$term_array[1] = array(
-				'taxonomy' => 'yachts-tag',
+				'taxonomy' => 'cars-tag',
 				'field' => 'slug',
 				'terms' => $tags,
 				'operator' => 'IN');
@@ -1044,7 +1083,7 @@ foreach($data as $key=>$value)
 									if($numeric_specs_type==0)
 									{
 										$slug = "int_".$spec_slug;
-										$comparision = "<span>".__("Under ","framework").'</span>';
+										$comparision = "<span>".__("Less Than ","framework").'</span>';
 									}
 									else
 									{
@@ -1117,7 +1156,7 @@ foreach($data as $key=>$value)
 						$tag = '';
 						if($term_slug!='')
 						{
-                    		$listing_tags = get_terms('yachts-tag',array('hide_empty'=>true));
+                    		$listing_tags = get_terms('cars-tag',array('hide_empty'=>true));
 							foreach($listing_tags as $tag)
 							{
 								$tag_description = get_option("taxonomy_".$tag->term_id."_metas");
@@ -1146,7 +1185,7 @@ foreach($data as $key=>$value)
                                 				<div class="widget_tag_cloud matched-tags-list">';
 											foreach($list_tags as $tab) 
 											{
-												$tag_name = get_term_by('slug', $tab, 'yachts-tag');
+												$tag_name = get_term_by('slug', $tab, 'cars-tag');
                                                 echo '<a href="javascript:void(0);" class="">'.$tag_name->name.'</a>';
                                            	} 
 											echo '</div><br/>';
@@ -1202,6 +1241,7 @@ foreach($data as $key=>$value)
 										{
 											$detailed_specs = array();
 										}
+										$detailed_specs = imic_filter_lang_specs($detailed_specs);
 										$category_rail = (isset($imic_options['category_rail']))?$imic_options['category_rail']:'0';
 										$additional_specs_all = get_post_meta($additional_specs,'specifications_value',true);
 										$highlighted_specs = (isset($imic_options['highlighted_specs']))?$imic_options['highlighted_specs']:array();
@@ -1223,6 +1263,7 @@ foreach($data as $key=>$value)
 											$badge_ids = imic_classified_badge_specs(get_the_ID(), $badge_ids);
 											$detailed_specs = imic_classified_short_specs(get_the_ID(), $detailed_specs);
 										}
+										$badge_ids = imic_filter_lang_specs($badge_ids);
 										$post_author_id = get_post_field( 'post_author', get_the_ID() );
 										$user_info_id = get_user_meta($post_author_id,'imic_user_info_id',true);
 										$car_pin = get_post_meta($user_info_id,'imic_user_lat_long',true);
@@ -1241,6 +1282,8 @@ foreach($data as $key=>$value)
 										$save3 = (isset($_SESSION['saved_vehicle_id3']))?$_SESSION['saved_vehicle_id3']:'';
 										$specifications = get_post_meta(get_the_ID(),'feat_data',true);
 										$unique_value = imic_vehicle_price(get_the_ID(),$unique_specs,$specifications);
+										$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, get_the_ID());	
+										$highlighted_specs = $new_highlighted_specs;
 										$highlight_value = imic_vehicle_title(get_the_ID(),$highlighted_specs,$specifications);
 										$highlight_value = ($highlight_value=='')?get_the_title():$highlight_value;
 										$details_value = imic_vehicle_all_specs(get_the_ID(),$detailed_specs,$specifications);
@@ -1257,7 +1300,11 @@ foreach($data as $key=>$value)
                                         <!-- Result Item -->
                                         <div class="result-item format-standard">
                                             <div class="result-item-image"><?php if(has_post_thumbnail()) { ?>
-                                                <a href="<?php echo esc_url(get_permalink()); ?>" class="media-box"><?php the_post_thumbnail('600x400'); ?></a><?php } ?>
+                                                <a href="<?php echo esc_url(get_permalink()); ?>" class="media-box"><?php the_post_thumbnail('600x400'); ?></a><?php }
+																								else
+																								{
+																									echo '<a href="'.esc_url(get_permalink()).'" class="media-box"><img src="'.$default_image_src.'"></a>';
+																								} ?>
                                                 <?php $start = 0; 
 													$badge_position = array('vehicle-age','premium-listing','third-listing','fourth-listing');
 													if(!empty($badges)) {
@@ -1286,7 +1333,7 @@ foreach($data as $key=>$value)
                                                     </div>
                                                     <div class="result-item-block col2">
                                                         <div class="result-item-pricing">
-                                                            <div class="price">$<?php echo esc_attr(number_format((str_replace('$', '', $unique_value)))); ?></div>
+                                                            <div class="price"><?php echo esc_attr($unique_value); ?></div>
                                                         </div>
                                                         <div class="result-item-action-buttons">
                                                             <a <?php echo esc_attr($save_icon_disable); ?> id="" href="#" class="btn btn-default btn-sm save-car"><div class="vehicle-details-access" style="display:none;"><span class="vehicle-id"><?php echo esc_attr(get_the_ID()); ?></span></div><i class="fa <?php echo esc_attr($save_icon); ?>"></i> <?php _e('Save','framework'); ?></a>
@@ -1398,6 +1445,8 @@ foreach($data as $key=>$value)
 				}
 				$specifications = get_post_meta(get_the_ID(),'feat_data',true);
 				$details_value = imic_vehicle_all_specs(get_the_ID(),$detailed_specs,$specifications);
+				$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, get_the_ID());	
+				$highlighted_specs = $new_highlighted_specs;
 				$highlight_value = imic_vehicle_title(get_the_ID(),$highlighted_specs,$specifications);
 				$highlight_value = ($highlight_value=='')?get_the_title(get_the_ID()):$highlight_value; ?>
               	<!-- Result Item -->
@@ -1460,12 +1509,16 @@ if(!function_exists('imic_create_vehicle'))
 		$listing_view = (isset($_POST['listing_view']))?$_POST['listing_view']:'';
 		$fields = (isset($_POST['values']))?$_POST['values']:'';
 		$tags = (isset($_POST['tags']))?$_POST['tags']:array();
-        $features = (isset($_POST['features']))?$_POST['features']:'';
 		$val = $id = $mids = '';
 		$data = (isset($_POST['matched']))?$_POST['matched']:'';
 		$mids = (isset($_POST['mids']))?$_POST['mids']:'';
 		$category = (isset($_POST['category']))?$_POST['category']:'';
 		$category = ($category!="none")?$category:'';
+		$remain = (isset($_POST['remain']))?$_POST['remain']:'';
+		$plans = (isset($_POST['plan']))?$_POST['plan']:'';
+		$user_id = get_current_user_id( );
+		$user_info_id = get_user_meta($user_id,'imic_user_info_id',true);
+		$user_remaining_listings = get_post_meta($user_info_id, 'imic_allowed_listings_'.$plans, true);
 		if(!empty($mids)) 
 		{
 			foreach($mids as $mid) 
@@ -1489,18 +1542,26 @@ if(!function_exists('imic_create_vehicle'))
 		if(empty($post_id)) 
 		{
 		$post_id = wp_insert_post( $my_post ); 
+		update_post_meta($user_info_id, 'imic_allowed_listings_'.$plans, $user_remaining_listings-1);
+		$user_plan_summary = get_post_meta($user_info_id, 'imic_user_plan_'.$plans, true);
+		if(!empty($user_plan_summary))
+		{
+			foreach($user_plan_summary as $key=>$value)
+			{
+				$new_value[$key] = $value.','.$post_id;
+			}
+			update_post_meta($user_info_id, 'imic_user_plan_'.$plans, $new_value);
+		}
 		update_post_meta($post_id, 'imic_pages_Choose_slider_display', '1');
 		update_post_meta($post_id, 'imic_browse_by_specification_switch', '2');
+		$valid_with_plan = get_post_meta($plans, 'imic_plan_validity_expire_listing', true);
 		//Listing not showing in front end if user doesn't set any plan
 		$listing_end_date = get_post_meta($post_id, 'imic_plugin_listing_end_dt', true);
-		if($listing_end_date=='')
+		if($listing_end_date==''&&$valid_with_plan!=1)
 		{
 			update_post_meta($post_id, 'imic_plugin_listing_end_dt', '2020-01-01');
 		}
 		}
-        if($features!=''){
-            update_post_meta($post_id,'imic_tab_area1',$features);
-        }
 		if($category!='')
 		{
 			$cat_slug = $category;
@@ -1580,7 +1641,7 @@ if(!function_exists('imic_create_vehicle'))
 	}
 	$tags = array_map( 'intval', $tags );
 	$tags = array_unique( $tags );
-	wp_set_object_terms($post_id, $tags, 'yachts-tag');
+	wp_set_object_terms($post_id, $tags, 'cars-tag');
 	if(!empty($tags)) 
 	{
 		foreach($tags as $tag) 
@@ -1641,60 +1702,69 @@ if(!function_exists('imic_create_vehicle'))
 	if(empty($specification_values['start_time'])) 
 	{
 		for ($i = 0; $i < count( $specs_ids ); $i++ ) 
-       	{
+    {
 			$id = $specs_ids[$i];
 			$vals = get_post_meta($id,'specifications_value',true);
 			if(imic_get_child_values_status($vals)==1) 
 			{
 				$feat_data['start_time'][]  = '';
-                $feat_data['sch_title'][]  = $id*111;
+        $feat_data['sch_title'][]  = $id*111;
 			}
 			$feat_data['start_time'][]  = 'select';
-           	$feat_data['sch_title'][]  = $id;
-        }
-        if ( $feat_data ) update_post_meta( $post_id, 'feat_data', $feat_data ); 
+      $feat_data['sch_title'][]  = $id;
+   	}
+    if ( !empty($feat_data) ) 
+		{
+			update_post_meta( $post_id, 'feat_data', $feat_data ); 
+		}
 	}
 	$specification_values = get_post_meta($post_id,'feat_data',true);
-	for ($i = 0; $i < count( $specification_values['start_time'] ); $i++ ) 
+	if(!empty($specification_values['start_time']))
+	{
+		for ($i = 0; $i < count( $specification_values['start_time'] ); $i++ ) 
   	{
-		$value = $specification_values['start_time'][$i];
-		$id = $specification_values['sch_title'][$i];
-		if(!empty($updating_values)) 
-		{
-			if($i==0) 
+			$value = $specification_values['start_time'][$i];
+			$id = $specification_values['sch_title'][$i];
+			if(!empty($updating_values)) 
 			{
-				foreach($updating_values as $key=>$values) 
+				if($i==0) 
 				{
-					$key_id = array_search($key,$specification_values['sch_title']);
-					if(!is_int($key_id)) {
-						if(get_post_type($key)=='specification') 
+					foreach($updating_values as $key=>$values) 
+					{
+						$key_id = array_search($key,$specification_values['sch_title']);
+						if(!is_int($key_id)) 
 						{
-							$vals = get_post_meta($key,'specifications_value',true);
-							if(imic_get_child_values_status($vals)==1) 
+							if(get_post_type($key)=='specification') 
 							{
+								$vals = get_post_meta($key,'specifications_value',true);
+								if(imic_get_child_values_status($vals)==1) 
+								{
+									$new_feat_data['start_time'][]  = $values;
+									$new_feat_data['sch_title'][]  = $key*111;
+								}
 								$new_feat_data['start_time'][]  = $values;
-								$new_feat_data['sch_title'][]  = $key*111;
-							}
-							$new_feat_data['start_time'][]  = $values;
-							$new_feat_data['sch_title'][]  = $key;
+								$new_feat_data['sch_title'][]  = $key;
+							} 
 						} 
 					} 
+				}
+				if(isset($updating_values[$id])) 
+				{ 
+					$value = $updating_values[$id]; 
 				} 
 			}
-			if(isset($updating_values[$id])) 
-			{ 
-				$value = $updating_values[$id]; 
-			} 
+			$new_feat_data['start_time'][]  = $value;
+			$new_feat_data['sch_title'][]  = $id;
 		}
-		$new_feat_data['start_time'][]  = $value;
-		$new_feat_data['sch_title'][]  = $id;
 	}
-   	if ( !empty($new_feat_data) ) 
+  if ( !empty($new_feat_data) ) 
 	{
-     	update_post_meta( $post_id, 'feat_data', $new_feat_data ); 
+    update_post_meta( $post_id, 'feat_data', $new_feat_data ); 
 	}
 	$title = (isset($imic_options['highlighted_specs']))?$imic_options['highlighted_specs']:array();
 	$specifications = get_post_meta($post_id,'feat_data',true);
+	$new_highlighted_specs = imic_filter_lang_specs_admin($title, $post_id);	
+	$title = $new_highlighted_specs;
 	$new_title = imic_vehicle_title($post_id,$title,$specifications);
 	$new_slug = sanitize_title( $new_title );
 	$this_slug = imic_the_slug($post_id);
@@ -1795,6 +1865,8 @@ function imic_vehicle_add() {
 		foreach($saved_cars as $car) {
 			$specifications = get_post_meta($car[0],'feat_data',true);
 			$unique_values = imic_vehicle_price($car[0],$unique_specs,$specifications);
+			$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, $car[0]);	
+			$highlighted_specs = $new_highlighted_specs;
 			$highlight_values = imic_vehicle_title($car[0],$highlighted_specs,$specifications);
 			$highlight_values = ($highlight_values=='')?get_the_title($car[0]):$highlight_values;
 			echo '
@@ -1834,6 +1906,8 @@ function imic_vehicle_add() {
 			$specifications = get_post_meta($vehicle_id,'feat_data',true);
 			if(!empty($specifications)) {
 			$unique_values = imic_vehicle_price($vehicle_id,$unique_specs,$specifications);
+			$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, $vehicle_id);	
+			$highlighted_specs = $new_highlighted_specs;
 			$highlight_values = imic_vehicle_title($vehicle_id,$highlighted_specs,$specifications);
 			$highlight_values = ($highlight_values=='')?get_the_title($vehicle_id):$highlight_values;
 		echo '
@@ -1858,6 +1932,8 @@ function imic_vehicle_add() {
 	$_SESSION['saved_vehicle_id1'] = $vehicle_id;
 	$specifications = get_post_meta($_SESSION['saved_vehicle_id1'],'feat_data',true);
 	$unique_value = imic_vehicle_price($_SESSION['saved_vehicle_id1'],$unique_specs,$specifications);
+	$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, $_SESSION['saved_vehicle_id1']);	
+	$highlighted_specs = $new_highlighted_specs;
 	$highlight_value = imic_vehicle_title($_SESSION['saved_vehicle_id1'],$highlighted_specs,$specifications);
 	$highlight_value = ($highlight_value=='')?get_the_title($_SESSION['saved_vehicle_id1']):$highlight_value;
 	echo '
@@ -1875,6 +1951,8 @@ function imic_vehicle_add() {
 		$_SESSION['saved_vehicle_id2'] = $vehicle_id;
 		$specifications = get_post_meta($_SESSION['saved_vehicle_id2'],'feat_data',true);
 	$unique_value = imic_vehicle_price($_SESSION['saved_vehicle_id2'],$unique_specs,$specifications);
+	$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, $_SESSION['saved_vehicle_id2']);	
+	$highlighted_specs = $new_highlighted_specs;
 	$highlight_value = imic_vehicle_title($_SESSION['saved_vehicle_id2'],$highlighted_specs,$specifications);
 	$highlight_value = ($highlight_value=='')?get_the_title($_SESSION['saved_vehicle_id2']):$highlight_value;
 		echo '
@@ -1891,6 +1969,8 @@ function imic_vehicle_add() {
 		$_SESSION['saved_vehicle_id3'] = $vehicle_id;
 		$specifications = get_post_meta($_SESSION['saved_vehicle_id3'],'feat_data',true);
 	$unique_value = imic_vehicle_price($_SESSION['saved_vehicle_id3'],$unique_specs,$specifications);
+	$new_highlighted_specs = imic_filter_lang_specs_admin($highlighted_specs, $_SESSION['saved_vehicle_id3']);	
+	$highlighted_specs = $new_highlighted_specs;
 	$highlight_value = imic_vehicle_title($_SESSION['saved_vehicle_id3'],$highlighted_specs,$specifications);
 	$highlight_value = ($highlight_value=='')?get_the_title($_SESSION['saved_vehicle_id3']):$highlight_value;
 		echo '
@@ -2099,19 +2179,22 @@ add_action('wp_ajax_imi_remove_ads', 'imi_remove_ads');
 }
 if(!function_exists('imic_sortable_specification')) {
 function imic_sortable_specification(){
-	$spec_value = $_POST['sorting'];
-	$spec_id = $_POST['spec_id'];
-	$field_id = $spec_id*111;
-	$spec_multi_id = explode('-',$spec_id);
-	$select_new_class = ($spec_multi_id[0]=="field")?"field-":"child-";
-	$spec_id = $spec_multi_id[1]-2648;
-	$specs = get_post_meta($spec_id,'specifications_value',true);
-	$key = find_car_with_position($specs, $spec_value);
-	$vals = $specs[$key]['imic_plugin_specification_values_child'];
-	if(!empty($vals)) {
-	$new_val = explode(',',$vals);
-	echo '<label>Select '.get_post_meta($spec_id,'imic_plugin_sub_field_label',true).'</label>';
-	echo '<select id="'.$select_new_class.(($spec_id*111)+2648).'" class="form-control selectpicker custom-cars-fields" name="'.($spec_id*111).'">';
+    global $imic_options;
+    $spec_value = $_POST['sorting'];
+    $spec_id = $_POST['spec_id'];
+    $field_id = $spec_id*111;
+    $spec_multi_id = explode('-',$spec_id);
+    $select_new_class = ($spec_multi_id[0]=="field")?"field-":"child-";
+    $spec_id = $spec_multi_id[1]-2648;
+    $numeric_specs_type = (isset($imic_options['integer_specs_type']))?$imic_options['integer_specs_type']:0;
+    $spec_name = ($numeric_specs_type==0)?$spec_id*111:'child_'.imic_the_slug($spec_id);
+    $specs = get_post_meta($spec_id,'specifications_value',true);
+    $key = find_car_with_position($specs, $spec_value);
+    $vals = $specs[$key]['imic_plugin_specification_values_child'];
+    if(!empty($vals)) {
+    $new_val = explode(',',$vals);
+    echo '<label>Select '.get_post_meta($spec_id,'imic_plugin_sub_field_label',true).'</label>';
+    echo '<select id="'.$select_new_class.(($spec_id*111)+2648).'" class="form-control selectpicker custom-cars-fields" name="'.($spec_name).'">'; 
 	echo '<option value="" disabled selected>'.esc_attr__('All', 'framework').'</option>';
 	foreach($new_val as $val) {
 		echo '<option value="'.$val.'">'.$val.'</option>';
@@ -2211,25 +2294,28 @@ if (!is_user_logged_in()) {
 } }
 if(!function_exists('ajax_login')) {
 function ajax_login(){
-    global $wpdb;
-
     check_ajax_referer( 'ajax-login-nonce', 'security' );
     $info = array();
-    $info['user_login'] = $_POST['username'];
+		if(filter_var($_POST['username'], FILTER_VALIDATE_EMAIL)) {
+      $user_withemail = get_user_by( 'email', $_POST['username'] );
+			if(!is_wp_error($user_withemail))
+			{
+				$info['user_login'] = $user_withemail->user_login;
+			}
+			else
+			{
+				$info['user_login'] = 'abcd1234!@#$abcd';
+			}
+    }
+		else
+		{
+			$info['user_login'] = $_POST['username'];
+		}
     $info['user_password'] = $_POST['password'];
 	if($_POST['rememberme']=='true') {
     $info['remember'] = true; }
 	else{
 	$info['remember'] = false; }
-
-    $cap_key = $wpdb->prefix . 'capabilities';
-    if ( $userdata = get_user_by( 'login', $_POST['username'] ) ) {
-        if ( array_key_exists( 'pending_user', (array) $userdata->$cap_key ) ) {
-           echo json_encode(array('loggedin'=>false, 'message'=>__('Account pending activation.','framework')));
-           die();
-        }
-    }
-
     $user_signon = wp_signon( $info, false );
     if ( is_wp_error($user_signon) ){
         echo json_encode(array('loggedin'=>false, 'message'=>__('Wrong username or password.','framework')));
@@ -2399,6 +2485,66 @@ wp_set_object_terms($post_id,$user_info->roles,'user-category');
 update_post_meta($post_id,'imic_user_reg_id',$user_id); }
 }
 add_action('user_register','imic_add_user_info');
+}
+function imic_convert_integer($value)
+{
+	$strings = array('Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine');
+	$print_str = $strings[$value];
+	return $print_str;
+}
+function imic_convert_string($value)
+{ 
+	switch($value)
+	{
+		case 'Zero':
+		$print_int = 0;
+		break;
+		case 'One':
+		$print_int = 1;
+		break;
+		case 'Two':
+		$print_int = 2;
+		break;
+		case 'Three':
+		$print_int = 3;
+		break;
+		case 'Four':
+		$print_int = 4;
+		break;
+		case 'Five':
+		$print_int = 5;
+		break;
+		case 'Six':
+		$print_int = 6;
+		break;
+		case 'Seven':
+		$print_int = 7;
+		break;
+		case 'Eight':
+		$print_int = 8;
+		break;
+		case 'Nine':
+		$print_int = 9;
+		break;
+	}
+	return $print_int;
+}
+function imic_create_captcha()
+{
+	$operators = array('+', '-', '*');
+	$operator_rand = rand(0, 2);
+	$first_val = rand ( 0 , 20 );
+	$second_val = rand ( 0 , 9 );
+	if($operator_rand==1&&$first_val<=$second_val)
+	{
+		$first_val = $second_val+2;
+	}
+	elseif($operator_rand==2&&$first_val>=9)
+	{
+		$first_val = 2;
+	}
+	$second_value_string = imic_convert_integer($second_val);
+	return $first_val. ' '.$operators[$operator_rand].' '. $second_value_string;
 }
 /**
  * Handles "activate" action for login page
@@ -2582,16 +2728,18 @@ function imic_agent_register() {
 		return(preg_match("/^[-_.[:alnum:]]+@((([[:alnum:]]|[[:alnum:]][[:alnum:]-]*[[:alnum:]])\.)+(ad|ae|aero|af|ag|ai|al|am|an|ao|aq|ar|arpa|as|at|au|aw|az|ba|bb|bd|be|bf|bg|bh|bi|biz|bj|bm|bn|bo|br|bs|bt|bv|bw|by|bz|ca|cc|cd|cf|cg|ch|ci|ck|cl|cm|cn|co|com|coop|cr|cs|cu|cv|cx|cy|cz|de|dj|dk|dm|do|dz|ec|edu|ee|eg|eh|er|es|et|eu|fi|fj|fk|fm|fo|fr|ga|gb|gd|ge|gf|gh|gi|gl|gm|gn|gov|gp|gq|gr|gs|gt|gu|gw|gy|hk|hm|hn|hr|ht|hu|id|ie|il|in|info|int|io|iq|ir|is|it|jm|jo|jp|ke|kg|kh|ki|km|kn|kp|kr|kw|ky|kz|la|lb|lc|li|lk|lr|ls|lt|lu|lv|ly|ma|mc|md|me|mg|mh|mil|mk|ml|mm|mn|mo|mp|mq|mr|ms|mt|mu|museum|mv|mw|mx|my|mz|na|name|nc|ne|net|nf|ng|ni|nl|no|np|nr|nt|nu|nz|om|org|pa|pe|pf|pg|ph|pk|pl|pm|pn|pr|pro|ps|pt|pw|py|qa|re|ro|ru|rw|sa|sb|sc|sd|se|sg|sh|si|sj|sk|sl|sm|sn|so|sr|st|su|sv|sy|sz|tc|td|tf|tg|th|tj|tk|tm|tn|to|tp|tr|tt|tv|tw|tz|ua|ug|uk|um|us|uy|uz|va|vc|ve|vg|vi|vn|vu|wf|ws|ye|yt|yu|za|zm|zw)$|(([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5])\.){3}([0-9][0-9]?|[0-1][0-9][0-9]|[2][0-4][0-9]|[2][5][0-5]))$/i",$email));
 	}
 	
+	
 	if (!defined("PHP_EOL")) define("PHP_EOL", "\r\n");
-    if ($_POST['roles'] == 'Broker' || $_POST['roles'] == 'Shipyard'){
-    	$firstname     = $_POST['firstname'];
+	
+	if ($_POST['roles'] == 'Broker' || $_POST['roles'] == 'Shipyard'){
+        $firstname     = $_POST['firstname'];
         $lastname     = $_POST['lastname'];
-    	$company     = $_POST['company'];
+        $company     = $_POST['company'];
     }
-	$email    = $_POST['email'];
+    $email    = $_POST['email'];
     $username     = $_POST['username'];
-	$pwd1  = $_POST['pwd1'];
-	$pwd2 = $_POST['pwd2'];
+    $pwd1  = $_POST['pwd1'];
+    $pwd2 = $_POST['pwd2'];
 
     if ($_POST['roles'] == 'Broker' || $_POST['roles'] == 'Shipyard'){
         if(trim($firstname) == '') {
@@ -2605,6 +2753,25 @@ function imic_agent_register() {
             exit();
         }
     }
+    
+	$captcha_question = $_POST['captcha_q'];
+	$captcha_answer = $_POST['captcha_a'];
+	$captcha_split = explode(' ', $captcha_question);
+	if($captcha_split[1]=='+')
+	{ 
+		$second_val = imic_convert_string($captcha_split[2]);
+		$exact_val = $captcha_split[0]+$second_val;
+	}
+	elseif($captcha_split[1]=='-')
+	{ 
+		$second_val = imic_convert_string($captcha_split[2]);
+		$exact_val = $captcha_split[0]-$second_val;
+	}
+	else
+	{ 
+		$second_val = imic_convert_string($captcha_split[2]);
+		$exact_val = $captcha_split[0]*$second_val;
+	} 
 	
 	if(trim($username) == '') {
 		echo '<div class="alert alert-error">'.__('You must enter your username.','framework').'</div>';
@@ -2625,6 +2792,11 @@ function imic_agent_register() {
 		echo '<div class="alert alert-error">'.__('You must enter a same password.','framework').'</div>';
 		exit();
 	}
+	elseif($exact_val!=$captcha_answer)
+	{
+		echo '<div class="alert alert-error">'.__('Captcha do not match.','framework').'</div>';
+		exit();
+	}
 	
 	
 	$err = '';
@@ -2634,9 +2806,6 @@ function imic_agent_register() {
 	
 	if (isset($_POST['task']) && $_POST['task'] == 'register') {
 		$username = esc_sql(trim($_POST['username']));
-        $firstname    = $_POST['firstname'];
-        $lastname     = $_POST['lastname'];
-        $fullname = esc_sql(trim($_POST['firstname'])).' '.esc_sql(trim($_POST['lastname']));
 		$pwd1 = esc_sql(trim($_POST['pwd1']));
 		$pwd2 = esc_sql(trim($_POST['pwd2']));
 		$email = esc_sql(trim($_POST['email']));
@@ -2645,14 +2814,15 @@ function imic_agent_register() {
 	   //Email properties
 	   	$dealer_msg = $imic_options['agent_register'];
 		$admin_mail_to = get_option('admin_email');
-		$mail_subject = "New user registration.";
-		$admin_mail_content = __("New user registered with following details.","framework")."\r\n\r\n";
-		$admin_mail_content .= __("Full Name: ","framework").$fullname. "\r\n";
-        //$admin_mail_content .= __("Phone Number: ","framework").$phonenumber. "\r\n";
+		$mail_subject = $username ." registered successfully.";
+		$admin_mail_content = "<p>".__("New user registered with following details.","framework")."</p>";
+        $admin_mail_content .= __("Full Name: ","framework").$fullname. "\r\n";
         if ($_POST['roles'] == 'Broker' || $_POST['roles'] == 'Shipyard'){
             $admin_mail_content .= __("Company Name: ","framework").$company. "\r\n";
         }
-		$admin_mail_content .= __("Email: ","framework").$email. "\r\n";
+        $admin_mail_content .= __("Email: ","framework").$email. "\r\n";
+        $admin_mail_content .= __("Role: ","framework").$role. "\r\n";
+		$admin_mail_content .= "<p>".__("Email: ","framework").$email."</p>";
         $admin_mail_content .= __("Role: ","framework").$role. "\r\n";
 		$admin_msg = wordwrap( $admin_mail_content, 70 );
 		$admin_headers = "From: $email" . PHP_EOL;
@@ -2677,8 +2847,8 @@ function imic_agent_register() {
 							array(
 								'user_pass' => apply_filters('pre_user_user_pass', $pwd1), 
 								'user_login' => apply_filters('pre_user_user_login', $username), 
-								'user_email' => apply_filters('pre_user_user_email', $email),
-                                'role' => 'pending_user')
+								'user_email' => apply_filters('pre_user_user_email', $email), 
+								'role' => 'pending_user')
 							);
 			$my_post = array(
   'post_title'    => $username,
@@ -2697,10 +2867,10 @@ wp_update_user( array( 'ID' => $user_id, 'last_name' => $lastname) );
 update_post_meta($post_id,'imic_user_company',$company);
 							
 			if (is_wp_error($user_id)) {
-				$err = 'Error on user creation.';
-			} else {
-				do_action('user_register', $user_id);
-				$success = 'Thank you for your registration, you will be receiving an email once your account has been approved.';
+                $err = 'Error on user creation.';
+            } else {
+                do_action('user_register', $user_id);
+                $success = 'Thank you for your registration, you will be receiving an email once your account has been approved.';
                 //$success = 'Thank you for your registration, you will be redirected in a moment.';
                                 // $info_register = array();
                                 // $info_register['user_login'] = $username;
@@ -2714,10 +2884,10 @@ update_post_meta($post_id,'imic_user_company',$company);
 	if (!empty($err)) :
 		echo '<div class="alert alert-error">' . $err . '</div>';
 	endif;
-
+	
 	if (!empty($success)) :
-		wp_mail($admin_mail_to, $mail_subject, $admin_msg);	
-		wp_mail($email, $mail_subject, $dealer_msg);
+        wp_mail($admin_mail_to, $mail_subject, $admin_msg); 
+        wp_mail($email, $mail_subject, $dealer_msg);
 		echo '<div class="alert alert-success">' . $success . '</div>';
 	endif;
     die();
@@ -2769,7 +2939,7 @@ function imic_search_dealers() {
                                         <div class="dealer-block-add">';
 										if(!empty($user_info)) {
                                             echo '<span>'.__('Member since','framework').' <strong>'.date("M, Y", strtotime($user_info->user_registered)).'</strong></span>'; }
-                                            echo '<span>'.__('Total listings','framework').' <strong>'.imic_count_user_posts_by_type($user_id,'cars').'</strong></span>
+                                            echo '<span>'.__('Total listings','framework').' <strong>'.imic_count_user_posts_by_type($user_id,'yachts').'</strong></span>
                                         </div>
                                     </div>
                                     <div class="text-align-center"><a href="'.get_author_posts_url($user_id).'" class="btn btn-default">'.__('View profile','framework').'</a></div>
@@ -3193,7 +3363,7 @@ add_action( 'edit_user_profile_update', 'imic_save_agent_field' );
 if(!function_exists('imic_get_currency_symbol')){
 function imic_get_currency_symbol( $currency = '' ) {
 	if ( ! $currency ) {
-		$currency = imic_get_currency();
+		$currency = 'USD';
 	}
 	switch ( $currency ) {
 		case 'AED' :
@@ -3344,39 +3514,50 @@ if(!function_exists('imic_update_listing_date'))
 	}
 	imic_update_listing_date();
 }
-if(!function_exists('imic_langcode_post_id'))
-{
-	function imic_langcode_post_id($post_id)
-	{
-		if (class_exists('SitePress')) 
-		{
-    global $wpdb;
- 
-    $query = $wpdb->prepare('SELECT language_code FROM ' . $wpdb->prefix . 'icl_translations WHERE element_id="%d"', $post_id);
-    $query_exec = $wpdb->get_row($query);
- 
-    return $query_exec->language_code;
-		}
-	}
-}
 if(!function_exists('imic_filter_lang_specs'))
 {
-	function imic_filter_lang_specs($specs)
+	function imic_filter_lang_specs($specs, $listing_terms = array())
 	{
 		$new_specs = array();
 		if((!empty($specs))&&(class_exists('SitePress')))
 		{
 			foreach($specs as $spec)
 			{
-				if(class_exists('SitePress')&&ICL_LANGUAGE_CODE==imic_langcode_post_id( $spec ))
+				if(!empty($listing_terms))
 				{
-					$new_specs[] = $spec;
+					if(class_exists('SitePress')&&ICL_LANGUAGE_CODE==imic_langcode_post_id( $spec ))
+					{
+						if(has_term( $listing_terms, 'listing-category', $spec ))
+						{
+							$new_specs[] = $spec;
+						}
+					}
+				}
+				else
+				{
+					if(class_exists('SitePress')&&ICL_LANGUAGE_CODE==imic_langcode_post_id( $spec ))
+					{
+							$new_specs[] = $spec;
+					}
 				}
 			}
 		}
 		else
 		{
-			$new_specs = $specs;
+			if(!empty($listing_terms))
+			{
+				foreach($specs as $spec)
+				{
+					if(has_term( $listing_terms, 'listing-category', $spec ))
+					{
+						$new_specs[] = $spec;
+					}
+				}
+			}
+			else
+			{
+				$new_specs = $specs;
+			}
 		}
 		return $new_specs;
 	}
@@ -3386,9 +3567,16 @@ if(!function_exists('imic_update_specifications_type'))
 	function imic_update_specifications_type()
 	{
 		global $imic_options;
-		$specification_field_type = (isset($imic_options['specification_fields_type']))?$imic_options['specification_fields_type']:0;
 		$specifications_upd_st = get_option('imic_specifications_upd_st');
-		if($specifications_upd_st==''&&$specifications_upd_st!=1&&$specification_field_type==1)
+		$data_import_status = get_option('imic_data_imported_status');
+		$listings_arg = array('post_type'=>'yachts', 'posts_per_page' => -1);
+		if($specifications_upd_st==''&&$specifications_upd_st!=1)
+		{
+			$listing_posts = new WP_Query($listings_arg);
+			$total_listings = $listing_posts->found_posts;
+			wp_reset_postdata();
+		}
+		if($specifications_upd_st==''&&$specifications_upd_st!=1&&$data_import_status==1)
 		{
 			$specificiations_arg = array('post_type'=>'specification', 'posts_per_page'=>-1, 'meta_query'=>array(array('key'=>'imic_plugin_spec_char_type', 'value'=>0, 'compare'=>'=')));
 			$specifications_posts = new WP_Query($specificiations_arg);
@@ -3399,7 +3587,7 @@ if(!function_exists('imic_update_specifications_type'))
 				endwhile;
 			endif;
 			wp_reset_postdata();
-			$listings_arg = array('post_type'=>'cars', 'posts_per_page' => -1);
+			$listings_arg = array('post_type'=>'yachts', 'posts_per_page' => -1);
 			$listing_posts = new WP_Query($listings_arg);
 			if($listing_posts->have_posts()):
 				while($listing_posts->have_posts()):
@@ -3417,7 +3605,7 @@ if(!function_exists('imic_update_specifications_type'))
 								$second_key = array_search($specs*111, $feat_data['sch_title']);
 								if(is_int($second_key)) 
 								{ 
-									$val = ' '.$feat_data['start_time'][$second_key];
+									$val = $feat_data['start_time'][$second_key];
 							 		update_post_meta(get_the_ID(), 'child_'.$this_slug, $val);
 								}
 								if(is_int($detailed_spec_key)) 
@@ -3437,12 +3625,99 @@ if(!function_exists('imic_update_specifications_type'))
 			update_option('imic_specifications_upd_st', 1);
 		}
 	}
-	imic_update_specifications_type();
+	if(!is_admin())
+	{
+		imic_update_specifications_type();
+	}
 }
 if(!function_exists('imic_encode_spaces'))
 {
 function imic_encode_spaces($string){
     return str_replace(' ', '%20', $string);
 }
+}
+if(!function_exists("imic_list_child_specs"))
+{
+	function imic_list_child_specs()
+	{
+		$spec_id = (isset($_POST['specid']))?$_POST['specid']:'';
+		$spec_val = (isset($_POST['parent']))?$_POST['parent']:'';
+		$list_id = (isset($_POST['listid']))?$_POST['listid']:'';
+		if($spec_id!=''&&$spec_val!='')
+		{
+			$char_slug = imic_the_slug($spec_id);
+			$spec_value = '';
+			$current_value = get_post_meta($list_id, 'child_'.$char_slug, true);
+			$values = get_post_meta($spec_id,'specifications_value',true);
+			echo '<select type="text" class="meta_feat_title rwmb-select" name="child_'.esc_attr($char_slug).'">';
+              foreach($values as $value) {
+								if($spec_val==$value['imic_plugin_specification_values'])
+								{
+									$child_vals = $value['imic_plugin_specification_values_child'];
+									$child_vals = explode(',', $child_vals);
+									break;
+								}
+							}
+							foreach($child_vals as $val)
+							{
+								$selected = ($current_value==$val||$current_value==" ".$val)?'selected':'';
+								echo '<option '.$selected.' value="'.$val.'">'.$val.'</option>';
+							}
+             echo '</select>';
+		}
+		die();
+	}
+	add_action('wp_ajax_nopriv_imic_list_child_specs', 'imic_list_child_specs');
+	add_action('wp_ajax_imic_list_child_specs', 'imic_list_child_specs');
+}
+if(!function_exists('imic_contact_site_plans'))
+{
+	function imic_contact_site_plans()
+	{
+		$tx = (isset($_POST['transaction']))?$_POST['transaction']:'';
+		$message = (isset($_POST['message']))?$_POST['message']:'';
+		$plan_id = (isset($_POST['plan']))?$_POST['plan']:'';
+		if($tx!='')
+		{
+			$paypal_details = imic_validate_payment($tx);
+			if(!empty($paypal_details))
+			{
+				$st = $paypal_details['payment_status'];
+				$payment_gross = $paypal_details['payment_gross'];
+				global $current_user;
+				get_currentuserinfo();
+				$user_id = get_current_user_id( );
+				$current_user = wp_get_current_user();
+				$user_info_id = get_user_meta($user_id,'imic_user_info_id',true);
+				$site_manager_email = get_option('admin_email');
+				$manager_email = esc_attr($site_manager_email);
+				$dealer_name = get_the_title($user_info_id);
+				$e_subject = __('Payment Related Query','framework');
+				$e_body = __("You have been contacted by $dealer_name ","framework"). PHP_EOL . PHP_EOL;
+				$e_content = '';
+				$e_content .= __("Name: ","framework").$dealer_name. PHP_EOL . PHP_EOL;
+				$e_content .= __("Email: ","framework").$current_user->user_email. PHP_EOL . PHP_EOL;
+				$e_content .= __("Plan: ","framework").get_the_title($plan_id). PHP_EOL . PHP_EOL;
+				$e_content .= __("Transaction ID: ","framework").$paypal_details['txn_id']. PHP_EOL . PHP_EOL;
+				$e_content .= __("Payment Status: ","framework").$paypal_details['payment_status']. PHP_EOL . PHP_EOL;
+				$e_content .= __("Message: ","framework").$message. PHP_EOL . PHP_EOL;
+				$e_reply = __("You can contact ","framework").$dealer_name.__(" via email, ","framework").$current_user->user_email;
+				$msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
+				$headers = __("From: ","framework").$current_user->user_email. PHP_EOL;
+				$headers .= __("Reply-To: ","framework").$current_user->user_email. PHP_EOL;
+				$headers .= "MIME-Version: 1.0" . PHP_EOL;
+				$headers .= "Content-type: text/plain; charset=utf-8" . PHP_EOL;
+				$headers .= "Content-Transfer-Encoding: quoted-printable" . PHP_EOL;
+				if(mail($manager_email, $e_subject, $msg, $headers)) {
+					echo "<div class=\"alert alert-success\">".__('Thank you', 'framework')." <strong>$dealer_name</strong>, ".__('your message has been submitted to us.', 'framework')."</div>";
+				} else {
+					echo '<div class="alert alert-error">ERROR!</div>';
+				}
+			}
+		}
+		die();
+	}
+	add_action('wp_ajax_nopriv_imic_contact_site_plans', 'imic_contact_site_plans');
+	add_action('wp_ajax_imic_contact_site_plans', 'imic_contact_site_plans');
 }
 ?>
