@@ -2109,6 +2109,7 @@ body.admin-bar .site-header-wrapper{
 	height:auto;
 	position:relative;
 	z-index:555;
+	margin-top: 8px;
 }
 .share-text{
 	line-height:40px;
@@ -5171,11 +5172,13 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 	position:relative;
 	margin-bottom:-55px;
 	background-color:#ccc;
+	display: none;
 }
 .page-header h1.page-title{
 	color:#fff;
 	padding:105px 0 0;
 	margin:0;
+	display: none;
 }
 .prosite-header{
 	min-height:300px;

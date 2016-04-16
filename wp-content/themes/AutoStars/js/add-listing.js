@@ -111,17 +111,6 @@ jQuery(".find-cars").click(function(){
     }
     $images = jQuery("input[name=file]").val(names);
 });
-jQuery(".tabs-listing").live("click", function(){
-	if(jQuery(this).hasClass("pending")||jQuery(this).hasClass("completed")||jQuery(this).hasClass("active"))
-	{
-		jQuery("#message").html();
-	}
-	else
-	{
-		jQuery(this).parent().find(".pending").addClass("active");
-		jQuery("#message").html('<div class="alert alert-error">'+adds.tabs+'</div>');
-	}
-});
 	jQuery(".save-searched-value").live('click',function() {
 		$sb = jQuery(this).attr("id");
 		var $matched_id = jQuery(this).attr('id');
@@ -136,6 +125,7 @@ jQuery(".tabs-listing").live("click", function(){
 		var $selling_option = jQuery("input[name=Loan-Tenure]:checked").val();
 		var $edit_post = jQuery("#vehicle-id").attr('class');
 		var $mileage = jQuery("#mileage-add").val();
+		var $features = jQuery("#featcontent").val();
 		var $category = imic_get_query_val('list-cat');
 		var $search_val = [], hash;
 		var $specs_ids = [], hash;
@@ -154,7 +144,7 @@ jQuery(".tabs-listing").live("click", function(){
 		if(jQuery(".listing-images-uploads").val()=='')
 		{
 			jQuery("#message").empty(); 
-			jQuery("#message").append('<div class="alert alert-error">'+adds.noimage+'</div>'); 
+			jQuery("#message").append('<div class="alert alert-error">Please upload images.</div>'); 
 			jQuery("#photoimg").addClass("input-error");
 			notvalid = false;
 		}
@@ -169,13 +159,8 @@ jQuery(".tabs-listing").live("click", function(){
 		}
 		jQuery('.listing-form-content > div.active input.custom-cars-fields').each(function(e) { 
 		if (jQuery( this ).hasClass( "mandatory" )) {
-			if(jQuery(this).hasClass("finder"))
-			{
-			}
-			else
-			{
-				var intRegex = /^\d+$/;
-				var floatRegex = /^((\d+(\.\d *)?)|((\d*\.)?\d+))$/;
+			var intRegex = /^\d+$/;
+			var floatRegex = /^((\d+(\.\d *)?)|((\d*\.)?\d+))$/;
 				if((jQuery(this).hasClass("integer-val"))&&(!floatRegex.test(jQuery(this).val())))
 				{
 					jQuery(this).addClass("input-error");
@@ -183,33 +168,19 @@ jQuery(".tabs-listing").live("click", function(){
 				}
 				else if(jQuery(this).val()=='') 
 				{
-					jQuery(this).addClass("input-error");
-					notvalid = false; 
+				jQuery(this).addClass("input-error");
+				notvalid = false; 
 				}
 				else {
 				jQuery(this).removeClass("input-error");
 				valid = true;
 				}
 			}
-			}
-			if((notvalid==true)&&(valid==true)) 
-			{ 
-			isValid = true; 
-			} 
-			else 
-			{ 
-			isValid = false; 
-			}
+			if((notvalid==true)&&(valid==true)) { isValid = true; } else { isValid = false; }
 		}); }
 		if($matched_id=="ss") {
 		jQuery('.listing-form-content > div.active .custom-cars-fields .selectpicker span.filter-option, .listing-form-content > div.active input.custom-cars-fields').each(function(index, item) { 
 		if ( jQuery( this ).parent().parent().hasClass( "mandatory" ) ) {
-			if(jQuery(this).parent().parent().hasClass("finder"))
-			{
-				
-			}
-			else
-			{
 				if(jQuery(this).text()=='Select') {
 				jQuery(this).parent().addClass("input-error");
 				notvalid = false; }
@@ -218,15 +189,7 @@ jQuery(".tabs-listing").live("click", function(){
 				valid = true;
 				}
 			}
-			}
-			if((notvalid==true)&&(valid==true)) 
-			{ 
-			isValid = true; 
-			} 
-			else 
-			{ 
-			isValid = false; 
-			}
+			if((notvalid==true)&&(valid==true)) { isValid = true; } else { isValid = false; }
 			if(jQuery(item).is(':input')) { $search_val.push(jQuery(item).val()); }
 		else { $search_val.push(jQuery(item).text()); }
 		}); }
@@ -245,19 +208,13 @@ jQuery(".tabs-listing").live("click", function(){
 					if($on=="1") 
 					{
 						$tags.push($id);
-						//$tags[$on+$id] = $id; Was used to make unique index of tags (Now we are using tag ID instead of slug)
+						$tags[$on+$id] = $id; 
 					}
 			}); 
 		}
 		if($matched_id=="ss") 
 		{
-		  if (isValid == false) 
-			{	
-			jQuery('html, body').animate({
-        scrollTop: jQuery("#main-form-content").offset().top
-    }, 2000);
-			return false; 
-			} 
+		  if (isValid == false) {	return false; } 
 		}
 		jQuery("#vehicle-id").removeClass();
 		if($matched_id!="ss") { $matched_id = $matched_id; } else { $matched_id = ""; }
@@ -273,14 +230,13 @@ jQuery(".tabs-listing").live("click", function(){
 				mids: $specs_ids,
 				post_id: $edit_post,
 				tags: $tags,
+				features: $features,
 				phone: $phone,
 				email: $email,
 				price: $price,
 				listing_view: $selling_option,
 				steps: $parent_div_id,
-				category: $category,
-				remain: adds.remain,
-				plan: adds.plans
+				category: $category
             },
             success: function(data) {
 				var $total_percent = jQuery('.completed').length;
@@ -305,9 +261,6 @@ jQuery(".tabs-listing").live("click", function(){
 				jQuery('#results-holder').each(function() {
 				jQuery(this).find('.result-item').matchHeight();
 			});
-			jQuery('html, body').animate({
-        scrollTop: jQuery("#main-form-content").offset().top
-    }, 2000);
             },
             error: function(errorThrown) {
             }
@@ -373,7 +326,7 @@ jQuery(".tabs-listing").live("click", function(){
                 success: function(msg){
 					jQuery("#loading-listing-save").hide();
 					jQuery("#message").empty();
-					jQuery("#message").append('<div class="alert alert-success">'+adds.successaved+'</div>');
+					jQuery("#message").append('<div class="alert alert-success">Successfully Saved.</div>');
 					jQuery('#photoimg').val(''); 
 					jQuery('.tabs-listing[data-rel='+$parent_div_id+']').addClass('completed');
 					jQuery('.tabs-listing[data-rel='+$parent_div_id+']').removeClass('active pending');
@@ -398,7 +351,7 @@ jQuery(".tabs-listing").live("click", function(){
                 success: function(msg){
 					jQuery("#loading-listing-save").hide();
 					jQuery("#message").empty();
-					jQuery("#message").append('<div class="alert alert-success">'+adds.successaved+'</div>');
+					jQuery("#message").append('<div class="alert alert-success">Successfully Saved.</div>');
 					jQuery('#photoimg').val(''); 
 					jQuery('.tabs-listing[data-rel='+$parent_div_id+']').addClass('completed');
 					jQuery('.tabs-listing[data-rel='+$parent_div_id+']').removeClass('active pending');
@@ -537,13 +490,13 @@ jQuery(".tabs-listing").live("click", function(){
 		if($uzip=='') { jQuery("#uzip").addClass("input-error"); } else { jQuery("#uzip").removeClass("input-error"); }
 		if($ucity=='') { jQuery("#ucity").addClass("input-error"); } else { jQuery("#ucity").removeClass("input-error"); }
 		if($fname!=''&&$lname!=''&&$uphone!=''&&$uzip!=''&&$ucity!='') {
-			if(values.plans=="1"&&adds.remain!="1") 
+			if(values.plans=="1") 
 			{
 						
 				if((imic_get_query_val("plans")=="")||(imic_get_query_val("plans")==="none")||($form_action==''))
 				 {
 					 jQuery("#message").empty(); 
-					 jQuery("#message").append('<div class="alert alert-error">'+adds.selectplan+'</div>'); 
+					 jQuery("#message").append('<div class="alert alert-error">Please select payment plan</div>'); 
 					 return false;
 				 } 
 				else 
@@ -557,13 +510,6 @@ jQuery(".tabs-listing").live("click", function(){
 				var $vehicle_ids = jQuery("#vehicle-id").attr("class");
 				var $url_thank = imic_update_url("edit",$vehicle_ids,$form_action);
 				jQuery('#uploadfrm').attr('action', $url_thank);
-			}
-			if(adds.remain=="1") 
-			{
-				var $form_actions = jQuery('#uploadfrm').attr('action');
-				var $vehicle_ids = jQuery("#vehicle-id").attr("class");
-				var $url_thanks = imic_update_url("tx",$vehicle_ids*4,$form_actions);
-				jQuery('#uploadfrm').attr('action', $url_thanks);
 			}
 			jQuery("#loading-listing-save").show();
 			var $query_vars_val = getUrlParams_ads();

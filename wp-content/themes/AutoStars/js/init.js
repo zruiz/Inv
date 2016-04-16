@@ -599,6 +599,18 @@ $(document).ready(function(){
 	    $(this).parent().find('input.search-range').val(value2+"-"+value);
 	});
 
+	$("#range1_range_builder-year").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range2_range_builder-year").val();
+	    $(this).parent().find('input.search-range').val(value+"-"+value2);
+	});
+
+	$("#range2_range_builder-year").change(function () {
+	    var value = this.value;
+	    var value2 = jQuery("#range1_range_builder-year").val();
+	    $(this).parent().find('input.search-range').val(value2+"-"+value);
+	});
+
 	$('.password-show').click(function(){
 		var $rel = $(this).attr("rel");
 		if($rel=="0") { $(this).attr("rel","1"); $("#pwd1").attr("type","text"); $("#pwd2").attr("type","text"); }
