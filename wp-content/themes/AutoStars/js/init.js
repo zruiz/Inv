@@ -3,14 +3,14 @@ jQuery(function($){
 	$("form.searchoneform").submit(function()
     { 
     	if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
-		if ($("input[name='builder-year']").val() == '') $("input[name='builder-year']").attr("disabled", "disabled");
+		if ($("input[name='range_builder-year']").val() == '') $("input[name='range_builder-year']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits
     });
 	$("form.search1, form.search2").submit(function()
     { 
         if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
-		if ($("input[name='builder-year']").val() == '') $("input[name='builder-year']").attr("disabled", "disabled");
+		if ($("input[name='range_builder-year']").val() == '') $("input[name='range_builder-year']").attr("disabled", "disabled");
 		if ($("input[name='range_loa']").val() == '') $("input[name='range_loa']").attr("disabled", "disabled");
 		if ($("input[name='range_price']").val() == '') $("input[name='range_price']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");

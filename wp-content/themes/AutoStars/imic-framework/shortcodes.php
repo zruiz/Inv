@@ -868,7 +868,8 @@ $output = '<form class="'.$form_class.'" method="get" action="'.esc_url($listing
 										$output .= '<div class="col-md-4 col-sm-4">';
 										if($int==1)
 										{ ?>
-											<b><?php $output .= esc_attr(get_the_title($field)); $output .= ' ('.$value_label.")"; ?> 
+											<b><?php if (get_the_title($field) == 'Year') { $output .= esc_attr(get_the_title($field)); }else{ ?>
+											   <?php $output .= esc_attr(get_the_title($field)); $output .= ' ('.$value_label.")"; } ?> 	 
 											   <?php $output .= '<input class="search-range" type="hidden" name="'.esc_attr($spec_slug).'" value="">';?> 
 											   <?php //$output .= '<span class="left">'.esc_attr($min_val).'</span> - '?>
 											   <?php $output .= '<div class="hidden-slider" style="display:none;"> <input id="ex2" type="text" class="span2" value="" data-slider-min="'.esc_attr($min_val).'" data-slider-max="'. esc_attr($max_val).'" data-slider-step="'. esc_attr($steps).'" data-slider-value="['. esc_attr($min_val).','. esc_attr($max_val).']" data-imic-start="" data-imic-end=""/></div><input class="form-control" id="range1_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="Min"/> <input class="form-control" id="range2_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="Max" />';?>
