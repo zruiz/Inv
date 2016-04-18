@@ -41,7 +41,7 @@ if($banner_type==1) {
     	<div id="contact-map" style="width:100%;height:300px"></div>
     </div>';
 }else { ?>
-<div class="page-header parallax" style="background-image:url(<?php echo esc_url($image); ?>); background-color:<?php echo esc_attr($color) ?>; height:<?php echo esc_attr($height).'px' ?>;">
+<div class="page-header parallax banner" style="background-image:url(<?php echo esc_url($image); ?>); background-color:<?php echo esc_attr($color) ?>; height:<?php echo esc_attr($height).'px' ?>;">
     	<div class="container">
         	<h1 class="page-title"><?php echo get_the_title(); ?></h1>
        	</div>
