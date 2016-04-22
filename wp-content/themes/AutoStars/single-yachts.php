@@ -379,6 +379,53 @@ $loggedUserEmail = $current_user->user_email;
 										$label_positions = get_post_meta($normal,'imic_plugin_lable_position',true);
 										$badge_slug = imic_the_slug($normal);
 										$this_specification = get_post_meta(get_the_ID(), 'feat_data', true);
+										$new_value_labels = '';
+										$new_value_conv = '';
+										switch ($value_labels) {
+											case 'ft':
+												$new_value_labels = 'm';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)/3.2808,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'm':
+												$new_value_labels = 'ft';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*3.2808,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'NM':
+												$new_value_labels = 'miles';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*1.15078,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'miles':
+												$new_value_labels = 'NM';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)/1.15078,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'l':
+												$new_value_labels = 'gal';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)/3.78541,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'gal':
+												$new_value_labels = 'l';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*3.78541,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'kt':
+												$new_value_labels = 'mph';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*1.15078,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											case 'mph':
+												$new_value_labels = 'kt';
+												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)/1.15078,2);
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
+												break;
+											default:
+												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels;
+												break;
+										}
 									if($field_type==1) {
 										if($label_positions==0) {
 											echo '<tr>
@@ -386,9 +433,10 @@ $loggedUserEmail = $current_user->user_email;
                                                             		<td>'.$value_labels.get_post_meta($id,'int_'.$badge_slug,true).'</td>
                                                             	</tr>'; }
 										else {
+											
 											echo '<tr>
                                                             		<td>'.get_the_title($normal).'</td>
-                                                            		<td>'.get_post_meta($id,'int_'.$badge_slug,true).$value_labels.'</td>
+                                                            		<td>'.$str.'</td>
                                                             	</tr>'; }
 									} else {
 										if($specification_data_type=="0")

@@ -586,12 +586,12 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
 													if($label!='') 
 													{
 														echo '<div class="input-group">
-														<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="'.get_the_title($field).'">
+														<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="">
 														<span class="input-group-addon">'.$label.'</span></div>'; 
 													}
 													else 
 													{
-														echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="'.get_the_title($field).'">'; 
+														echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.$required.' '.$int_value.'" placeholder="">'; 
 													}	
 												}
                                                	if(($st==$half)) 
