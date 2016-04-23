@@ -3,7 +3,7 @@ jQuery(function($){
 	$("form.searchoneform").submit(function()
     { 
     	if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
-		if ($("input[name='range_builder-year']").val() == '') $("input[name='range_builder-year']").attr("disabled", "disabled");
+		//if ($("input[name='range_builder-year']").val() == '') $("input[name='range_builder-year']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits
     });
@@ -16,6 +16,7 @@ jQuery(function($){
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits
     });
+
      $(".add-listing").click(function()
     { 
         jQuery("#PaymentModal").modal('show');
@@ -611,6 +612,10 @@ $(document).ready(function(){
 	    $(this).parent().find('input.search-range').val(value2+"-"+value);
 	});
 
+	if ( $("#search-tab li").length ){
+		$('body,html').animate({ scrollTop: "612" }, 750, 'easeOutExpo' );
+	}
+
 	$('.password-show').click(function(){
 		var $rel = $(this).attr("rel");
 		if($rel=="0") { $(this).attr("rel","1"); $("#pwd1").attr("type","text"); $("#pwd2").attr("type","text"); }
@@ -762,6 +767,7 @@ $(document).ready(function(){
 	
 	if($("#results-holder").hasClass("results-grid-view")){
 		AUTOSTARS.RESULTS();
+
 	}
 	//* Advanced Search Trigger
 	$('.search-advanced-trigger').on("click", function() {	
