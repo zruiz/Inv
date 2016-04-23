@@ -927,7 +927,7 @@ $order = $term_slug = $have_int = '';
 $posts_page = get_option('posts_per_page');
 $paged = (get_query_var('paged'))?get_query_var('paged'):'';
 $value = $pagin = $offset = $off = '';
-$count = 1;
+$count = $convertor = 1;
 $filters_type = (isset($imic_options['filters_type']))?$imic_options['filters_type']:'';
 $data_page = ($filters_type==1)?'yes':'';
 $default_image_src = (isset($imic_options['default_car_image']))?$imic_options['default_car_image']['url']:'';
@@ -947,6 +947,10 @@ foreach($data as $key=>$value)
 			$paged = $value;
 			$posts_page = get_option('posts_per_page');
 		}
+        elseif($key=="options")
+        {
+            if ($value == 'm') $convertor = 3.28084;
+        }
 		elseif($key=="list-cat")
 		{
 			$term_slug = $value;
@@ -972,8 +976,8 @@ foreach($data as $key=>$value)
 			if(strpos($key,'range_') !== false)
 			{
 				$new_val = explode("-", $value);
-				$value = $new_val[1];
-				$pm_value = $new_val[0];
+				$value = $new_val[1]*$convertor;
+				$pm_value = $new_val[0]*$convertor;
 				$key = explode("_", $key);
 				$key = "int_".$key[1];
 				$arrays[$count++] = array(

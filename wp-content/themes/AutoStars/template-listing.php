@@ -471,7 +471,7 @@ $qrs = imic_queryToArray($_SERVER['QUERY_STRING']);
                             </div>
                         	<div id="results-holder" class="results-<?php echo esc_attr($listing_type); ?>-view">
                             	<?php $paged = (get_query_var('paged'))?get_query_var('paged'):''; $arrays = $term_array = array(); 
-								$value = $pagin = $offset = $have_int = $off = ''; $count = 1; 
+								$value = $pagin = $offset = $have_int = $off = ''; $count = $convertor = 1; 
 if(!empty($qrs)) 
 { 
 	foreach($qrs as $key=>$value)
@@ -493,6 +493,10 @@ if(!empty($qrs))
 			$paged = $value;
 			$posts_page = get_option('posts_per_page');
 		}
+        elseif($key=="options")
+        {
+            if ($value == 'm') $convertor = 3.28084;
+        }
 		elseif($key=='specification-search')
 		{
 			$sval = explode('%20', $value);
@@ -512,8 +516,8 @@ if(!empty($qrs))
 			if(strpos($key,'range_') !== false)
 			{   
 				$new_val = explode("-", $value);
-				$value = $new_val[1];
-				$pm_value = $new_val[0];
+				$value = $new_val[1]*$convertor;
+				$pm_value = $new_val[0]*$convertor;
 				$key = explode("_", $key);
 				$key = "int_".$key[1];
 				$arrays[$count++] = array(
