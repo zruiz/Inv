@@ -11,7 +11,7 @@ jQuery(function($){
     { 
         if ($("input[name='specification-search']").val() == '') $("input[name='specification-search']").attr("disabled", "disabled");
 		if ($("input[name='range_builder-year']").val() == '') $("input[name='range_builder-year']").attr("disabled", "disabled");
-		if ($("input[name='range_loa']").val() == '') $("input[name='range_loa']").attr("disabled", "disabled");
+		if ($("input[name='range_loa']").val() == '') { $("input[name='range_loa']").attr("disabled", "disabled"); $("input[name='options']").attr("disabled", "disabled") }
 		if ($("input[name='range_price']").val() == '') $("input[name='range_price']").attr("disabled", "disabled");
         //$(this).find(':input[value=""]').attr("disabled", "disabled");
         return true; // ensure form still submits

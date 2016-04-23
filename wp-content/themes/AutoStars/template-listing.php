@@ -396,7 +396,7 @@ $qrs = imic_queryToArray($_SERVER['QUERY_STRING']);
             <div class="col-md-12">
             <ul class="search-tabs nav nav-pills" id="search-tab">
             <?php if(!empty($qrs)) { foreach($qrs as $key=>$value) {
-				if(!get_query_var($key)&&$key!="order"&&$key!="pg"&&$key!="pagin"&&$key!="list-cat") {
+				if(!get_query_var($key)&&$key!="order"&&$key!="pg"&&$key!="pagin"&&$key!="list-cat"&&$key!="options") {
 				if($value!='') {
                     echo '<li id="'.urldecode($key).'"><a href="javascript:void(0);">'.urldecode($value).' <i class="fa fa-times"></i></a></li>';
 				} }
@@ -510,7 +510,7 @@ if(!empty($qrs))
 		{
 			if (strpos($key,'int_') !== false||strpos($key,'range_') !== false) {
 			if(strpos($key,'range_') !== false)
-			{
+			{   
 				$new_val = explode("-", $value);
 				$value = $new_val[1];
 				$pm_value = $new_val[0];
@@ -540,6 +540,13 @@ if(!empty($qrs))
                     	'compare' => '=',
              		);
 				} 
+                elseif (strpos($key,'options') !== false) {
+                    $arrays[$count] = array(
+                            'key' => 'imic_plugin_ad_payment_status',
+                            'value' =>  '1',
+                            'compare' => '=',
+                            );
+                }
 				else 
 				{
 							$sval_arr = str_replace('%20', ' ', $value);

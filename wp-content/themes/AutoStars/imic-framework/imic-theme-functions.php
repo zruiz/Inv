@@ -998,7 +998,13 @@ foreach($data as $key=>$value)
                     'value' =>  $value,
                     'compare' => '=',
                     );
-		}
+		}elseif (strpos($key,'options') !== false) {
+            $arrays[$count] = array(
+                    'key' => 'imic_plugin_ad_payment_status',
+                    'value' =>  '1',
+                    'compare' => '=',
+                    );
+        }
 		 else {
         $arrays[$count] = array(
                     'key' => 'feat_data',

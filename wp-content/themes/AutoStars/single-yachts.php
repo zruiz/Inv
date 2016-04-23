@@ -392,13 +392,13 @@ $loggedUserEmail = $current_user->user_email;
 												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*3.2808,2);
 												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
 												break;
-											case 'NM':
-												$new_value_labels = 'miles';
+											case 'nm':
+												$new_value_labels = 'mi';
 												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)*1.15078,2);
 												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
 												break;
-											case 'miles':
-												$new_value_labels = 'NM';
+											case 'mi':
+												$new_value_labels = 'nm';
 												$new_value_conv = number_format(get_post_meta($id,'int_'.$badge_slug,true)/1.15078,2);
 												$str = get_post_meta($id,'int_'.$badge_slug,true).' '.$value_labels.' ('.$new_value_conv. ' '.$new_value_labels.')';
 												break;

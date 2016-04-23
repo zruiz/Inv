@@ -875,7 +875,16 @@ $output = '<form class="'.$form_class.'" method="get" action="'.esc_url($listing
 											   <?php $output .= '<div class="hidden-slider" style="display:none;"> <input id="ex2" type="text" class="span2" value="" data-slider-min="'.esc_attr($min_val).'" data-slider-max="'. esc_attr($max_val).'" data-slider-step="'. esc_attr($steps).'" data-slider-value="['. esc_attr($min_val).','. esc_attr($max_val).']" data-imic-start="" data-imic-end=""/></div><input class="form-control" id="range1_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="From"/> <input class="form-control" id="range2_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="To" />';?>
 											   <?php //$output .= '<span class="right">'.esc_attr($max_val).'</span></b><div class="hidden-slider" style="display:none;"> <input id="ex2" type="text" class="span2" value="" data-slider-min="'.esc_attr($min_val).'" data-slider-max="'. esc_attr($max_val).'" data-slider-step="'. esc_attr($steps).'" data-slider-value="['. esc_attr($min_val).','. esc_attr($max_val).']" data-imic-start="" data-imic-end=""/></div><input class="form-control" id="1" type="text" class="span2" value=""/> <input class="form-control" id="2" type="text" class="span2" value=""/>';?>
 											<?php }else{ ?>
-											   <?php $output .= esc_attr(get_the_title($field)); $output .= ' ('.$value_label.")"; ?> 	 
+											   <?php if (get_the_title($field) == 'LOA') {
+											   $output .=   ' <span> LOA</span> <div class="btn-group" data-toggle="buttons" style="float: right;padding-bottom: 3px;">
+																	     <label class="btn btn-default btn-xs active">
+																		    <input type="radio" name="options" id="option1" autocomplete="off" value="ft" checked> ft
+																		  </label>
+																	     <label class="btn btn-default btn-xs">
+																		    <input type="radio" name="options" id="option2" autocomplete="off" value="m"> m
+																		  </label>
+															</div>'; ?>
+											   <?php } else { $output .= '<span>'.esc_attr(get_the_title($field)).'</span>'; $output .= ' ('.$value_label.")"; } ?> 
 											   <?php $output .= '<input class="search-range" type="hidden" name="'.esc_attr($spec_slug).'" value="">';?> 
 											   <?php //$output .= '<span class="left">'.esc_attr($min_val).'</span> - '?>
 											   <?php $output .= '<div class="hidden-slider" style="display:none;"> <input id="ex2" type="text" class="span2" value="" data-slider-min="'.esc_attr($min_val).'" data-slider-max="'. esc_attr($max_val).'" data-slider-step="'. esc_attr($steps).'" data-slider-value="['. esc_attr($min_val).','. esc_attr($max_val).']" data-imic-start="" data-imic-end=""/></div><input class="form-control" id="range1_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="Min"/> <input class="form-control" id="range2_'.esc_attr($spec_slug).'" type="text" class="span3" value="" placeholder="Max" />';?>
