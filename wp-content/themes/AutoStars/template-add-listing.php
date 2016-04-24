@@ -737,9 +737,9 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
 															$required_value = get_post_meta($update_id,'int_'.$spec_slug,true); }
 														}
 														if($label!='') {
-														echo '<div class="input-group"><input '.esc_attr($disable).' type="text" id="'.esc_attr($input_id).'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.esc_attr($required).esc_attr($int_value).'" placeholder="'.get_the_title($field).'"><span class="input-group-addon">'.$label.'</span></div>'; }
+														echo '<div class="input-group"><input '.esc_attr($disable).' type="text" id="'.esc_attr($input_id).'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.esc_attr($required).esc_attr($int_value).'" placeholder=""><span class="input-group-addon">'.$label.'</span></div>'; }
 														else {
-														echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.esc_attr($required).esc_attr($int_value).'" placeholder="'.get_the_title($field).'">'; }	
+														echo '<input '.$disable.' type="text" id="'.$input_id.'" value="'.$required_value.'" name="'.basename(get_permalink($field)).'" class="form-control custom-cars-fields '.esc_attr($required).esc_attr($int_value).'" placeholder="">'; }	
 														}
 													
 												} }

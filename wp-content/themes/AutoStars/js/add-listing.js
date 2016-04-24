@@ -276,7 +276,7 @@ jQuery(".find-cars").click(function(){
 	 jQuery("#loading").hide();
        if(window.File && window.FileList && window.FileReader && jQuery("#photoimg").length>0){
         document.getElementById("photoimg").addEventListener("change", function(event){
-            jQuery('#photoList_new').empty();
+            //jQuery('#photoList_new').empty();
             var files = event.target.files; //FileList object
             for(var i = 0; i< files.length; i++){
                 var file = files[i];
