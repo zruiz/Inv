@@ -411,6 +411,7 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
 																						if($imic_options['ad_listing_fields']==0) { ?>
                                                 <div class="alert alert-warning fade in">
                                                     <?php echo esc_attr_e('Yacht ad listing can take few days to review. ','framework'); ?>
+                                                    <p><?php echo esc_attr_e('For your convenience conversions will also be added to your listing page. ','framework'); ?></p>
                                                     <!-- <a data-toggle="tab" href="#searchvehicle"><?php echo esc_attr_e('Try search again','framework'); ?></a> -->
                                                 </div>
                                           	<?php } ?>

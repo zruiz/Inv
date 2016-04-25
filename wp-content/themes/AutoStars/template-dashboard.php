@@ -174,11 +174,11 @@ $specification_type = (isset($imic_options['short_specifications']))?$imic_optio
 						$success_msg = $imic_options['payment_success_mail'];
 						$listing_contact_email = '';
 						$admin_mail_to = ($listing_contact_email=='')?get_option('admin_email'):$listing_contact_email;
-						$mail_subject = $user_name .__('successfully added listing.','framework');
-						$admin_mail_content = "<p>".$user_name.__(" has added Ad listing.","framework")."</p>";
+						$mail_subject = $user_name .__(' successfully added a new listing.','framework');
+						$admin_mail_content = "<p>".$user_name.__(" has added a new listing.","framework")."</p>";
 						$admin_mail_content .= "<p>".__("Name: ","framework").$user_name."</p>";
 						$admin_mail_content .= "<p>".__("Email: ","framework").$current_user->user_email."</p>";
-						$admin_mail_content .= "<p>".__("Ad: ","framework").get_permalink( $vehicle)."</p>";
+						$admin_mail_content .= "<p>".__("Listing: ","framework")."<a href='".get_permalink( $vehicle)."'>Preview Listing</a></p>";
 						$admin_msg = wordwrap( $admin_mail_content, 70 );
 						$admin_headers = "From: $current_user->user_email" . PHP_EOL;
 						$admin_headers .= "Reply-To: $current_user->user_email" . PHP_EOL;
@@ -188,8 +188,8 @@ $specification_type = (isset($imic_options['short_specifications']))?$imic_optio
 						$dealer_headers .= "Reply-To: $admin_mail_to" . PHP_EOL;
 						$dealer_headers .= "MIME-Version: 1.0" . PHP_EOL;
 						$dealer_headers .= "Content-Type: text/html; charset=\"iso-8859-1\"\n"; 
-						@mail($admin_mail_to, $mail_subject, $admin_msg, $admin_headers);	
-						@mail($current_user->user_email, $mail_subject, $success_msg, $dealer_headers);	
+						wp_mail($admin_mail_to, $mail_subject, $admin_msg, $admin_headers);	
+						wp_mail($current_user->user_email, $mail_subject, $success_msg);	
 						}
 						if((esc_attr(get_query_var('search'))!=1)&&(esc_attr(get_query_var('saved'))!=1)&&(esc_attr(get_query_var('profile'))!=1)&&(esc_attr(get_query_var('account'))!=1)) {
 								echo '<h2>'.__('My Account','framework').'</h2>';
