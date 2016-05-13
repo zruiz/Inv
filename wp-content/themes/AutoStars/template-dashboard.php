@@ -168,7 +168,7 @@ $specification_type = (isset($imic_options['short_specifications']))?$imic_optio
 							echo '<div class="alert alert-success fade in">
 							<a class="close" href="#" data-dismiss="alert">×</a>
 							<strong>Well done!</strong>
-							'.__('Thanks for submiting your listing. You can visit dashboard for further reference','framework').'
+							'.__('Thanks for submitting your listing. You can visit dashboard for further reference','framework').'
 							</div> ';
 						//Email properties
 						$success_msg = $imic_options['payment_success_mail'];
