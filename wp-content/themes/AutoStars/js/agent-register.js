@@ -17,6 +17,9 @@ jQuery(document).ready(function() {
 			data: {
 				action: 'imic_agent_register',
 				role: jQuery('#role').val(),
+				firstname: jQuery('#firstname').val(),
+				lastname: jQuery('#lastname').val(),
+				company: jQuery('#company').val(),
 				username: jQuery('#username').val(),
 				email: jQuery('#email').val(),
 				pwd1: jQuery('#pwd1').val(),
@@ -52,7 +55,10 @@ jQuery(document).ready(function() {
 			url: agent_register.ajaxurl,
 			data: {
 				action: 'imic_agent_register',
-				//role: jQuery('#role-popup').val(),
+				role: jQuery('#role-popup').val(),
+				firstname: jQuery('#firstname-popup').val(),
+				lastname: jQuery('#lastname-popup').val(),
+				company: jQuery('#company-popup').val(),
 				username: jQuery('#username-popup').val(),
 				email: jQuery('#email-popup').val(),
 				pwd1: jQuery('#pwd1-popup').val(),
@@ -64,12 +70,16 @@ jQuery(document).ready(function() {
 				},
 			success: function(data) {
 				
-				document.getElementById('message-popup').innerHTML = data;
-				jQuery('#message-popup').slideDown('slow');
+				//document.getElementById('message-popup').innerHTML = data;
+				//jQuery('#message-popup').slideDown('slow');
 				jQuery('.register-form-popup img.loader').fadeOut('slow',function(){jQuery(this).remove()});
 				jQuery('#submit-popup').removeAttr('disabled');
-				if(data.match('successfully') != null) { document.getElementById('registerformpopup').reset();
-                                document.location.href = jQuery('.redirect_register').val();
+				if(data.match('registration') != null) { document.getElementById('registerformpopup').reset();
+				var delay=2000; //1 seconds
+				setTimeout(function(){
+				  document.location.href = jQuery('.redirect_register').val();
+				}, delay);
+                                
 				}
 			},
 			error: function(errorThrown) {
