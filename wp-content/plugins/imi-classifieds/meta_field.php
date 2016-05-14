@@ -149,7 +149,7 @@ $meta_box = array(
 		array(
             'name' => __('Show for vehicle edit', 'framework'),
             'id' => $prefix . 'show_for_vehicle',
-            'desc' => __("Select whether to display this as custom field while editing listing from the wp-dashboard > Cars.", 'framework'),
+            'desc' => __("Select whether to display this as custom field while editing listing from the wp-dashboard > Yachts.", 'framework'),
             'type' => 'select',
             'options' => array(
 		'1' => __('Yes', 'framework'),
@@ -171,7 +171,7 @@ if (!function_exists('imic_register_car_additional_specs')) {
 $meta_box = array(
     'id' => 'cars-additional_specs',
     'title' => __('Additional Specifications', 'framework'),
-    'pages' => array('cars'),
+    'pages' => array('yachts'),
     'show_names' => true,
     'fields' => array(
 		array(
@@ -190,7 +190,7 @@ $meta_box = array(
 			'std' => 0,
         ),
 		array(
-            'name' => __('Payment Status', 'framework'),
+            'name' => __('Listing Status', 'framework'),
             'id' => $prefix . 'ad_payment_status',
             'desc' => __("Select Ad payment status.", 'framework'),
             'type' => 'select',
@@ -220,7 +220,7 @@ $meta_box = array(
 		array(
             'name' => __('Manual', 'framework'),
             'id' => $prefix . 'car_manual',
-            'desc' => __("Upload Vehicle Manual.", 'framework'),
+            'desc' => __("Upload Listing Manual.", 'framework'),
             'type' => 'file_input',
             'std' => '',
         ),
@@ -288,7 +288,7 @@ if (!function_exists('imic_register_cars_specification_values')) {
         $prefix = 'imic_plugin_';
 		//Car Details Meta Box
 		$meta_boxes[] = array(
-		'title' => __( 'Car Details', 'rwmb' ),
+		'title' => __( 'Yacht Details', 'rwmb' ),
 		 'pages' => array('specification'),
 		'fields' => array(
 			array(
@@ -345,7 +345,7 @@ add_action( 'save_post', 'imic_update_event_fields_data', 10, 2 );
  */
 function add_event_fields_clone() 
 {
-    add_meta_box('event_schedule',__('Specifications','framework'),'imic_event_feilds_output','cars','normal','core');
+    add_meta_box('event_schedule',__('Specifications','framework'),'imic_event_feilds_output','yachts','normal','core');
 }
 /**
  * Print the Meta Box content
@@ -569,7 +569,7 @@ function imic_update_event_fields_data( $post_id, $post_object )
         return;
     // Verify authenticity
 	// Check the user's permissions.
-	if ( isset( $_POST['post_type'] ) && 'cars' == $_POST['post_type'] ) {
+	if ( isset( $_POST['post_type'] ) && 'yachts' == $_POST['post_type'] ) {
 		if ( ! current_user_can( 'edit_page', $post_id ) ) {
 			return;
 		}
@@ -627,7 +627,7 @@ function imic_update_event_fields_data( $post_id, $post_object )
 function add_admin_scripts_event( $hook ) {
     global $post;
     if ( $hook == 'post-new.php' || $hook == 'post.php' ) {
-        if ( 'cars' === $post->post_type ) {     
+        if ( 'yachts' === $post->post_type ) {     
 			wp_enqueue_style(  'myscript', get_stylesheet_directory_uri().'/css/clone_fields.css' );
 			wp_enqueue_script(  'imic_listing_admin', plugin_dir_path( __FILE__ ).'/js/listing_admin_plugin.js' );
 			wp_localize_script('imic_listing_admin','listadm',array('ajaxurl'=>admin_url('admin-ajax.php')));

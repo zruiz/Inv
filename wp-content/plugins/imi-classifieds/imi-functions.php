@@ -238,8 +238,8 @@ if(!function_exists('imic_set_tags_fields'))
 		$term_id = get_term_by('slug', $category_slug, 'listing-category');
 		$parents = get_ancestors( $term_id->term_id, 'listing-category' );
 		array_push($parents, $term_id->term_id);
-		$list_tags = get_terms('cars-tag',array('hide_empty'=>false));
-		$term_list = wp_get_post_terms($update_id, 'cars-tag', array("fields" => "ids"));
+		$list_tags = get_terms('yachts-tag',array('hide_empty'=>false));
+		$term_list = wp_get_post_terms($update_id, 'yachts-tag', array("fields" => "ids"));
 		foreach($list_tags as $tag)
 		{ 
 			$cat_slugs = get_option('taxonomy_'.$tag->term_id.'_metas');
