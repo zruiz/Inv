@@ -70,8 +70,8 @@ jQuery(document).ready(function() {
 				},
 			success: function(data) {
 				
-				//document.getElementById('message-popup').innerHTML = data;
-				//jQuery('#message-popup').slideDown('slow');
+				document.getElementById('message-popup').innerHTML = data;
+				jQuery('#message-popup').slideDown('slow');
 				jQuery('.register-form-popup img.loader').fadeOut('slow',function(){jQuery(this).remove()});
 				jQuery('#submit-popup').removeAttr('disabled');
 				if(data.match('registration') != null) { document.getElementById('registerformpopup').reset();

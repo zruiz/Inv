@@ -2880,8 +2880,8 @@ update_post_meta($post_id,'imic_user_company',$company);
                 $err = 'Error on user creation.';
             } else {
                 do_action('user_register', $user_id);
-                $success = 'Thank you for your registration, you will be receiving an email once your account has been approved.';
-                //$success = 'Thank you for your registration, you will be redirected in a moment.';
+                //$success = 'Thank you for your registration, you will be receiving an email once your account has been approved.';
+                $success = 'Thank you for your registration, you will be redirected in a moment.';
                                 // $info_register = array();
                                 // $info_register['user_login'] = $username;
                                 // $info_register['user_password'] = $pwd1;
