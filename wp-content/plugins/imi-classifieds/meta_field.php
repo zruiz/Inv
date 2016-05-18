@@ -175,7 +175,7 @@ $meta_box = array(
     'show_names' => true,
     'fields' => array(
 		array(
-            'name' => __('Ad Steps Completed', 'framework'),
+            'name' => __('Listing Steps Completed', 'framework'),
             'id' => $prefix . 'ads_steps',
             'desc' => __("Select completed steps of this listing.", 'framework'),
             'type' => 'select',
@@ -192,7 +192,7 @@ $meta_box = array(
 		array(
             'name' => __('Listing Status', 'framework'),
             'id' => $prefix . 'ad_payment_status',
-            'desc' => __("Select Ad payment status.", 'framework'),
+            'desc' => __("Select listing status.", 'framework'),
             'type' => 'select',
             'options' => array(
 			'0' => __('Pending', 'framework'),
