@@ -410,8 +410,8 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
 																						}
 																						if($imic_options['ad_listing_fields']==0) { ?>
                                                 <div class="alert alert-warning fade in">
-                                                    <?php echo esc_attr_e('Yacht ad listing can take few days to review. ','framework'); ?>
-                                                    <p><?php echo esc_attr_e('For your convenience conversions will also be added to your listing page. ','framework'); ?></p>
+                                                    <?php echo esc_attr_e('Yacht listings can take up to 2 business days to review. ','framework'); ?>
+                                                    <p><?php echo esc_attr_e('For your convenience conversions will be added to your listing page. ','framework'); ?></p>
                                                     <!-- <a data-toggle="tab" href="#searchvehicle"><?php echo esc_attr_e('Try search again','framework'); ?></a> -->
                                                 </div>
                                           	<?php } ?>
@@ -616,8 +616,8 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
                             
                     			<!-- AD LISTING FORM STEP TWO -->
                       			<div id="listing-add-form-two" class="tab-pane fade <?php echo ($active_tab2!='')?$active_tab2.' in':''; ?>">
-                        			<h3><?php echo esc_attr_e('Add additional features your yacht have','framework'); ?></h3>
-                            		<div class="lighter"><p><?php echo esc_attr_e('Features added can either factory fitted or after market features.','framework'); ?></p></div>
+                        			<h3><?php echo esc_attr_e('Add additional features to promote your listing.','framework'); ?></h3>
+                            		<!-- <div class="lighter"><p><?php echo esc_attr_e('Features added can either factory fitted or after market features.','framework'); ?></p></div> -->
                                     <div class="panel panel-default">
                                         <div id="featcontainer">
 											<!-- <label for="featcontent" class="screen-reader-text"><?php _e( 'Yacht Features' ); ?></label> -->
@@ -636,8 +636,8 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
                             
                     			<!-- AD LISTING FORM STEP THREE -->
                       			<div id="listing-add-form-three" class="tab-pane fade <?php echo ($active_tab3!='')?$active_tab3.' in':''; ?>">
-                                	<h3><?php echo esc_attr_e('Tell us more about your listing specific details','framework'); ?></h3>
-                            		<div class="lighter"><p><?php echo esc_attr_e('Be specific and clear about this details to make your listing selling quickly.','framework'); ?></p></div>
+                                	<h3><?php echo esc_attr_e('Add your listing details and broker information','framework'); ?></h3>
+                            		<!-- <div class="lighter"><p><?php echo esc_attr_e('Be specific and clear about this details to make your listing selling quickly.','framework'); ?></p></div> -->
                                     <div class="row">
                                     	<div class="col-md-6">
                                        		<?php if(!empty($additional_details)) { 
@@ -780,7 +780,7 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
                     			<!-- AD LISTING FORM STEP FOUR -->
                       			<div id="listing-add-form-four" class="tab-pane fade <?php echo ($active_tab4!='')?$active_tab4.' in':''; ?>">
                                     <h3><?php echo esc_attr_e('Upload your listing photos','framework'); ?></h3>
-                                    <div class="lighter"><p><?php echo esc_attr_e('Registered listing owners should include at least one picture.','framework'); ?></p></div>
+                                    <div class="lighter"><p><?php echo esc_attr_e('Please include high quality images, these images must reflect your yacht listing accurately.','framework'); ?></p></div>
                                     <?php $content = '';
 										if($update_id!='')
 										{
@@ -812,13 +812,13 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
                                             ?>
                                          <?php FRONT_MEDIA_ALLOW::wp_media_upload_button(); ?>
                                <hr class="fw">
-                               <h3><?php echo esc_attr_e('Provide a hosted video URL of your listing','framework'); ?></h3>
-                                    <div class="lighter"><p><?php echo esc_attr_e('As per our experience and selling stats we found that listings with video available sell more faster than the one which do not have any video.','framework'); ?></p>
+                               <h3><?php echo esc_attr_e('Provide your listing video URL','framework'); ?></h3>
+                                    <div class="lighter"><p><?php echo esc_attr_e('We recommend adding a high quality video of your listing, listings with videos get more visits and contact requests on our site.','framework'); ?></p>
                                     </div>
                                     <input value="<?php echo get_post_meta($update_id,'imic_plugin_video_url',true); ?>" name="vehicle-video" id="vehicle-video" type="text" class="form-control" placeholder="Youtube/Video URL">
                                     <hr class="fw">
-                                    <h3><?php echo esc_attr_e('Add some comments about your listing','framework'); ?></h3>
-                                    <div class="lighter"><p><?php echo esc_attr_e('Enter here some impressive wording about your yacht to attract more buyers interested in your Ad listing. This will appear on the search results page as well.','framework'); ?></p></div>
+                                    <h3><?php echo esc_attr_e('Add any additional features and details about your listing','framework'); ?></h3>
+                                    <!-- <div class="lighter"><p><?php echo esc_attr_e('Enter here some impressive wording about your yacht to attract more buyers interested in your Ad listing. This will appear on the search results page as well.','framework'); ?></p></div> -->
                                     <textarea name="vehicle-detail" id="vehicle-detail" class="form-control" rows="10"><?php echo $content; ?></textarea>
                                     
                                     <?php if(is_user_logged_in()) { ?>
@@ -827,8 +827,8 @@ $specification_data_type = (isset($imic_options['specification_fields_type']))?$
                             
                     			<!-- AD LISTING FORM STEP FIVE -->
                       			<div id="listing-add-form-five" class="tab-pane fade <?php echo ($active_tab5!='')?$active_tab5.' in':''; ?>">
-                                	<h3><?php echo esc_attr_e('About the listing approval process','framework'); ?></h3>
-                            		<div class="lighter"><p><?php echo esc_attr_e('To make sure listings are safe and appropriate for everyone, all listings go through an approval process using the Invictvs ads policies. Most listings are reviewed within 1 business day. However, some reviews take longer because the listing requires a more complex review. Once the listing is approved and published any user of our website will be able to contact you about the listing.','framework'); ?></p></div>
+                                	<h3><?php echo esc_attr_e('Listing approval process','framework'); ?></h3>
+                            		<div class="lighter"><p><?php echo esc_attr_e('All Invictus listings go through an approval process in order to monitor quality and accuracy. Listing approval process might take up to 2 business days..','framework'); ?></p></div>
                                     <div class="btn-group selling-choice" data-toggle="buttons">
                                     <?php $listing_view = get_post_meta($update_id,'imic_plugin_listing_view',true); ?>
                                         <label class="btn btn-default <?php echo ($listing_view=="all"||$listing_view=="")?"active":""; ?>" style="display:none;">
