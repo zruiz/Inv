@@ -672,7 +672,7 @@ $cars_listing = new WP_Query( $args_cars );
 													endforeach; } ?>
                                                 <div class="result-item-view-buttons">
                                                     <?php if($video!='') { ?>
-                                                    <a href="<?php echo esc_attr($video); ?>" data-rel="prettyPhoto"><i class="fa fa-play"></i> <?php _e('View video','framework'); ?></a><?php } ?>
+                                                    <a href="<?php echo esc_attr($video); ?>" target="_blank" data-rel="prettyPhoto"><i class="fa fa-play"></i> <?php _e('View video','framework'); ?></a><?php } ?>
                                                     <a href="<?php echo esc_url(get_permalink()); ?>"><i class="fa fa-plus"></i> <?php _e('View details','framework'); ?></a>
                                                 </div>
                                             </div>
