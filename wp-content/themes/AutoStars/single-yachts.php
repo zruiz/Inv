@@ -774,7 +774,7 @@ $loggedUserEmail = $current_user->user_email;
                                     <span class="vehicle-enquiry-foot-ico"><i class="fa fa-phone"></i></span>
                                     <strong><?php echo get_post_meta(get_the_ID(),'imic_plugin_contact_phone',true); ?></strong><?php echo esc_attr_e('Broker Name:','framework'); ?> <a href="<?php echo esc_url(get_author_posts_url($post_author_id)); ?>"><?php echo esc_attr($userName); ?></a>
 									 <div style="padding:10px 0;">
-			                        	<input type="button" data-toggle="modal" data-target="#infoModal" class="btn btn-primary" value="Request more info">
+			                        	<input type="button" data-toggle="modal" data-target="#infoModal" class="btn btn-primary request-info" value="Request more info">
 			                        </div>
                                     <!-- <a href="#" data-toggle="modal" data-target="#infoModal" class="btn btn-default" title="<?php echo esc_attr_e('Request more info','framework'); ?>"><i class="fa fa-info"></i> <span><?php echo esc_attr_e('Request more info','framework'); ?></span></a> -->
                                 </div>
