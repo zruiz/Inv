@@ -55,7 +55,7 @@ global $imic_options;
                     $redirect_login= get_post_meta(get_the_ID(),'imic_login_redirect_options',true);
                     $redirect_login=!empty($redirect_login)?$redirect_login:  home_url();
                     ?>
-                    <input type ="hidden" class ="redirect_login" name ="redirect_login" value ="dashboard/"/>
+                    <input type ="hidden" class ="redirect_login" name ="redirect_login" value ="/dashboard/"/>
                     <div class="input-group">
                     <span class="input-group-addon"><i class="fa fa-user"></i></span>
                     <input class="form-control input1" id="loginname" type="text" name="loginname" placeholder="<?php _e('Username', 'framework'); ?>">
