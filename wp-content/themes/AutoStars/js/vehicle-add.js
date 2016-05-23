@@ -61,17 +61,17 @@ jQuery(document).ready(function(){
 			var $saved_id = $id.split("-");
 			ids.push($saved_id[1]); }
 		});
-		if(ids.length>3) { alert(dashboard.exceed); } else {
+		if(ids.length>3) { alert("You can not select more than 3 listing to compare"); } else {
 		var ids = ids.join('-');
 		var $check_length = jQuery(".saved-cars-box input:checkbox:checked").length;
 		if ($check_length > 1) { jQuery(".compare-in-box").removeAttr('disabled');
-		jQuery(".compare-in-box").text(dashboard.compmsg+"("+$check_length+")");
+		jQuery(".compare-in-box").text("Compare("+$check_length+")");
 		var $url = jQuery(".compare-in-box").attr("href");
 		var $new_url = Update_compare_url("compare",ids,$url);
 		jQuery(".compare-in-box").attr("href", $new_url);
 		}
 		else { jQuery(".compare-in-box").attr('disabled','disabled');
-		jQuery(".compare-in-box").text(dashboard.compmsg+"()"); } }
+		jQuery(".compare-in-box").text("Compare()"); } }
 	});
 	jQuery('.compare-viewed-box').hide();
 	if((jQuery('ul#viewed-cars-listbox li').length) > 1) { jQuery(".compare-viewed-box").show(); }
@@ -136,7 +136,7 @@ jQuery(document).ready(function(){
 		jQuery(this).attr('disabled','disabled');
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
             data: {
                 action: 'imic_vehicle_add',
                 vehicle_id: $vehicle_id,
@@ -152,6 +152,7 @@ jQuery(document).ready(function(){
 				jQuery('.saved-cars-box li:gt(0):lt(' + (jQuery('.saved-cars-box li').length - 3) + ')').remove();
 				if((jQuery('ul.saved-cars-box li').length) > 1) { jQuery(".compare-in-box").show(); }
 				else { jQuery(".compare-in-box").hide(); }
+				alert("Successfully Saved");
             },
             error: function(errorThrown) {
             }
@@ -160,11 +161,6 @@ jQuery(document).ready(function(){
 	});
 	jQuery("#reset-filters-search").live('click',function(){
 		var $vars = imic_ger_query_vars();
-		jQuery('.get-child-cat [value=""]').attr('selected',true);
-		jQuery('.get-child-cat ul li').removeClass("selected");
-		jQuery('.get-child-cat ul li:first').addClass("selected");
-		jQuery('.get-child-cat span.filter-option').text("Select");
-		jQuery("#sub-manufacturer").empty();
 		//alert($vars);
 		jQuery.each($vars,function(index,value){
 			if(index!="page_id") {
@@ -175,7 +171,7 @@ jQuery(document).ready(function(){
 		jQuery("#search-tab").empty();
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
             data: {
                 action: 'imic_search_result',
                 values: '',
@@ -198,7 +194,7 @@ jQuery(document).ready(function(){
 		//alert($vehicle_id);
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -211,8 +207,8 @@ jQuery(document).ready(function(){
             success: function(data) {
 				jQuery("#blank-search").remove();
 				if($search_vehicle_id=="unsaved") { jQuery("#search-saved li").remove(); }
-				if(data=='') { jQuery("#messages").html("<div class=\"alert alert-error\">"+dashboard.asaved+"</div>"); }
-				else { jQuery("#messages").html("<div class=\"alert alert-success\">"+dashboard.ssaved+"</div>"); }
+				if(data=='') { jQuery("#messages").html("<div class=\"alert alert-error\">You have already saved this search</div>"); }
+				else { jQuery("#messages").html("<div class=\"alert alert-success\">Successfully Saved</div>"); }
 				jQuery("#search-saved").append(data);
             },
             error: function(errorThrown) {
@@ -245,7 +241,7 @@ jQuery(document).ready(function(){
 		//alert($saved_items);
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -295,7 +291,7 @@ jQuery(document).ready(function(){
         .on('click', '#delete', function (e) {
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
             data: {
                 action: 'imi_remove_cars',
                 saved: $saved_items,
@@ -335,7 +331,7 @@ jQuery(document).ready(function(){
 		//alert($saved_items);
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -389,7 +385,7 @@ jQuery(document).ready(function(){
 		//alert($saved_items);
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -428,7 +424,7 @@ jQuery(document).ready(function(){
 		//alert($saved_items);
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -464,7 +460,7 @@ jQuery(document).ready(function(){
 		var $ad_next_status = jQuery(this).find(".ad-next-status").text();
 		jQuery.ajax({
             type: 'POST',
-            url: dashboard.ajaxurl,
+            url: values.ajaxurl,
 			//processData: true,
 			//contentType: 'application/json',
             data: {
@@ -485,7 +481,7 @@ jQuery(".session-save-car").live('click',function(){
 	var $this_session = jQuery(this).attr("id");
 	jQuery.ajax({
 		type: 'POST',
-		url: dashboard.ajaxurl,
+		url: values.ajaxurl,
 		data:{
 			action: 'imic_remove_session_saved',
 			sessions: $this_session
