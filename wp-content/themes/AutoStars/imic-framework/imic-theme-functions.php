@@ -1519,6 +1519,7 @@ if(!function_exists('imic_create_vehicle'))
 		$listing_view = (isset($_POST['listing_view']))?$_POST['listing_view']:'';
 		$fields = (isset($_POST['values']))?$_POST['values']:'';
 		$tags = (isset($_POST['tags']))?$_POST['tags']:array();
+        $features = (isset($_POST['features']))?$_POST['features']:'';
 		$val = $id = $mids = '';
 		$data = (isset($_POST['matched']))?$_POST['matched']:'';
 		$mids = (isset($_POST['mids']))?$_POST['mids']:'';
@@ -1572,6 +1573,9 @@ if(!function_exists('imic_create_vehicle'))
 			update_post_meta($post_id, 'imic_plugin_listing_end_dt', '2020-01-01');
 		}
 		}
+        if($features!=''){
+            update_post_meta($post_id,'imic_tab_area1',$features);
+        }
 		if($category!='')
 		{
 			$cat_slug = $category;
@@ -2365,10 +2369,10 @@ function imic_reset_password(){
 					$user_verification_get = get_user_meta($user_id,'imic_reset_password_key',true);
 					$to = $user_email;
 					$subject = esc_attr__('Verification Code to reset password', 'framework');
-					$body = esc_attr__('Please use this verification code to reset password', 'framework');
+					$body = esc_attr__('Please use this verification code to reset your password', 'framework');
 					$body .= esc_attr__('Verification Code', 'framework').' '.$user_verification_get;
 					wp_mail( $to, $subject, $body );
-					echo json_encode(array('valid'=>true, 'message'=>__('Please insert verification code, which you recieved in above email.','framework')));
+					echo json_encode(array('valid'=>true, 'message'=>__('Please insert the verification code, you received in your email.','framework')));
 				}
 				else
 				{
@@ -2820,19 +2824,22 @@ function imic_agent_register() {
 		$pwd2 = esc_sql(trim($_POST['pwd2']));
 		$email = esc_sql(trim($_POST['email']));
 		$role = (isset($_POST['roles']))?esc_sql(trim($_POST['roles'])):'';
+        $fullname = $firstname. ' ' .$lastname;
 		
 	   //Email properties
 	   	$dealer_msg = $imic_options['agent_register'];
+        $dealer_msg = preg_replace('/Dear/', 'Dear '.$firstname, $imic_options['agent_register']);
+        $dealer_mail_subject = 'Your Account is successfully created';
 		$admin_mail_to = get_option('admin_email');
-		$mail_subject = $username ." registered successfully.";
-		$admin_mail_content = "<p>".__("New user registered with following details.","framework")."</p>";
+		$admin_mail_subject = $username ." registered successfully.";
+		$admin_mail_content = __("New user registered with following details.","framework"). "\r\n";
         $admin_mail_content .= __("Full Name: ","framework").$fullname. "\r\n";
         if ($_POST['roles'] == 'Broker' || $_POST['roles'] == 'Shipyard'){
             $admin_mail_content .= __("Company Name: ","framework").$company. "\r\n";
         }
         $admin_mail_content .= __("Email: ","framework").$email. "\r\n";
         $admin_mail_content .= __("Role: ","framework").$role. "\r\n";
-		$admin_mail_content .= "<p>".__("Email: ","framework").$email."</p>";
+		$admin_mail_content .= __("Email: ","framework").$email. "\r\n";
         $admin_mail_content .= __("Role: ","framework").$role. "\r\n";
 		$admin_msg = wordwrap( $admin_mail_content, 70 );
 		$admin_headers = "From: $email" . PHP_EOL;
@@ -2896,8 +2903,8 @@ update_post_meta($post_id,'imic_user_company',$company);
 	endif;
 	
 	if (!empty($success)) :
-        wp_mail($admin_mail_to, $mail_subject, $admin_msg); 
-        wp_mail($email, $mail_subject, $dealer_msg);
+        wp_mail($admin_mail_to, $admin_mail_subject, $admin_msg); 
+        wp_mail($email, $dealer_mail_subject, $dealer_msg);
 		echo '<div class="alert alert-success">' . $success . '</div>';
 	endif;
     die();

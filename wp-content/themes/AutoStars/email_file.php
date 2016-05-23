@@ -34,9 +34,10 @@ foreach($_POST as $key=>$value) {
 		}
 	}
 }
-//$e_reply = __("You can contact","framework"). $name .__("via email","framework").", $email";		
-$msg = wordwrap( $body . $e_content, 70 );
-$msgs = wordwrap( $u_body, 70 );
+//$e_reply = __("You can contact","framework"). $name .__("via email","framework").", $email";
+$msgs = preg_replace('/Dear/', 'Dear '.$name, $u_body);
+$msgs = wordwrap( ltrim($msgs), 70 );
+$msg = wordwrap( ltrim($body . $e_content), 70 );
 $admin_email = get_option('admin_email');
 
 $headers = "From: $email" . PHP_EOL;

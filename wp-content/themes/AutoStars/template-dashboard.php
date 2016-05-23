@@ -154,7 +154,7 @@ $specification_type = (isset($imic_options['short_specifications']))?$imic_optio
                                     <li class="list-group-item <?php if(get_query_var('search')==1) { echo "active"; } ?>"> <span class="badge"><?php echo count($saved_search); ?></span> <a href="<?php echo esc_url(add_query_arg('search',1,get_permalink())); ?>"><i class="fa fa-folder-o"></i> <?php echo esc_attr_e('Saved Searches','framework'); ?></a></li><?php } if(!empty($saved_cars)) { ?>
                                     <li class="list-group-item <?php if(get_query_var('saved')==1) { echo "active"; } ?>"> <span class="badge"><?php echo count($saved_cars); ?></span> <a href="<?php echo esc_url(add_query_arg('saved',1,get_permalink())); ?>"><i class="fa fa-star-o"></i> <?php echo esc_attr_e('Saved Yachts','framework'); ?></a></li><?php } ?>
                                     <?php if($role->slug == 'broker' || $role->slug == 'shipyard') { ?>
-                                    <li class="list-group-item"> <a href="<?php echo esc_url($listing_url); ?>"><i class="fa fa-plus-square-o"></i> <?php echo esc_attr_e('Create new Ad','framework'); ?></a></li><?php if($total_ads!='') { ?>
+                                    <!-- <li class="list-group-item"> <a href="<?php echo esc_url($listing_url); ?>"><i class="fa fa-plus-square-o"></i> <?php echo esc_attr_e('Create new Ad','framework'); ?></a></li>--><?php if($total_ads!='') { ?> 
                                     <li class="list-group-item <?php if(get_query_var('manage')==1) { echo "active"; } ?>"> <span class="badge"><?php echo esc_attr($total_ads); ?></span> <a href="<?php echo esc_url(add_query_arg('manage',1,get_permalink())); ?>"><i class="fa fa-edit"></i> <?php echo esc_attr_e('Manage Ads','framework'); ?></a></li><?php } ?>
                                     <?php } ?>
                                     <li class="list-group-item <?php if(get_query_var('profile')==1) { echo "active"; } ?>"> <a href="<?php echo esc_url(add_query_arg('profile',1,get_permalink())); ?>"><i class="fa fa-user"></i> <?php echo esc_attr_e('My Profile','framework'); ?></a></li>
@@ -171,14 +171,16 @@ $specification_type = (isset($imic_options['short_specifications']))?$imic_optio
 							'.__('Thanks for submitting your listing. You can visit dashboard for further reference','framework').'
 							</div> ';
 						//Email properties
-						$success_msg = $imic_options['payment_success_mail'];
+						$firstname = $current_user->user_firstname;
+						$success_msg = preg_replace('/Dear/', 'Dear '.$firstname, $imic_options['payment_success_mail']);
+						$success_msg = wordwrap( ltrim($success_msg), 70 );
 						$listing_contact_email = '';
 						$admin_mail_to = ($listing_contact_email=='')?get_option('admin_email'):$listing_contact_email;
 						$mail_subject = $user_name .__(' successfully added a new listing.','framework');
 						$admin_mail_content = "<p>".$user_name.__(" has added a new listing.","framework")."</p>";
 						$admin_mail_content .= "<p>".__("Name: ","framework").$user_name."</p>";
 						$admin_mail_content .= "<p>".__("Email: ","framework").$current_user->user_email."</p>";
-						$admin_mail_content .= "<p>".__("Listing: ","framework")."<a href='".get_permalink( $vehicle)."'>Preview Listing</a></p>";
+						$admin_mail_content .= "<p>".__("Listing: ","framework")."<a href='".get_permalink( $vehicle).'&preview=true'."'>Preview Listing</a></p>";
 						$admin_msg = wordwrap( $admin_mail_content, 70 );
 						$admin_headers = "From: $current_user->user_email" . PHP_EOL;
 						$admin_headers .= "Reply-To: $current_user->user_email" . PHP_EOL;
